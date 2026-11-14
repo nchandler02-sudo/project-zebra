@@ -40,8 +40,10 @@ Windows Firewall will prompt the first time: allow Node on private networks.
 | Dr. Bazo | 100 | the rarest answer on the list (only on Impossible-tier prompts) |
 
 The host picks a difficulty in the lobby or between rounds (key `D`): **Casual** (default: 60 s, 5 answers, every match scores at least 10,
-traps cost nothing, phones say whether an answer is on the list), **Standard** (45 s, 3 answers, a trap only costs points when 30% of
-players named it) or **Zebra** (the original rules). `ZEBRA_ROUND_SECONDS` overrides the round length. Points stay hidden until the
+phones say whether an answer is on the list), **Standard** (45 s, 3 answers) or **Zebra** (45 s, 3 answers, the original rules).
+
+**Board-prep traps** are famous answers that score -10 (526 of the bank's answers). The host controls them separately with the **Traps** toggle (key `X`, lobby or between rounds, any difficulty):
+**Off** (default, a trap scores 0), **When common** (costs 10 only if at least 30% of the players who answered named it) or **Always** (costs 10). `ZEBRA_ROUND_SECONDS` overrides the round length. Points stay hidden until the
 round ends, and the reveal teaches the most attainable misses first plus one zebra. The "Diagnostic Depth" meter shows the best rarity found so far without saying who or what.
 
 ## Lightning round (optional add-on)

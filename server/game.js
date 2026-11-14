@@ -13,10 +13,9 @@ const Activities = require('./activities');
 const ENV_SECONDS = Number(process.env.ZEBRA_ROUND_SECONDS) || 0;
 
 /**
- * Room difficulty. Casual is the default: every match scores at least 10, board-prep traps cost nothing,
- * the phone tells you whether an answer is on the list (never its points) and misses don't use up a slot.
- * Standard: traps only cost points when at least TRAP_COMMON_SHARE of the players who answered named them.
- * Zebra: the original rules.
+ * Room difficulty. Casual is the default: every match scores at least 10, the phone tells you whether an answer is
+ * on the list (never its points) and misses don't use up a slot. Standard and Zebra give fewer answers and less time.
+ * Board-prep traps (negative base scores) are controlled separately by the room's `traps` option, see TRAPS.
  */
 const DIFFICULTY = {
   casual: { label: 'Casual', seconds: 60, maxAnswers: 5, maxTries: 10, feedback: true, mcRight: 15, mcWrong: -5 },
@@ -32,6 +31,9 @@ const AWARDS_FINALIST = AWARDS.finalist;
 const LOG_MAX = 80;
 const DEFAULT_DIFFICULTY = 'casual';
 const TRAP_COMMON_SHARE = 0.3;
+// Board-prep traps: 'off' = a trap scores 0 (default), 'crowd' = costs points only when TRAP_COMMON_SHARE of the answering players named it, 'always' = always costs points.
+const TRAPS = ['off', 'crowd', 'always'];
+const DEFAULT_TRAPS = 'off';
 const CASUAL_FLOOR = 10;
 const MAX_NAME = 20;
 const MAX_ANSWER = 80;
@@ -118,6 +120,7 @@ class Room {
     this.nextPid = 1;
     this.phase = 'lobby';
     this.difficulty = DEFAULT_DIFFICULTY;
+    this.traps = DEFAULT_TRAPS;
     this.roundNo = 0;
     this.prompt = null;
     this.impossible = false;
@@ -153,6 +156,7 @@ class Room {
   setOptions(opts) {
     if (this.phase === 'round' || this.phase === 'break' || this.phase === 'activity') return;
     if (opts && DIFFICULTY[opts.difficulty]) { this.difficulty = opts.difficulty; this.logEvent(`difficulty -> ${opts.difficulty}`); }
+    if (opts && TRAPS.includes(opts.traps)) { this.traps = opts.traps; this.logEvent(`traps -> ${opts.traps}`); }
     if (opts && typeof opts.lightning === 'boolean') {
       if (opts.lightning && !this.db.mc.length) {
         this.host && this.host.send({ t: 'error', message: 'No lightning questions are loaded on the server.' });
@@ -388,8 +392,8 @@ class Room {
   /** Points for an answer's base score after the room's difficulty rules. */
   pointsFor(base, named, participants) {
     if (base < 0) {
-      if (this.difficulty === 'casual') return 0;
-      if (this.difficulty === 'standard') return participants > 0 && named / participants >= TRAP_COMMON_SHARE ? base : 0;
+      if (this.traps === 'off') return 0;
+      if (this.traps === 'crowd') return participants > 0 && named / participants >= TRAP_COMMON_SHARE ? base : 0;
       return base;
     }
     if (this.difficulty === 'casual' && base > 0 && base < CASUAL_FLOOR) return CASUAL_FLOOR;
@@ -640,6 +644,7 @@ class Room {
       maxAnswers: this.maxAnswers(),
       difficulty: this.difficulty,
       difficultyLabel: this.cfg().label,
+      traps: this.traps,
       tierLabels: TIER_LABELS,
       lightning: this.lightningInfo(),
       tourney: this.tourney ? this.tourney.hostView() : null,
@@ -746,6 +751,7 @@ class Room {
       phase: this.phase,
       roundNo: this.roundNo,
       difficulty: this.difficulty,
+      traps: this.traps,
       lightning: this.lightning,
       mcActive: this.mcActive(),
       mcPool: this.mcPool.map((q) => q.id),

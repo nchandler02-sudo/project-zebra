@@ -45,8 +45,8 @@ test('full game flow', async (t) => {
   const hosted = await host.next((m) => m.t === 'hosted');
   assert.match(hosted.code, /^[A-Z]{4}$/);
 
-  host.send({ t: 'set_options', difficulty: 'standard' });
-  await host.next((m) => m.t === 'host_state' && m.difficulty === 'standard');
+  host.send({ t: 'set_options', difficulty: 'standard', traps: 'always' });
+  await host.next((m) => m.t === 'host_state' && m.difficulty === 'standard' && m.traps === 'always');
 
   const a = client(port); await a.open();
   a.send({ t: 'join', code: hosted.code, name: '  Ada  ' });
@@ -188,7 +188,7 @@ test('casual (default) rules: floor, free traps, feedback, misses do not use slo
   a.close(); host.close();
 });
 
-test('standard rules: trap only costs points when the room piles on', async (t) => {
+test('traps: crowd mode only costs points when the room piles on', async (t) => {
   const { server, game } = createServer(db);
   await new Promise((r) => server.listen(0, '127.0.0.1', r));
   t.after(() => { for (const c of server.wsClients) c.terminate(); server.closeAllConnections(); server.close(); game.stop(); });
@@ -196,8 +196,8 @@ test('standard rules: trap only costs points when the room piles on', async (t) 
   const host = client(port); await host.open();
   host.send({ t: 'host_create' });
   const hosted = await host.next((m) => m.t === 'hosted');
-  host.send({ t: 'set_options', difficulty: 'standard' });
-  await host.next((m) => m.t === 'host_state' && m.difficulty === 'standard');
+  host.send({ t: 'set_options', difficulty: 'standard', traps: 'crowd' });
+  await host.next((m) => m.t === 'host_state' && m.difficulty === 'standard' && m.traps === 'crowd');
   const names = ['A', 'B', 'C', 'D'];
   const ps = [];
   for (const n of names) { const c = client(port); await c.open(); c.send({ t: 'join', code: hosted.code, name: n }); await c.next((m) => m.t === 'welcome'); ps.push(c); }
@@ -244,4 +244,32 @@ test('prompt level preference: casual picks easy prompts, zebra avoids them, sta
   // no easy prompts at all: casual falls back to whatever exists
   const noEasy = new Room('T', 'k', new Database({ prompts: [hard, db.prompts[1]] })); noEasy.difficulty = 'casual';
   assert.equal(noEasy.pickPrompt(false).id, 'hard-one');
+});
+
+test('traps toggle: default off, always costs 10 in any difficulty, bad values ignored', async (t) => {
+  const { server, game } = createServer(db);
+  await new Promise((r) => server.listen(0, '127.0.0.1', r));
+  t.after(() => { for (const c of server.wsClients) c.terminate(); server.closeAllConnections(); server.close(); game.stop(); });
+  const port = server.address().port;
+  const host = client(port); await host.open();
+  host.send({ t: 'host_create' });
+  const hosted = await host.next((m) => m.t === 'hosted');
+  const first = await host.next((m) => m.t === 'host_state');
+  assert.equal(first.traps, 'off', 'traps default to off');
+  host.send({ t: 'set_options', traps: 'banana' });
+  host.send({ t: 'set_options', difficulty: 'zebra' });
+  const z = await host.next((m) => m.t === 'host_state' && m.difficulty === 'zebra');
+  assert.equal(z.traps, 'off', 'invalid value ignored; zebra difficulty alone no longer turns traps on');
+  const room = game.rooms.get(hosted.code);
+  assert.equal(room.pointsFor(-10, 5, 5), 0, 'off: a trap scores 0 even in zebra');
+  host.send({ t: 'set_options', traps: 'always' });
+  await host.next((m) => m.t === 'host_state' && m.traps === 'always');
+  host.send({ t: 'set_options', difficulty: 'casual' });
+  await host.next((m) => m.t === 'host_state' && m.difficulty === 'casual');
+  assert.equal(room.pointsFor(-10, 1, 10), -10, 'always: costs 10 in casual too');
+  host.send({ t: 'set_options', traps: 'crowd' });
+  await host.next((m) => m.t === 'host_state' && m.traps === 'crowd');
+  assert.equal(room.pointsFor(-10, 1, 10), 0, 'crowd: free below 30%');
+  assert.equal(room.pointsFor(-10, 3, 10), -10, 'crowd: costs at 30%');
+  host.close();
 });

@@ -911,6 +911,7 @@ body.peek #peekhint { display: block; }
     <div class="mgrid">
       <button class="mi" type="button" data-act="qr" tabindex="-1"><span class="key">Q</span><span class="mt">Show join QR code<small>Full screen, for latecomers</small></span></button>
       <button class="mi idle-only" type="button" data-act="lightning" tabindex="-1"><span class="key">L</span><span class="mt"><span>Lightning round: <b class="state" id="m-l">OFF</b></span><small>30 s of multiple choice after the timer</small></span></button>
+      <button class="mi idle-only" type="button" data-act="traps" tabindex="-1"><span class="key">X</span><span class="mt"><span>Board-prep traps: <b class="state" id="m-t">OFF</b></span><small>Off, only when common, or always (costs 10)</small></span></button>
       <button class="mi idle-only" type="button" data-act="games" tabindex="-1"><span class="key">G</span><span class="mt">Games &amp; activities<small>Confidence bets, Connections, Clue ladder, Millionaire, Chopped, Debrief</small></span></button>
       <button class="mi idle-only" type="button" data-act="tournament" tabindex="-1"><span class="key">T</span><span class="mt">Rock paper scissors<small>Tournament break game for everyone</small></span></button>
       <button class="mi" type="button" data-act="answers" tabindex="-1"><span class="key">A</span><span class="mt">Answer list<small>Every answer and its points (after a round)</small></span></button>
@@ -1316,6 +1317,7 @@ function renderChrome(st) {
   setText($('ph-v'), ph + (st.difficultyLabel ? ' · ' + st.difficultyLabel : ''));
   renderDifficulty(st);
   renderLightning(st);
+  renderTraps(st);
   setText($('pl-v'), (st.players || []).length);
   setText($('rc-v'), st.code || S.code || '----');
   setText($('m-code'), st.code || S.code || '----');
@@ -1324,9 +1326,9 @@ function renderChrome(st) {
 }
 
 var DIFFS = [
-  ['casual', 'Casual', 'Every correct answer scores. Board-prep traps cost nothing, and phones tell you when an answer is on the list.'],
-  ['standard', 'Standard', 'Rarer answers score more. A board-prep trap only costs points when the room piles onto it.'],
-  ['zebra', 'Zebra', 'The full game: rarity decides everything and board-prep traps cost 10.']
+  ['casual', 'Casual', 'Every correct answer scores at least 10, 60 seconds, 5 answers, and phones tell you when an answer is on the list.'],
+  ['standard', 'Standard', 'Rarer answers score more. 45 seconds, 3 answers, no hints.'],
+  ['zebra', 'Zebra', 'The full game: 45 seconds, 3 answers, rarity decides everything.']
 ];
 function buildSegs() {
   document.querySelectorAll('[data-seg]').forEach(function (w) {
@@ -1341,7 +1343,32 @@ function buildSegs() {
     t.appendChild(el('span', 'tl')); t.appendChild(el('span', 'key', 'L'));
     t.addEventListener('click', function () { toggleLightning(); t.blur(); });
     w.appendChild(t); w.appendChild(el('div', 'tog-note'));
+    var tr = el('button', 'tog'); tr.type = 'button'; tr.tabIndex = -1; tr.dataset.tr = '1';
+    tr.appendChild(el('span', 'tl')); tr.appendChild(el('span', 'key', 'X'));
+    tr.addEventListener('click', function () { cycleTraps(); tr.blur(); });
+    w.appendChild(tr); w.appendChild(el('div', 'tog-note trap-note'));
   });
+}
+var TRAP_MODES = [
+  ['off', 'OFF', 'Board-prep traps score 0. Naming a famous zebra never loses points.'],
+  ['crowd', 'WHEN COMMON', 'A board-prep trap costs 10 only when at least 30% of the players who answered named it.'],
+  ['always', 'ALWAYS', 'Board-prep traps always cost 10. Naming a famous zebra is a mistake.']
+];
+function cycleTraps() {
+  var st = S.st; if (!st) return;
+  if (st.phase === 'round') { toast('Change Traps between rounds'); return; }
+  var i = TRAP_MODES.findIndex(function (m) { return m[0] === (st.traps || 'off'); });
+  send({ t: 'set_options', traps: TRAP_MODES[(i + 1) % TRAP_MODES.length][0] });
+}
+function renderTraps(st) {
+  var cur = st.traps || 'off';
+  var m = TRAP_MODES.filter(function (x) { return x[0] === cur; })[0] || TRAP_MODES[0];
+  document.querySelectorAll('[data-seg]').forEach(function (w) {
+    var t = w.querySelector('[data-tr]'); if (!t) return;
+    setCls(t, 'on', cur !== 'off'); setText(t.firstChild, '⚠ Traps: ' + m[1]);
+    var n = w.querySelector('.trap-note'); if (n) setText(n, m[2]);
+  });
+  var mt = $('m-t'); if (mt) { setText(mt, m[1]); setCls(mt, 'on', cur !== 'off'); }
 }
 function toggleLightning() {
   var st = S.st; if (!st) return;
@@ -1834,6 +1861,7 @@ function act(name) {
   if (name === 'restart') { openOv('confirm'); return; }
   if (!st) return;
   if (name === 'lightning') { toggleLightning(); return; }
+  if (name === 'traps') { cycleTraps(); return; }
   if (name === 'tournament') { closeOv(); tourneyAct(); return; }
   if (name === 'games') { gamesAct(); return; }
   if (st.phase === 'activity') {
@@ -1888,7 +1916,7 @@ document.addEventListener('click', function () { if (document.body.classList.con
 var KEYMAP = {
   ' ': 'start', 'Enter': 'start', 'e': 'end', 'E': 'end', 'i': 'impossible', 'I': 'impossible', 'f': 'full', 'F': 'full',
   'u': 'base', 'U': 'base', 'd': 'diff', 'D': 'diff', 'm': 'menu', 'M': 'menu', 'q': 'qr', 'Q': 'qr',
-  'b': 'debug', 'B': 'debug', 'l': 'lightning', 'L': 'lightning', 'r': 'restart', 'R': 'restart', 't': 'tournament', 'T': 'tournament', 'z': 'peek', 'Z': 'peek', 'a': 'answers', 'A': 'answers', 'g': 'games', 'G': 'games'
+  'b': 'debug', 'B': 'debug', 'l': 'lightning', 'L': 'lightning', 'x': 'traps', 'X': 'traps', 'r': 'restart', 'R': 'restart', 't': 'tournament', 'T': 'tournament', 'z': 'peek', 'Z': 'peek', 'a': 'answers', 'A': 'answers', 'g': 'games', 'G': 'games'
 };
 
 /* ---------- overlays: menu, restart confirm, big QR, debug ---------- */
@@ -1915,7 +1943,7 @@ function renderAnswerList() {
   var list = rv.answerList || [];
   setText($('al-prompt'), (st.round && st.round.prompt) || 'Answer list');
   setText($('al-found'), 'Room found ' + (Number(rv.found) || 0) + ' of ' + (Number(rv.total) || list.length));
-  setText($('al-sub'), (st.difficultyLabel || '') + ' scoring' + (st.difficulty === 'casual' ? ' (every match scores at least 10, traps cost nothing)' : st.difficulty === 'standard' ? ' (a trap only costs points if the room piles onto it)' : ''));
+  setText($('al-sub'), (st.difficultyLabel || '') + ' scoring' + (st.difficulty === 'casual' ? ' (every match scores at least 10)' : '') + ((st.traps || 'off') === 'off' ? ', traps cost nothing' : st.traps === 'crowd' ? ', a trap costs points only if the room piles onto it' : ', traps cost 10'));
   var cols = $('al-cols'); cols.textContent = '';
   cols.className = 'alcols' + (list.length > 33 ? ' c4' : '');
   list.forEach(function (a) {
