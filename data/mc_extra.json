@@ -1,0 +1,2021 @@
+{
+ "version": 1,
+ "review_status": "unreviewed",
+ "generator": "AI-drafted for faculty review",
+ "levels": {
+  "mc-apap-antidote": 1,
+  "mc-siadh-labs": 3,
+  "mc-odms": 4,
+  "mc-hyperk-ecg": 3,
+  "mc-hyperk-tx": 2,
+  "mc-hypercalcemia-hosp": 3,
+  "mc-nagma": 3,
+  "mc-methanol": 4,
+  "mc-alkalosis-urinecl": 5,
+  "mc-hit": 4,
+  "mc-pancreatitis-top": 1,
+  "mc-saag": 3,
+  "mc-sbp": 3,
+  "mc-qt-drug": 3,
+  "mc-torsades-tx": 3,
+  "mc-warfarin-abx": 3,
+  "mc-warfarin-reversal": 3,
+  "mc-dabigatran-reversal": 3,
+  "mc-pe-ecg": 2,
+  "mc-pe-lowprob": 3,
+  "mc-pe-massive": 4,
+  "mc-hfref-avoid": 3,
+  "mc-hf-s3": 3,
+  "mc-psc": 4,
+  "mc-uc-pattern": 2,
+  "mc-hypothyroid-labs": 2,
+  "mc-myxedema": 6,
+  "mc-ra-ccp": 2,
+  "mc-felty": 5,
+  "mc-mtx-folate": 2,
+  "mc-sepsis-fluids": 3,
+  "mc-pressor": 2,
+  "mc-eos-parasite": 3,
+  "mc-syncope-common": 2,
+  "mc-syncope-as": 3,
+  "mc-orthostatic-def": 2,
+  "mc-troponin-ckd": 3,
+  "mc-atn-casts": 2,
+  "mc-triple-whammy": 3,
+  "mc-inh-b6": 2,
+  "mc-augmentin": 4,
+  "mc-verapamil": 1,
+  "mc-insulinoma": 5,
+  "mc-fuo-def": 4,
+  "mc-silent-mi": 3,
+  "mc-lems": 5,
+  "mc-dka-k": 3,
+  "mc-he": 2,
+  "mc-anaphylaxis": 1,
+  "mc-chads": 2,
+  "mc-curb": 2
+ },
+ "questions": [
+  {
+   "id": "mcx-cap-pneumo",
+   "q": "Which organism is the most common cause of community-acquired pneumonia in adults?",
+   "correct": "Streptococcus pneumoniae",
+   "wrong": [
+    "Haemophilus influenzae",
+    "Staphylococcus aureus",
+    "Klebsiella pneumoniae"
+   ],
+   "why": "Pneumococcus remains the leading bacterial cause of CAP.",
+   "tags": [
+    "pulm-critical-care"
+   ],
+   "level": 1
+  },
+  {
+   "id": "mcx-opioid-miosis",
+   "q": "A patient is found with pinpoint pupils and a respiratory rate of 6. What is the best immediate treatment?",
+   "correct": "Naloxone",
+   "wrong": [
+    "Flumazenil",
+    "Physostigmine",
+    "Activated charcoal"
+   ],
+   "why": "Miosis plus respiratory depression is the opioid toxidrome, reversed by naloxone.",
+   "tags": [
+    "toxicology-drugs"
+   ],
+   "level": 1
+  },
+  {
+   "id": "mcx-statin-myopathy",
+   "q": "Which adverse effect is most characteristic of statins?",
+   "correct": "Myopathy",
+   "wrong": [
+    "Peripheral neuropathy",
+    "Pulmonary fibrosis",
+    "Hyperkalemia"
+   ],
+   "why": "Statins can cause myalgia, myopathy and rarely rhabdomyolysis.",
+   "tags": [
+    "toxicology-drugs"
+   ],
+   "level": 1
+  },
+  {
+   "id": "mcx-metformin-egfr",
+   "q": "Metformin is contraindicated when eGFR falls below which value (mL/min/1.73 m2)?",
+   "correct": "30",
+   "wrong": [
+    "15",
+    "45",
+    "60"
+   ],
+   "why": "Metformin is contraindicated below an eGFR of 30 because of lactic acidosis risk.",
+   "tags": [
+    "endocrine"
+   ],
+   "level": 1
+  },
+  {
+   "id": "mcx-inferior-rca",
+   "q": "ST elevation in leads II, III and aVF most often reflects occlusion of which artery?",
+   "correct": "Right coronary artery",
+   "wrong": [
+    "Left anterior descending artery",
+    "Left main coronary artery",
+    "Diagonal branch of the LAD"
+   ],
+   "why": "Inferior STEMI is usually from the right coronary artery (sometimes a dominant circumflex).",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 1
+  },
+  {
+   "id": "mcx-ida-postmeno",
+   "q": "A 62-year-old woman has iron deficiency anemia. What is the most appropriate next step?",
+   "correct": "Upper endoscopy and colonoscopy",
+   "wrong": [
+    "Oral iron and recheck in 1 year",
+    "Bone marrow biopsy",
+    "Hemoglobin electrophoresis"
+   ],
+   "why": "Iron deficiency in a postmenopausal woman is GI blood loss until proven otherwise.",
+   "tags": [
+    "hematology"
+   ],
+   "level": 1
+  },
+  {
+   "id": "mcx-dvt-us",
+   "q": "What is the best initial imaging test for suspected lower-extremity deep vein thrombosis?",
+   "correct": "Compression duplex ultrasonography",
+   "wrong": [
+    "Contrast venography",
+    "CT pulmonary angiography",
+    "MRI of the leg"
+   ],
+   "why": "Compression ultrasound is noninvasive, accurate and first-line for proximal DVT.",
+   "tags": [
+    "hematology"
+   ],
+   "level": 1
+  },
+  {
+   "id": "mcx-kussmaul",
+   "q": "Kussmaul respirations are the respiratory compensation for which acid-base disorder?",
+   "correct": "Metabolic acidosis",
+   "wrong": [
+    "Metabolic alkalosis",
+    "Respiratory acidosis",
+    "Respiratory alkalosis"
+   ],
+   "why": "Deep rapid breathing blows off CO2 to compensate for metabolic acidosis.",
+   "tags": [
+    "nephrology-acid-base"
+   ],
+   "level": 1
+  },
+  {
+   "id": "mcx-obstructive-spiro",
+   "q": "Which spirometry finding defines airflow obstruction?",
+   "correct": "Reduced FEV1/FVC ratio",
+   "wrong": [
+    "Reduced total lung capacity",
+    "Reduced DLCO alone",
+    "Reduced FVC with a normal ratio"
+   ],
+   "why": "Obstruction is defined by a low FEV1/FVC ratio; restriction lowers TLC.",
+   "tags": [
+    "pulm-critical-care"
+   ],
+   "level": 1
+  },
+  {
+   "id": "mcx-a1c-window",
+   "q": "HbA1c reflects average blood glucose over roughly what period?",
+   "correct": "About 3 months",
+   "wrong": [
+    "About 3 days",
+    "About 2 weeks",
+    "About 1 year"
+   ],
+   "why": "Red cell lifespan makes HbA1c a measure of the preceding 2-3 months.",
+   "tags": [
+    "endocrine"
+   ],
+   "level": 1
+  },
+  {
+   "id": "mcx-crc-45",
+   "q": "At what age should average-risk adults begin colorectal cancer screening?",
+   "correct": "45",
+   "wrong": [
+    "40",
+    "50",
+    "55"
+   ],
+   "why": "US guidelines now begin average-risk screening at age 45.",
+   "tags": [
+    "preventive-care"
+   ],
+   "level": 1
+  },
+  {
+   "id": "mcx-chvostek",
+   "q": "Facial twitching when the facial nerve is tapped (Chvostek sign) suggests which abnormality?",
+   "correct": "Hypocalcemia",
+   "wrong": [
+    "Hypercalcemia",
+    "Hyperkalemia",
+    "Hypernatremia"
+   ],
+   "why": "Chvostek and Trousseau signs reflect neuromuscular irritability of hypocalcemia.",
+   "tags": [
+    "nephrology-acid-base"
+   ],
+   "level": 1
+  },
+  {
+   "id": "mcx-aaa-screen",
+   "q": "Which patient should have one-time screening abdominal ultrasound for AAA?",
+   "correct": "A 68-year-old man who has ever smoked",
+   "wrong": [
+    "A 68-year-old woman who has never smoked",
+    "A 45-year-old man with hypertension",
+    "A 55-year-old woman with diabetes"
+   ],
+   "why": "Screening is recommended for men aged 65-75 who have ever smoked.",
+   "tags": [
+    "preventive-care"
+   ],
+   "level": 1
+  },
+  {
+   "id": "mcx-stemi-asa",
+   "q": "A patient with STEMI has not yet received any medication. Which drug should be given immediately?",
+   "correct": "Chewed aspirin",
+   "wrong": [
+    "Intravenous metoprolol",
+    "Intravenous morphine",
+    "Oral amlodipine"
+   ],
+   "why": "Aspirin has the largest early mortality benefit in STEMI; routine early beta blocker, morphine and CCB are not first steps.",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 2
+  },
+  {
+   "id": "mcx-phenytoin-gingival",
+   "q": "Which anticonvulsant classically causes gingival hyperplasia and hirsutism?",
+   "correct": "Phenytoin",
+   "wrong": [
+    "Valproate",
+    "Lamotrigine",
+    "Levetiracetam"
+   ],
+   "why": "Gingival hyperplasia and hirsutism are classic phenytoin effects.",
+   "tags": [
+    "neurology"
+   ],
+   "level": 2
+  },
+  {
+   "id": "mcx-glucagon-im",
+   "q": "A patient on insulin is unresponsive with glucose 28 mg/dL and no IV access. What is the best treatment?",
+   "correct": "Intramuscular glucagon",
+   "wrong": [
+    "Oral glucose gel by mouth",
+    "Subcutaneous octreotide",
+    "Intravenous diazoxide"
+   ],
+   "why": "Glucagon IM is appropriate when the patient cannot safely take oral carbohydrate and IV access is lacking.",
+   "tags": [
+    "endocrine"
+   ],
+   "level": 2
+  },
+  {
+   "id": "mcx-hypoca-qt",
+   "q": "Which ECG finding is typical of hypocalcemia?",
+   "correct": "Prolonged QT interval",
+   "wrong": [
+    "Shortened QT interval",
+    "Peaked T waves",
+    "Prominent U waves"
+   ],
+   "why": "Hypocalcemia lengthens the ST segment and so the QT interval.",
+   "tags": [
+    "nephrology-acid-base"
+   ],
+   "level": 2
+  },
+  {
+   "id": "mcx-hypok-uwave",
+   "q": "Which ECG finding is typical of hypokalemia?",
+   "correct": "U waves",
+   "wrong": [
+    "Peaked T waves",
+    "Shortened QT interval",
+    "Osborn waves"
+   ],
+   "why": "Hypokalemia causes ST depression, flat T waves and prominent U waves.",
+   "tags": [
+    "nephrology-acid-base"
+   ],
+   "level": 2
+  },
+  {
+   "id": "mcx-protamine",
+   "q": "Which agent reverses unfractionated heparin?",
+   "correct": "Protamine sulfate",
+   "wrong": [
+    "Vitamin K",
+    "Idarucizumab",
+    "Andexanet alfa"
+   ],
+   "why": "Protamine binds heparin and neutralizes its anticoagulant effect.",
+   "tags": [
+    "hematology"
+   ],
+   "level": 2
+  },
+  {
+   "id": "mcx-beck-tamponade",
+   "q": "Hypotension, distended neck veins and muffled heart sounds describe which condition?",
+   "correct": "Cardiac tamponade",
+   "wrong": [
+    "Tension pneumothorax",
+    "Aortic dissection",
+    "Acute pulmonary edema"
+   ],
+   "why": "This is Beck triad of cardiac tamponade.",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 2
+  },
+  {
+   "id": "mcx-tension-ptx",
+   "q": "A ventilated patient suddenly becomes hypotensive with absent right breath sounds and tracheal deviation to the left. What is the next step?",
+   "correct": "Immediate needle decompression",
+   "wrong": [
+    "Obtain a portable chest x-ray first",
+    "Order a CT of the chest",
+    "Start empiric antibiotics"
+   ],
+   "why": "Tension pneumothorax is a clinical diagnosis treated at once by decompression.",
+   "tags": [
+    "pulm-critical-care"
+   ],
+   "level": 2
+  },
+  {
+   "id": "mcx-charcot",
+   "q": "Fever, jaundice and right upper quadrant pain (Charcot triad) suggest which diagnosis?",
+   "correct": "Acute cholangitis",
+   "wrong": [
+    "Acute cholecystitis",
+    "Acute pancreatitis",
+    "Hepatic abscess"
+   ],
+   "why": "Charcot triad indicates biliary obstruction with infection.",
+   "tags": [
+    "gi-hepatology"
+   ],
+   "level": 2
+  },
+  {
+   "id": "mcx-acei-angioedema",
+   "q": "Which drug class can cause angioedema without urticaria through bradykinin accumulation?",
+   "correct": "ACE inhibitors",
+   "wrong": [
+    "Thiazide diuretics",
+    "Beta blockers",
+    "Statins"
+   ],
+   "why": "ACE inhibitors block bradykinin degradation and can cause angioedema.",
+   "tags": [
+    "toxicology-drugs"
+   ],
+   "level": 2
+  },
+  {
+   "id": "mcx-furosemide-oto",
+   "q": "Which diuretic is most associated with ototoxicity?",
+   "correct": "Furosemide",
+   "wrong": [
+    "Hydrochlorothiazide",
+    "Spironolactone",
+    "Acetazolamide"
+   ],
+   "why": "Loop diuretics, especially at high IV doses, can cause hearing loss and tinnitus.",
+   "tags": [
+    "toxicology-drugs"
+   ],
+   "level": 2
+  },
+  {
+   "id": "mcx-tpa-window",
+   "q": "What is the standard maximum time from last known well for IV thrombolysis in acute ischemic stroke?",
+   "correct": "4.5 hours",
+   "wrong": [
+    "1.5 hours",
+    "8 hours",
+    "12 hours"
+   ],
+   "why": "IV alteplase or tenecteplase is given within 4.5 hours; advanced imaging can extend selected patients.",
+   "tags": [
+    "neurology"
+   ],
+   "level": 2,
+   "review_notes": "Imaging-selected extended-window thrombolysis exists; stem asks for the standard window."
+  },
+  {
+   "id": "mcx-b12-neuro",
+   "q": "Macrocytic anemia with loss of vibration sense and ataxia suggests deficiency of which nutrient?",
+   "correct": "Vitamin B12",
+   "wrong": [
+    "Folate",
+    "Vitamin B6",
+    "Thiamine"
+   ],
+   "why": "B12 deficiency causes macrocytosis plus subacute combined degeneration of the dorsal columns.",
+   "tags": [
+    "hematology"
+   ],
+   "level": 2
+  },
+  {
+   "id": "mcx-gca-steroids",
+   "q": "A 72-year-old has new temporal headache, jaw claudication and an ESR of 95. What is the next step?",
+   "correct": "Start high-dose prednisone now, then arrange temporal artery biopsy",
+   "wrong": [
+    "Wait for temporal artery biopsy before any treatment",
+    "Start an NSAID and arrange outpatient MRI",
+    "Start aspirin alone and observe"
+   ],
+   "why": "Giant cell arteritis threatens vision, so steroids start before biopsy confirmation.",
+   "tags": [
+    "rheumatology"
+   ],
+   "level": 3
+  },
+  {
+   "id": "mcx-digoxin-fab",
+   "q": "A patient on digoxin has vomiting, yellow-tinted vision, K 6.2 and complete heart block. What is the specific treatment?",
+   "correct": "Digoxin-specific antibody fragments",
+   "wrong": [
+    "Hemodialysis",
+    "Activated charcoal alone",
+    "Intravenous amiodarone"
+   ],
+   "why": "Digoxin immune Fab treats life-threatening digoxin toxicity; dialysis does not clear digoxin well.",
+   "tags": [
+    "toxicology-drugs"
+   ],
+   "level": 3
+  },
+  {
+   "id": "mcx-amio-toxicity",
+   "q": "Which drug causes pulmonary fibrosis, thyroid dysfunction and corneal microdeposits?",
+   "correct": "Amiodarone",
+   "wrong": [
+    "Dofetilide",
+    "Flecainide",
+    "Sotalol"
+   ],
+   "why": "Amiodarone is iodine-rich and lipophilic, with lung, thyroid, liver and eye toxicity.",
+   "tags": [
+    "toxicology-drugs"
+   ],
+   "level": 3
+  },
+  {
+   "id": "mcx-tls-labs",
+   "q": "Which lab pattern fits tumor lysis syndrome?",
+   "correct": "High potassium, phosphate and uric acid with low calcium",
+   "wrong": [
+    "High potassium and calcium with low phosphate",
+    "Low potassium and phosphate with high uric acid",
+    "High sodium and calcium with low uric acid"
+   ],
+   "why": "Cell lysis releases K, phosphate and purines; phosphate binds calcium.",
+   "tags": [
+    "oncology"
+   ],
+   "level": 3
+  },
+  {
+   "id": "mcx-hypercalcemia-saline",
+   "q": "A cancer patient has calcium 14 mg/dL and is volume depleted. What is the first treatment?",
+   "correct": "Intravenous isotonic saline",
+   "wrong": [
+    "Immediate loop diuretic",
+    "Hydrochlorothiazide",
+    "Dietary calcium restriction"
+   ],
+   "why": "Volume repletion comes first; bisphosphonates follow.",
+   "tags": [
+    "oncology"
+   ],
+   "level": 3
+  },
+  {
+   "id": "mcx-dissection-bb",
+   "q": "In suspected acute aortic dissection, which drug should be started first to reduce shear stress?",
+   "correct": "Intravenous esmolol",
+   "wrong": [
+    "Intravenous hydralazine",
+    "Sublingual nifedipine",
+    "Intravenous nitroprusside alone"
+   ],
+   "why": "An IV beta blocker lowers heart rate and dP/dt before any vasodilator is added.",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 3
+  },
+  {
+   "id": "mcx-ivdu-endocarditis",
+   "q": "Which organism most commonly causes endocarditis in people who inject drugs?",
+   "correct": "Staphylococcus aureus",
+   "wrong": [
+    "Viridans streptococci",
+    "Enterococcus faecalis",
+    "Streptococcus gallolyticus"
+   ],
+   "why": "S. aureus, often right-sided, predominates in injection drug use.",
+   "tags": [
+    "infectious-disease"
+   ],
+   "level": 3
+  },
+  {
+   "id": "mcx-hbv-vaccinated",
+   "q": "Which hepatitis B serology indicates immunity from vaccination only?",
+   "correct": "Anti-HBs positive, anti-HBc negative",
+   "wrong": [
+    "HBsAg positive, anti-HBc IgM positive",
+    "Anti-HBs positive, total anti-HBc positive",
+    "HBsAg negative, anti-HBs negative, anti-HBc positive"
+   ],
+   "why": "Vaccine immunity produces anti-HBs without core antibody.",
+   "tags": [
+    "gi-hepatology"
+   ],
+   "level": 3
+  },
+  {
+   "id": "mcx-ltot-copd",
+   "q": "In COPD, long-term home oxygen improves survival when resting PaO2 is at or below what level?",
+   "correct": "55 mm Hg",
+   "wrong": [
+    "65 mm Hg",
+    "75 mm Hg",
+    "85 mm Hg"
+   ],
+   "why": "Survival benefit was shown for PaO2 of 55 mm Hg or less (SpO2 88% or less).",
+   "tags": [
+    "pulm-critical-care"
+   ],
+   "level": 3
+  },
+  {
+   "id": "mcx-vitk-factors",
+   "q": "Which clotting factors depend on vitamin K for synthesis?",
+   "correct": "II, VII, IX and X",
+   "wrong": [
+    "I, V, VIII and XIII",
+    "V, VIII, XI and XII",
+    "II, V, VII and XI"
+   ],
+   "why": "Factors II, VII, IX, X and proteins C and S require gamma-carboxylation.",
+   "tags": [
+    "hematology"
+   ],
+   "level": 3
+  },
+  {
+   "id": "mcx-phpt-labs",
+   "q": "Which lab pattern fits primary hyperparathyroidism?",
+   "correct": "High calcium, low phosphate, high PTH",
+   "wrong": [
+    "High calcium, high phosphate, low PTH",
+    "Low calcium, high phosphate, high PTH",
+    "Low calcium, low phosphate, low PTH"
+   ],
+   "why": "PTH raises calcium and promotes renal phosphate loss.",
+   "tags": [
+    "endocrine"
+   ],
+   "level": 3,
+   "review_notes": "PTH may be inappropriately normal rather than high."
+  },
+  {
+   "id": "mcx-pde5-nitrate",
+   "q": "A patient took sildenafil this morning and now has chest pain. Which drug must be avoided?",
+   "correct": "Sublingual nitroglycerin",
+   "wrong": [
+    "Aspirin",
+    "Morphine",
+    "Metoprolol"
+   ],
+   "why": "Nitrates with PDE5 inhibitors cause profound hypotension.",
+   "tags": [
+    "toxicology-drugs"
+   ],
+   "level": 3
+  },
+  {
+   "id": "mcx-wernicke-thiamine",
+   "q": "A malnourished patient with alcohol use disorder has confusion, ataxia and nystagmus. What should be given first?",
+   "correct": "Intravenous thiamine",
+   "wrong": [
+    "Intravenous dextrose alone",
+    "Oral multivitamin",
+    "Intravenous lorazepam"
+   ],
+   "why": "Wernicke encephalopathy needs IV thiamine, ideally before or with glucose.",
+   "tags": [
+    "neurology"
+   ],
+   "level": 3
+  },
+  {
+   "id": "mcx-pheo-alpha",
+   "q": "Before surgery for pheochromocytoma, which drug should be started first?",
+   "correct": "Phenoxybenzamine",
+   "wrong": [
+    "Metoprolol",
+    "Furosemide",
+    "Lisinopril"
+   ],
+   "why": "Alpha blockade comes first; unopposed beta blockade can precipitate a hypertensive crisis.",
+   "tags": [
+    "endocrine"
+   ],
+   "level": 4
+  },
+  {
+   "id": "mcx-serotonin-vs-nms",
+   "q": "Which finding best favors serotonin syndrome over neuroleptic malignant syndrome?",
+   "correct": "Inducible clonus with hyperreflexia",
+   "wrong": [
+    "Lead-pipe rigidity with hyporeflexia",
+    "Symptom onset over one to two weeks",
+    "Markedly elevated CK with myoglobinuria"
+   ],
+   "why": "Neuromuscular excitation (clonus, hyperreflexia) and rapid onset mark serotonin syndrome.",
+   "tags": [
+    "toxicology-drugs"
+   ],
+   "level": 4
+  },
+  {
+   "id": "mcx-hpylori-regimen",
+   "q": "Which is the preferred empiric first-line regimen for H. pylori infection?",
+   "correct": "Bismuth quadruple therapy for 14 days",
+   "wrong": [
+    "PPI with amoxicillin alone for 7 days",
+    "PPI with metronidazole alone for 7 days",
+    "Single-agent PPI for 8 weeks"
+   ],
+   "why": "Bismuth quadruple therapy is the preferred empiric regimen in current US guidance.",
+   "tags": [
+    "gi-hepatology"
+   ],
+   "level": 4,
+   "review_notes": "Newer vonoprazan regimens exist; no distractor uses them."
+  },
+  {
+   "id": "mcx-cardiogenic-shock",
+   "q": "Which hemodynamic profile fits cardiogenic shock?",
+   "correct": "Low cardiac output, high wedge pressure, high SVR",
+   "wrong": [
+    "High cardiac output, low wedge pressure, low SVR",
+    "Low cardiac output, low wedge pressure, high SVR",
+    "Normal cardiac output, high wedge pressure, low SVR"
+   ],
+   "why": "Pump failure lowers output and raises filling pressures with compensatory vasoconstriction.",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 4
+  },
+  {
+   "id": "mcx-mra-hfref",
+   "q": "Which drug added to an ACE inhibitor and beta blocker lowers mortality in HFrEF?",
+   "correct": "Spironolactone",
+   "wrong": [
+    "Amlodipine",
+    "Digoxin",
+    "Furosemide"
+   ],
+   "why": "Mineralocorticoid receptor antagonists reduce mortality; digoxin and loop diuretics do not.",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 4
+  },
+  {
+   "id": "mcx-sglt2-ketoacidosis",
+   "q": "Which serious adverse effect is classically associated with SGLT2 inhibitors even when glucose is near normal?",
+   "correct": "Euglycemic ketoacidosis",
+   "wrong": [
+    "Lactic acidosis",
+    "Severe hypoglycemia",
+    "Acute pancreatitis"
+   ],
+   "why": "SGLT2 inhibitors can cause ketoacidosis with only modestly raised glucose.",
+   "tags": [
+    "endocrine"
+   ],
+   "level": 4
+  },
+  {
+   "id": "mcx-hemolysis-labs",
+   "q": "Which lab pattern supports hemolytic anemia?",
+   "correct": "Low haptoglobin, high LDH, high indirect bilirubin",
+   "wrong": [
+    "Low reticulocytes, high haptoglobin, normal LDH",
+    "Low haptoglobin, low LDH, high direct bilirubin",
+    "High haptoglobin, low LDH, normal bilirubin"
+   ],
+   "why": "Red cell destruction releases LDH and hemoglobin that consumes haptoglobin.",
+   "tags": [
+    "hematology"
+   ],
+   "level": 4
+  },
+  {
+   "id": "mcx-antihistone",
+   "q": "Which antibody is most associated with drug-induced lupus?",
+   "correct": "Antihistone antibody",
+   "wrong": [
+    "Anti-dsDNA antibody",
+    "Anti-Smith antibody",
+    "Anti-centromere antibody"
+   ],
+   "why": "Hydralazine, procainamide and isoniazid classically cause antihistone-positive lupus.",
+   "tags": [
+    "rheumatology"
+   ],
+   "level": 4
+  },
+  {
+   "id": "mcx-pbc-ama",
+   "q": "A 50-year-old woman has pruritus, fatigue and elevated alkaline phosphatase. Which antibody is most specific for the likely diagnosis?",
+   "correct": "Antimitochondrial antibody",
+   "wrong": [
+    "Anti-smooth muscle antibody",
+    "Anti-LKM1 antibody",
+    "Perinuclear ANCA"
+   ],
+   "why": "This picture suggests primary biliary cholangitis, marked by AMA.",
+   "tags": [
+    "gi-hepatology"
+   ],
+   "level": 4
+  },
+  {
+   "id": "mcx-hemochromatosis-screen",
+   "q": "What is the best initial screening test for hereditary hemochromatosis?",
+   "correct": "Fasting transferrin saturation with ferritin",
+   "wrong": [
+    "Liver biopsy with iron staining",
+    "Serum iron level alone",
+    "Bone marrow iron stain"
+   ],
+   "why": "Elevated transferrin saturation is the earliest and most sensitive screen, followed by HFE testing.",
+   "tags": [
+    "gi-hepatology"
+   ],
+   "level": 4
+  },
+  {
+   "id": "mcx-lithium-ndi",
+   "q": "Polyuria with dilute urine in a patient on long-term lithium most likely reflects what?",
+   "correct": "Nephrogenic diabetes insipidus",
+   "wrong": [
+    "Central diabetes insipidus",
+    "SIADH",
+    "Osmotic diuresis from hyperglycemia"
+   ],
+   "why": "Lithium impairs collecting-duct response to ADH.",
+   "tags": [
+    "nephrology-acid-base"
+   ],
+   "level": 4
+  },
+  {
+   "id": "mcx-lofgren",
+   "q": "Erythema nodosum, ankle arthritis and bilateral hilar adenopathy in a young adult suggest what?",
+   "correct": "Sarcoidosis (Lofgren syndrome)",
+   "wrong": [
+    "Pulmonary tuberculosis",
+    "Lymphoma",
+    "Granulomatosis with polyangiitis"
+   ],
+   "why": "Lofgren syndrome is an acute, usually self-limited form of sarcoidosis.",
+   "tags": [
+    "pulm-critical-care"
+   ],
+   "level": 4
+  },
+  {
+   "id": "mcx-anion-gap-calc",
+   "q": "Na 140, Cl 100, HCO3 15 mEq/L. What is the best interpretation?",
+   "correct": "High anion gap metabolic acidosis",
+   "wrong": [
+    "Normal anion gap metabolic acidosis",
+    "Respiratory acidosis",
+    "Metabolic alkalosis"
+   ],
+   "why": "Gap = 140 - 100 - 15 = 25, well above normal.",
+   "tags": [
+    "nephrology-acid-base"
+   ],
+   "level": 4
+  },
+  {
+   "id": "mcx-hcm-valsalva",
+   "q": "Which maneuver increases the systolic murmur of hypertrophic cardiomyopathy?",
+   "correct": "Standing or Valsalva strain",
+   "wrong": [
+    "Squatting",
+    "Passive leg raise",
+    "Sustained handgrip"
+   ],
+   "why": "Lower preload narrows the outflow tract and loudens the murmur; squatting and handgrip soften it.",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 5
+  },
+  {
+   "id": "mcx-cdiff-fidaxomicin",
+   "q": "For an initial episode of non-severe C. difficile infection, which agent do current IDSA guidelines prefer?",
+   "correct": "Oral fidaxomicin",
+   "wrong": [
+    "Oral metronidazole",
+    "Intravenous metronidazole alone",
+    "Oral rifaximin"
+   ],
+   "why": "Fidaxomicin is preferred, with vancomycin an acceptable alternative; metronidazole is no longer favored.",
+   "tags": [
+    "infectious-disease"
+   ],
+   "level": 5,
+   "review_notes": "Oral vancomycin is also acceptable; deliberately excluded from options."
+  },
+  {
+   "id": "mcx-ptu-first-trimester",
+   "q": "A woman with Graves disease is in the first trimester of pregnancy. Which antithyroid drug is preferred?",
+   "correct": "Propylthiouracil",
+   "wrong": [
+    "Methimazole",
+    "Radioactive iodine",
+    "Propranolol alone"
+   ],
+   "why": "Methimazole is teratogenic in early pregnancy, so PTU is used in the first trimester.",
+   "tags": [
+    "endocrine"
+   ],
+   "level": 5
+  },
+  {
+   "id": "mcx-aldo-renin",
+   "q": "Which test is the best initial screen for primary aldosteronism in resistant hypertension?",
+   "correct": "Plasma aldosterone-to-renin ratio",
+   "wrong": [
+    "24-hour urine metanephrines",
+    "Late-night salivary cortisol",
+    "Adrenal vein sampling"
+   ],
+   "why": "The aldosterone-renin ratio screens before confirmatory testing and localization.",
+   "tags": [
+    "endocrine"
+   ],
+   "level": 5
+  },
+  {
+   "id": "mcx-ms-warfarin",
+   "q": "Which anticoagulant is recommended for atrial fibrillation with moderate-to-severe mitral stenosis?",
+   "correct": "Warfarin",
+   "wrong": [
+    "Apixaban",
+    "Rivaroxaban",
+    "Dabigatran"
+   ],
+   "why": "DOACs were inferior to warfarin in rheumatic mitral stenosis with AF.",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 5
+  },
+  {
+   "id": "mcx-statin-intensity",
+   "q": "A 60-year-old has had a myocardial infarction. Which lipid regimen is appropriate?",
+   "correct": "High-intensity statin such as atorvastatin 40-80 mg",
+   "wrong": [
+    "Low-dose pravastatin 10 mg",
+    "Ezetimibe monotherapy",
+    "Statin only if LDL is above 190 mg/dL"
+   ],
+   "why": "Clinical ASCVD warrants high-intensity statin therapy.",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 5
+  },
+  {
+   "id": "mcx-sglt2-ckd",
+   "q": "A patient with type 2 diabetes, eGFR 40 and albuminuria is on an ACE inhibitor. Which addition best slows CKD progression?",
+   "correct": "SGLT2 inhibitor",
+   "wrong": [
+    "Sulfonylurea",
+    "DPP-4 inhibitor",
+    "Thiazolidinedione"
+   ],
+   "why": "SGLT2 inhibitors reduce CKD progression and cardiovascular events independent of glycemia.",
+   "tags": [
+    "nephrology-acid-base"
+   ],
+   "level": 5
+  },
+  {
+   "id": "mcx-cppd-crystals",
+   "q": "Rhomboid, weakly positively birefringent crystals in joint fluid indicate which condition?",
+   "correct": "Calcium pyrophosphate deposition disease",
+   "wrong": [
+    "Monosodium urate gout",
+    "Septic arthritis",
+    "Hemarthrosis"
+   ],
+   "why": "CPPD (pseudogout) shows rhomboid crystals with weak positive birefringence.",
+   "tags": [
+    "rheumatology"
+   ],
+   "level": 5
+  },
+  {
+   "id": "mcx-gbs-csf",
+   "q": "Ascending weakness with areflexia follows a diarrheal illness. Which CSF finding is expected?",
+   "correct": "Elevated protein with normal white cell count",
+   "wrong": [
+    "Low glucose with neutrophilic pleocytosis",
+    "Normal protein with elevated opening pressure",
+    "Oligoclonal bands with normal protein"
+   ],
+   "why": "Albuminocytologic dissociation is typical of Guillain-Barre syndrome.",
+   "tags": [
+    "neurology"
+   ],
+   "level": 5
+  },
+  {
+   "id": "mcx-neurosyphilis-tx",
+   "q": "What is the recommended treatment for neurosyphilis?",
+   "correct": "Intravenous aqueous penicillin G",
+   "wrong": [
+    "Single-dose intramuscular benzathine penicillin G",
+    "Oral doxycycline for 14 days",
+    "Single-dose ceftriaxone"
+   ],
+   "why": "Neurosyphilis needs CNS-penetrating IV penicillin for 10-14 days.",
+   "tags": [
+    "infectious-disease"
+   ],
+   "level": 5
+  },
+  {
+   "id": "mcx-ida-vs-acd",
+   "q": "Which iron-study pattern favors iron deficiency over anemia of chronic disease?",
+   "correct": "High TIBC with low ferritin",
+   "wrong": [
+    "Low TIBC with high ferritin",
+    "Low TIBC with normal ferritin",
+    "High ferritin with normal TIBC"
+   ],
+   "why": "Iron deficiency raises transferrin (TIBC) and lowers ferritin.",
+   "tags": [
+    "hematology"
+   ],
+   "level": 5
+  },
+  {
+   "id": "mcx-meningitis-older",
+   "q": "Which empiric regimen is appropriate for bacterial meningitis in a 65-year-old?",
+   "correct": "Ceftriaxone, vancomycin and ampicillin",
+   "wrong": [
+    "Ceftriaxone and vancomycin alone",
+    "Ampicillin and gentamicin alone",
+    "Meropenem alone"
+   ],
+   "why": "Age over 50 adds Listeria coverage with ampicillin.",
+   "tags": [
+    "infectious-disease"
+   ],
+   "level": 5
+  },
+  {
+   "id": "mcx-hcv-svr",
+   "q": "When is sustained virologic response assessed after hepatitis C antiviral therapy?",
+   "correct": "12 weeks after treatment ends",
+   "wrong": [
+    "At the last dose",
+    "4 weeks after starting therapy",
+    "1 year after treatment ends"
+   ],
+   "why": "Undetectable HCV RNA 12 weeks after therapy (SVR12) defines cure.",
+   "tags": [
+    "gi-hepatology"
+   ],
+   "level": 5
+  },
+  {
+   "id": "mcx-ards-vt",
+   "q": "What tidal volume is recommended for lung-protective ventilation in ARDS?",
+   "correct": "6 mL/kg of predicted body weight",
+   "wrong": [
+    "8 mL/kg of actual body weight",
+    "10 mL/kg of predicted body weight",
+    "12 mL/kg of actual body weight"
+   ],
+   "why": "Low tidal volume ventilation (4-8, target 6 mL/kg PBW) lowers mortality in ARDS.",
+   "tags": [
+    "pulm-critical-care"
+   ],
+   "level": 6
+  },
+  {
+   "id": "mcx-hrs-tx",
+   "q": "A patient with cirrhosis has AKI unresponsive to volume expansion and diuretic withdrawal, with a bland urine sediment. Which treatment is indicated?",
+   "correct": "Albumin plus terlipressin",
+   "wrong": [
+    "Renal-dose dopamine",
+    "Intravenous furosemide alone",
+    "Intravenous mannitol"
+   ],
+   "why": "Hepatorenal syndrome-AKI is treated with albumin and a splanchnic vasoconstrictor.",
+   "tags": [
+    "gi-hepatology"
+   ],
+   "level": 6
+  },
+  {
+   "id": "mcx-variceal-ceftriaxone",
+   "q": "Which adjunct improves survival in cirrhosis with acute variceal bleeding, along with a vasoactive drug and endoscopy?",
+   "correct": "Ceftriaxone prophylaxis",
+   "wrong": [
+    "Tranexamic acid",
+    "Intravenous propranolol",
+    "Nitroglycerin infusion"
+   ],
+   "why": "Short-term antibiotic prophylaxis reduces infection, rebleeding and mortality.",
+   "tags": [
+    "gi-hepatology"
+   ],
+   "level": 6
+  },
+  {
+   "id": "mcx-sarcoid-hypercalcemia",
+   "q": "Hypercalcemia in sarcoidosis is mediated by which mechanism?",
+   "correct": "Granuloma production of 1,25-dihydroxyvitamin D",
+   "wrong": [
+    "PTH-related peptide secretion",
+    "Osteolytic bone destruction",
+    "Excess parathyroid hormone"
+   ],
+   "why": "Macrophages express 1-alpha-hydroxylase and activate vitamin D.",
+   "tags": [
+    "endocrine"
+   ],
+   "level": 6
+  },
+  {
+   "id": "mcx-anti-gbm",
+   "q": "Rapidly progressive glomerulonephritis with hemoptysis and linear IgG staining on immunofluorescence suggests which diagnosis?",
+   "correct": "Anti-GBM disease",
+   "wrong": [
+    "IgA nephropathy",
+    "Post-infectious glomerulonephritis",
+    "Membranous nephropathy"
+   ],
+   "why": "Linear IgG along the basement membrane is anti-GBM (Goodpasture) disease.",
+   "tags": [
+    "nephrology-acid-base"
+   ],
+   "level": 6
+  },
+  {
+   "id": "mcx-ttp-tx",
+   "q": "Fever, microangiopathic hemolytic anemia, thrombocytopenia and neurologic signs occur with a normal INR. What is the treatment?",
+   "correct": "Therapeutic plasma exchange",
+   "wrong": [
+    "Platelet transfusion",
+    "Splenectomy",
+    "Intravenous immunoglobulin"
+   ],
+   "why": "TTP is ADAMTS13 deficiency; emergent plasma exchange is life-saving and platelets are avoided.",
+   "tags": [
+    "hematology"
+   ],
+   "level": 6
+  },
+  {
+   "id": "mcx-low-uptake",
+   "q": "Hyperthyroidism with a very low radioactive iodine uptake is most consistent with which diagnosis?",
+   "correct": "Subacute (painful) thyroiditis",
+   "wrong": [
+    "Graves disease",
+    "Toxic multinodular goiter",
+    "TSH-secreting pituitary adenoma"
+   ],
+   "why": "Stored hormone leaks from an inflamed gland while uptake is suppressed.",
+   "tags": [
+    "endocrine"
+   ],
+   "level": 6
+  },
+  {
+   "id": "mcx-pjp-steroids",
+   "q": "A patient with HIV has Pneumocystis pneumonia and PaO2 of 60 mm Hg on room air. Which adjunct improves survival?",
+   "correct": "Glucocorticoids",
+   "wrong": [
+    "Leucovorin",
+    "Inhaled pentamidine",
+    "Interferon gamma"
+   ],
+   "why": "Adjunctive steroids are given when PaO2 is under 70 or A-a gradient is 35 or more.",
+   "tags": [
+    "infectious-disease"
+   ],
+   "level": 6
+  },
+  {
+   "id": "mcx-squamous-pthrp",
+   "q": "Which lung cancer type most often causes hypercalcemia through PTH-related peptide?",
+   "correct": "Squamous cell carcinoma",
+   "wrong": [
+    "Small cell carcinoma",
+    "Adenocarcinoma",
+    "Carcinoid tumor"
+   ],
+   "why": "Squamous tumors secrete PTHrP, causing humoral hypercalcemia of malignancy.",
+   "tags": [
+    "oncology"
+   ],
+   "level": 6
+  },
+  {
+   "id": "mcx-rv-infarct",
+   "q": "Inferior STEMI with hypotension, clear lungs and elevated JVP. What is the best initial management?",
+   "correct": "Intravenous isotonic fluid bolus",
+   "wrong": [
+    "Sublingual nitroglycerin",
+    "Intravenous furosemide",
+    "Intravenous metoprolol"
+   ],
+   "why": "Right ventricular infarction is preload dependent; avoid nitrates and diuretics.",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 6
+  },
+  {
+   "id": "mcx-adrenal-primary",
+   "q": "Which finding distinguishes primary from secondary adrenal insufficiency?",
+   "correct": "Hyperkalemia with skin hyperpigmentation",
+   "wrong": [
+    "Hypoglycemia",
+    "Low morning cortisol",
+    "Fatigue and hypotension"
+   ],
+   "why": "Mineralocorticoid loss and high ACTH occur only in primary adrenal failure.",
+   "tags": [
+    "endocrine"
+   ],
+   "level": 6
+  },
+  {
+   "id": "mcx-drta",
+   "q": "Hypokalemia, non-anion gap acidosis, urine pH above 5.5 and calcium kidney stones indicate which diagnosis?",
+   "correct": "Distal (type 1) renal tubular acidosis",
+   "wrong": [
+    "Proximal (type 2) renal tubular acidosis",
+    "Type 4 renal tubular acidosis",
+    "Chronic diarrhea"
+   ],
+   "why": "A defect in distal H+ secretion produces high urine pH, stones and hypokalemia.",
+   "tags": [
+    "nephrology-acid-base"
+   ],
+   "level": 6
+  },
+  {
+   "id": "mcx-legionella",
+   "q": "Pneumonia with high fever, diarrhea, confusion and hyponatremia: which test gives the quickest confirmation of the likely cause?",
+   "correct": "Urinary Legionella antigen",
+   "wrong": [
+    "Urinary pneumococcal antigen",
+    "Cold agglutinin titer",
+    "Sputum Gram stain"
+   ],
+   "why": "Legionella pneumonia is detected rapidly by urinary antigen (serogroup 1).",
+   "tags": [
+    "infectious-disease"
+   ],
+   "level": 6
+  },
+  {
+   "id": "mcx-wpw-af",
+   "q": "A stable patient has pre-excited atrial fibrillation (irregular wide-complex tachycardia). Which drug is appropriate?",
+   "correct": "Intravenous procainamide",
+   "wrong": [
+    "Intravenous diltiazem",
+    "Intravenous adenosine",
+    "Intravenous digoxin"
+   ],
+   "why": "AV nodal blockers can accelerate conduction over the accessory pathway; procainamide slows it.",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 7
+  },
+  {
+   "id": "mcx-warfarin-necrosis",
+   "q": "Skin necrosis in the first days of warfarin therapy reflects early depletion of which factor?",
+   "correct": "Protein C",
+   "wrong": [
+    "Antithrombin",
+    "Factor VIII",
+    "Von Willebrand factor"
+   ],
+   "why": "Protein C has a short half-life so a transient procoagulant state occurs before other factors fall.",
+   "tags": [
+    "hematology"
+   ],
+   "level": 7
+  },
+  {
+   "id": "mcx-aps-warfarin",
+   "q": "A patient has triple-positive antiphospholipid syndrome with prior venous thrombosis. Which anticoagulant is preferred?",
+   "correct": "Warfarin",
+   "wrong": [
+    "Rivaroxaban",
+    "Apixaban",
+    "Dabigatran"
+   ],
+   "why": "DOACs carry higher thrombotic event rates in high-risk APS, so warfarin is preferred.",
+   "tags": [
+    "rheumatology"
+   ],
+   "level": 7
+  },
+  {
+   "id": "mcx-gitelman",
+   "q": "Hypokalemia, hypomagnesemia, hypocalciuria and metabolic alkalosis with normal blood pressure suggest which diagnosis?",
+   "correct": "Gitelman syndrome",
+   "wrong": [
+    "Bartter syndrome",
+    "Liddle syndrome",
+    "Primary aldosteronism"
+   ],
+   "why": "Gitelman is an inherited thiazide-like defect; Bartter causes hypercalciuria.",
+   "tags": [
+    "nephrology-acid-base"
+   ],
+   "level": 7
+  },
+  {
+   "id": "mcx-austin-flint",
+   "q": "A mid-diastolic rumble at the apex in severe aortic regurgitation is called what?",
+   "correct": "Austin Flint murmur",
+   "wrong": [
+    "Graham Steell murmur",
+    "Carey Coombs murmur",
+    "Still murmur"
+   ],
+   "why": "The regurgitant jet impinges on the anterior mitral leaflet, causing functional mitral stenosis.",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 7
+  },
+  {
+   "id": "mcx-ici-pneumonitis",
+   "q": "A patient on pembrolizumab develops cough, hypoxemia and ground-glass opacities (grade 2 pneumonitis). What is appropriate?",
+   "correct": "Hold the drug and start prednisone about 1 mg/kg",
+   "wrong": [
+    "Continue pembrolizumab with antibiotics alone",
+    "Switch to inhaled corticosteroids alone",
+    "Observe with repeat imaging only"
+   ],
+   "why": "Moderate immune-related pneumonitis needs treatment interruption and systemic steroids.",
+   "tags": [
+    "oncology"
+   ],
+   "level": 7
+  },
+  {
+   "id": "mcx-wilson",
+   "q": "A 20-year-old has Coombs-negative hemolysis, acute liver failure and a low alkaline phosphatase. What is the likely diagnosis?",
+   "correct": "Wilson disease",
+   "wrong": [
+    "Autoimmune hepatitis",
+    "Hereditary hemochromatosis",
+    "Acute hepatitis A"
+   ],
+   "why": "Copper release causes hemolysis, and a low ALP-to-bilirubin ratio is typical.",
+   "tags": [
+    "gi-hepatology"
+   ],
+   "level": 7
+  },
+  {
+   "id": "mcx-winter",
+   "q": "pH 7.20, HCO3 12 mEq/L, PaCO2 40 mm Hg. What is the best interpretation?",
+   "correct": "Metabolic acidosis with a concurrent respiratory acidosis",
+   "wrong": [
+    "Appropriately compensated metabolic acidosis",
+    "Metabolic acidosis with a concurrent respiratory alkalosis",
+    "Pure respiratory acidosis"
+   ],
+   "why": "Expected PaCO2 = 1.5 x 12 + 8 = 26 (+/-2); 40 is too high, so ventilation is inadequate.",
+   "tags": [
+    "nephrology-acid-base"
+   ],
+   "level": 7
+  },
+  {
+   "id": "mcx-central-di",
+   "q": "In a water deprivation test, urine osmolality rises by more than 50% after desmopressin. Which diagnosis?",
+   "correct": "Central diabetes insipidus",
+   "wrong": [
+    "Nephrogenic diabetes insipidus",
+    "Primary polydipsia",
+    "SIADH"
+   ],
+   "why": "A large rise after ADH analog indicates deficient ADH secretion.",
+   "tags": [
+    "endocrine"
+   ],
+   "level": 7
+  },
+  {
+   "id": "mcx-pnh",
+   "q": "Hemolytic anemia with pancytopenia, venous thrombosis and dark morning urine. Which test confirms the diagnosis?",
+   "correct": "Flow cytometry for CD55 and CD59",
+   "wrong": [
+    "Direct antiglobulin test",
+    "Osmotic fragility test",
+    "Hemoglobin electrophoresis"
+   ],
+   "why": "PNH is confirmed by loss of GPI-anchored proteins on flow cytometry.",
+   "tags": [
+    "hematology"
+   ],
+   "level": 7
+  },
+  {
+   "id": "mcx-apl-atra",
+   "q": "Pancytopenia and DIC with hypergranular promyelocytes containing Auer rods. What should be started immediately?",
+   "correct": "All-trans retinoic acid",
+   "wrong": [
+    "Hydroxyurea",
+    "Imatinib",
+    "Rituximab"
+   ],
+   "why": "Suspected APL is an emergency; ATRA is started before genetic confirmation.",
+   "tags": [
+    "oncology"
+   ],
+   "level": 7
+  },
+  {
+   "id": "mcx-candidemia",
+   "q": "Blood culture grows yeast in a hospitalized patient. What is the best approach?",
+   "correct": "Start an echinocandin and remove central lines",
+   "wrong": [
+    "Repeat cultures and treat only if persistently positive",
+    "Oral nystatin",
+    "Intravenous vancomycin"
+   ],
+   "why": "Candida in blood is never a contaminant and requires systemic antifungal therapy.",
+   "tags": [
+    "infectious-disease"
+   ],
+   "level": 7,
+   "review_notes": "Fluconazole is an alternative in stable, azole-naive patients."
+  },
+  {
+   "id": "mcx-methemoglobin",
+   "q": "After dapsone use, a patient is cyanotic despite oxygen, with chocolate-brown blood and normal PaO2. What is the treatment?",
+   "correct": "Methylene blue",
+   "wrong": [
+    "Hydroxocobalamin",
+    "Hyperbaric oxygen",
+    "Sodium nitrite"
+   ],
+   "why": "Methemoglobinemia is treated with methylene blue, which reduces ferric heme.",
+   "tags": [
+    "toxicology-drugs"
+   ],
+   "level": 7
+  },
+  {
+   "id": "mcx-liddle",
+   "q": "An early-onset hypertensive patient has hypokalemia, alkalosis, low renin and low aldosterone. Which drug targets the defect?",
+   "correct": "Amiloride",
+   "wrong": [
+    "Spironolactone",
+    "Eplerenone",
+    "Hydrochlorothiazide"
+   ],
+   "why": "Liddle syndrome is constitutive ENaC activation; ENaC blockers work and aldosterone antagonists do not.",
+   "tags": [
+    "nephrology-acid-base"
+   ],
+   "level": 8
+  },
+  {
+   "id": "mcx-cryo-hcv",
+   "q": "Palpable purpura, arthralgia, low C4 and positive rheumatoid factor point to cryoglobulinemia. Which infection is the most common association?",
+   "correct": "Hepatitis C",
+   "wrong": [
+    "Hepatitis A",
+    "Parvovirus B19",
+    "Cytomegalovirus"
+   ],
+   "why": "Mixed cryoglobulinemia is most often secondary to chronic hepatitis C.",
+   "tags": [
+    "rheumatology"
+   ],
+   "level": 8
+  },
+  {
+   "id": "mcx-aip",
+   "q": "Severe abdominal pain, neuropathy and psychosis follow fasting and a new antiepileptic. What is the best initial test?",
+   "correct": "Urine porphobilinogen",
+   "wrong": [
+    "Serum ceruloplasmin",
+    "Urine 5-HIAA",
+    "Serum lead level"
+   ],
+   "why": "Acute intermittent porphyria is screened by urinary PBG during an attack.",
+   "tags": [
+    "gi-hepatology"
+   ],
+   "level": 8
+  },
+  {
+   "id": "mcx-anti-hu",
+   "q": "Which antibody is associated with subacute sensory neuronopathy and encephalomyelitis in a heavy smoker?",
+   "correct": "Anti-Hu (ANNA-1)",
+   "wrong": [
+    "Anti-Yo",
+    "Anti-Ri",
+    "Anti-NMDA receptor"
+   ],
+   "why": "Anti-Hu syndromes are linked to small cell lung cancer.",
+   "tags": [
+    "neurology"
+   ],
+   "level": 8
+  },
+  {
+   "id": "mcx-carcinoid-heart",
+   "q": "Carcinoid heart disease characteristically affects which valves?",
+   "correct": "Tricuspid regurgitation and pulmonic stenosis",
+   "wrong": [
+    "Left-sided mitral and aortic lesions",
+    "Isolated mitral valve prolapse",
+    "Bicuspid aortic valve disease"
+   ],
+   "why": "Hepatic metabolism of serotonin spares the left heart, so right-sided plaques predominate.",
+   "tags": [
+    "oncology"
+   ],
+   "level": 8
+  },
+  {
+   "id": "mcx-budd-chiari",
+   "q": "Which condition is the most common underlying cause of hepatic vein thrombosis (Budd-Chiari syndrome)?",
+   "correct": "Myeloproliferative neoplasm",
+   "wrong": [
+    "Hepatocellular carcinoma",
+    "Oral contraceptive use",
+    "Antiphospholipid syndrome"
+   ],
+   "why": "JAK2-positive myeloproliferative neoplasms are the leading cause.",
+   "tags": [
+    "gi-hepatology"
+   ],
+   "level": 8,
+   "review_notes": "Ranking of causes varies by series."
+  },
+  {
+   "id": "mcx-hlab1502",
+   "q": "Before starting carbamazepine in a patient of Southeast Asian ancestry, which HLA allele should be tested?",
+   "correct": "HLA-B*1502",
+   "wrong": [
+    "HLA-B*5701",
+    "HLA-B*5801",
+    "HLA-DQ2"
+   ],
+   "why": "HLA-B*1502 predicts carbamazepine-induced Stevens-Johnson syndrome.",
+   "tags": [
+    "toxicology-drugs"
+   ],
+   "level": 8
+  },
+  {
+   "id": "mcx-aza-allopurinol",
+   "q": "Which drug combination requires reducing azathioprine to about one quarter of the usual dose?",
+   "correct": "Azathioprine with allopurinol",
+   "wrong": [
+    "Azathioprine with prednisone",
+    "Azathioprine with hydroxychloroquine",
+    "Azathioprine with omeprazole"
+   ],
+   "why": "Xanthine oxidase inhibition blocks 6-MP breakdown and risks severe myelosuppression.",
+   "tags": [
+    "toxicology-drugs"
+   ],
+   "level": 8
+  },
+  {
+   "id": "mcx-ccb-overdose",
+   "q": "A patient with severe verapamil overdose has shock refractory to fluids, calcium and vasopressors. Which therapy is recommended?",
+   "correct": "High-dose insulin euglycemia therapy",
+   "wrong": [
+    "Glucagon alone",
+    "Hemodialysis",
+    "Phenylephrine alone"
+   ],
+   "why": "High-dose insulin improves inotropy in calcium channel blocker poisoning.",
+   "tags": [
+    "toxicology-drugs"
+   ],
+   "level": 8,
+   "review_notes": "Evidence is observational."
+  },
+  {
+   "id": "mcx-type4-rta",
+   "q": "A patient with long-standing diabetic nephropathy has hyperkalemia and mild non-gap acidosis. What is the most likely diagnosis?",
+   "correct": "Type 4 renal tubular acidosis",
+   "wrong": [
+    "Type 1 renal tubular acidosis",
+    "Type 2 renal tubular acidosis",
+    "Addison disease"
+   ],
+   "why": "Hyporeninemic hypoaldosteronism is the classic diabetic RTA.",
+   "tags": [
+    "nephrology-acid-base"
+   ],
+   "level": 8
+  },
+  {
+   "id": "mcx-strongyloides",
+   "q": "A patient from an endemic area starts high-dose prednisone, then develops gram-negative sepsis and meningitis. Which parasite is responsible?",
+   "correct": "Strongyloides stercoralis",
+   "wrong": [
+    "Ascaris lumbricoides",
+    "Entamoeba histolytica",
+    "Toxocara canis"
+   ],
+   "why": "Steroids can trigger hyperinfection with gut bacteria translocation.",
+   "tags": [
+    "infectious-disease"
+   ],
+   "level": 8
+  },
+  {
+   "id": "mcx-atheroembolic",
+   "q": "Days after cardiac catheterization a patient has worsening AKI, livedo reticularis, eosinophilia and low complement. What is the diagnosis?",
+   "correct": "Atheroembolic renal disease",
+   "wrong": [
+    "Contrast nephropathy",
+    "Acute interstitial nephritis",
+    "Renal artery thrombosis"
+   ],
+   "why": "Cholesterol emboli cause subacute stepwise decline in kidney function.",
+   "tags": [
+    "nephrology-acid-base"
+   ],
+   "level": 8
+  },
+  {
+   "id": "mcx-beer-potomania",
+   "q": "Sodium is low and urine osmolality is 60 mOsm/kg in a patient with heavy beer intake and a poor diet. What is the mechanism?",
+   "correct": "Low solute intake limits free-water excretion",
+   "wrong": [
+    "Excess ADH from lung disease",
+    "Cerebral salt wasting",
+    "Adrenal insufficiency"
+   ],
+   "why": "Little solute for the kidney to excrete means little obligate water excretion.",
+   "tags": [
+    "nephrology-acid-base"
+   ],
+   "level": 8,
+   "review_notes": "Overcorrection risk when fed is the teaching point."
+  },
+  {
+   "id": "mcx-amio-thyroid",
+   "q": "Amiodarone-induced thyrotoxicosis with low iodine uptake and absent thyroid blood flow (type 2) is best treated with what?",
+   "correct": "Glucocorticoids",
+   "wrong": [
+    "Methimazole",
+    "Radioactive iodine",
+    "Potassium perchlorate"
+   ],
+   "why": "Type 2 is destructive thyroiditis and responds to steroids; thionamides are used for type 1.",
+   "tags": [
+    "endocrine"
+   ],
+   "level": 9
+  },
+  {
+   "id": "mcx-whipple",
+   "q": "Chronic diarrhea, weight loss and migratory arthralgia are present; duodenal biopsy shows PAS-positive macrophages. Which organism is responsible?",
+   "correct": "Tropheryma whipplei",
+   "wrong": [
+    "Mycobacterium avium complex",
+    "Giardia lamblia",
+    "Cryptosporidium parvum"
+   ],
+   "why": "Whipple disease is caused by T. whipplei and treated with prolonged antibiotics.",
+   "tags": [
+    "gi-hepatology"
+   ],
+   "level": 9
+  },
+  {
+   "id": "mcx-secretin-gastrin",
+   "q": "Which test best confirms gastrinoma when fasting gastrin is only mildly elevated?",
+   "correct": "Secretin stimulation test",
+   "wrong": [
+    "Fasting chromogranin A",
+    "Urine 5-HIAA",
+    "Abdominal CT alone"
+   ],
+   "why": "Gastrin rises paradoxically after secretin in Zollinger-Ellison syndrome.",
+   "tags": [
+    "gi-hepatology"
+   ],
+   "level": 9
+  },
+  {
+   "id": "mcx-fhh",
+   "q": "Lifelong mild hypercalcemia, family history, high-normal PTH and calcium-creatinine clearance ratio below 0.01. What is the diagnosis?",
+   "correct": "Familial hypocalciuric hypercalcemia",
+   "wrong": [
+    "Primary hyperparathyroidism",
+    "Vitamin D intoxication",
+    "Milk-alkali syndrome"
+   ],
+   "why": "Inactivating CaSR variants cause benign hypercalcemia with low urinary calcium.",
+   "tags": [
+    "endocrine"
+   ],
+   "level": 9
+  },
+  {
+   "id": "mcx-attr-pyp",
+   "q": "Which noninvasive test confirms transthyretin cardiac amyloidosis?",
+   "correct": "Technetium pyrophosphate scintigraphy after excluding a monoclonal protein",
+   "wrong": [
+    "Abdominal fat pad aspirate alone",
+    "Serum free light chains alone",
+    "Coronary angiography"
+   ],
+   "why": "Positive bone-tracer uptake with no monoclonal protein is diagnostic of ATTR.",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 9
+  },
+  {
+   "id": "mcx-waldenstrom",
+   "q": "An elderly patient with an IgM paraprotein has epistaxis, blurred vision and engorged retinal veins. What is the emergency treatment?",
+   "correct": "Plasmapheresis",
+   "wrong": [
+    "Red cell transfusion",
+    "Therapeutic phlebotomy",
+    "High-dose methylprednisolone alone"
+   ],
+   "why": "Hyperviscosity syndrome is treated by plasmapheresis; transfusion worsens viscosity.",
+   "tags": [
+    "oncology"
+   ],
+   "level": 9
+  },
+  {
+   "id": "mcx-constrictive",
+   "q": "Which finding favors constrictive pericarditis over restrictive cardiomyopathy?",
+   "correct": "Respiratory variation in ventricular filling with septal bounce",
+   "wrong": [
+    "Marked biatrial enlargement",
+    "Thickened myocardium with sparkling texture",
+    "Reduced mitral annular e-prime velocity"
+   ],
+   "why": "Ventricular interdependence is the hallmark of constriction.",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 9
+  },
+  {
+   "id": "mcx-at3-deficiency",
+   "q": "Recurrent venous thrombosis with minimal aPTT prolongation despite escalating heparin doses suggests deficiency of what?",
+   "correct": "Antithrombin",
+   "wrong": [
+    "Protein S",
+    "Factor V Leiden",
+    "Protein C"
+   ],
+   "why": "Heparin works through antithrombin, so deficiency causes heparin resistance.",
+   "tags": [
+    "hematology"
+   ],
+   "level": 9
+  },
+  {
+   "id": "mcx-pml-natalizumab",
+   "q": "Progressive multifocal leukoencephalopathy in a patient on natalizumab is caused by which virus?",
+   "correct": "JC virus",
+   "wrong": [
+    "Varicella zoster virus",
+    "Cytomegalovirus",
+    "BK virus"
+   ],
+   "why": "JC virus reactivates under impaired CNS immune surveillance.",
+   "tags": [
+    "neurology"
+   ],
+   "level": 9
+  },
+  {
+   "id": "mcx-cjd",
+   "q": "Rapidly progressive dementia with myoclonus. Which CSF test is most specific for the likely diagnosis?",
+   "correct": "Real-time quaking-induced conversion (RT-QuIC)",
+   "wrong": [
+    "Elevated 14-3-3 protein",
+    "Oligoclonal IgG bands",
+    "Low glucose"
+   ],
+   "why": "RT-QuIC detects prion seeding with very high specificity.",
+   "tags": [
+    "neurology"
+   ],
+   "level": 9
+  },
+  {
+   "id": "mcx-hairy-cell",
+   "q": "Pancytopenia, splenomegaly, a dry marrow tap and BRAF V600E-positive cells with cytoplasmic projections. Which treatment?",
+   "correct": "Cladribine",
+   "wrong": [
+    "CHOP chemotherapy",
+    "Imatinib",
+    "Rituximab alone"
+   ],
+   "why": "Purine analogs achieve durable remissions in hairy cell leukemia.",
+   "tags": [
+    "oncology"
+   ],
+   "level": 9
+  },
+  {
+   "id": "mcx-adult-still",
+   "q": "Quotidian fever, evanescent salmon rash, arthritis, ferritin of 12,000 and negative ANA and RF. What is the diagnosis?",
+   "correct": "Adult-onset Still disease",
+   "wrong": [
+    "Systemic lupus erythematosus",
+    "Seronegative rheumatoid arthritis",
+    "Reactive arthritis"
+   ],
+   "why": "Very high ferritin with spiking fevers and rash defines adult-onset Still disease.",
+   "tags": [
+    "rheumatology"
+   ],
+   "level": 9
+  },
+  {
+   "id": "mcx-pris",
+   "q": "A sedated ventilated patient on high-dose propofol develops metabolic acidosis, rhabdomyolysis, hypertriglyceridemia and bradyarrhythmia. What is the diagnosis?",
+   "correct": "Propofol infusion syndrome",
+   "wrong": [
+    "Neuroleptic malignant syndrome",
+    "Malignant hyperthermia",
+    "Serotonin syndrome"
+   ],
+   "why": "Mitochondrial fatty-acid oxidation is impaired by prolonged high-dose propofol.",
+   "tags": [
+    "toxicology-drugs"
+   ],
+   "level": 9
+  },
+  {
+   "id": "mcx-vipoma",
+   "q": "Large-volume watery diarrhea, hypokalemia, achlorhydria and a pancreatic mass indicate excess of which hormone?",
+   "correct": "Vasoactive intestinal peptide",
+   "wrong": [
+    "Gastrin",
+    "Somatostatin",
+    "Glucagon"
+   ],
+   "why": "This is the WDHA (Verner-Morrison) syndrome of VIPoma.",
+   "tags": [
+    "oncology"
+   ],
+   "level": 10
+  },
+  {
+   "id": "mcx-c-septicum",
+   "q": "Spontaneous Clostridium septicum bacteremia is classically associated with which underlying condition?",
+   "correct": "Colonic malignancy",
+   "wrong": [
+    "Hepatocellular carcinoma",
+    "Prosthetic joint infection",
+    "Mitral valve prolapse"
+   ],
+   "why": "C. septicum sepsis without trauma should prompt colon cancer evaluation.",
+   "tags": [
+    "infectious-disease"
+   ],
+   "level": 10
+  },
+  {
+   "id": "mcx-pseudohypona",
+   "q": "Serum sodium is 123 mEq/L, measured osmolality 292 mOsm/kg and the serum is milky (triglycerides 4000 mg/dL). What is the interpretation?",
+   "correct": "Pseudohyponatremia",
+   "wrong": [
+    "True hypotonic hyponatremia",
+    "Hypertonic hyponatremia from glucose",
+    "SIADH"
+   ],
+   "why": "Lipid displaces plasma water and lowers sodium on indirect measurement, with normal tonicity.",
+   "tags": [
+    "nephrology-acid-base"
+   ],
+   "level": 10,
+   "review_notes": "Not seen with direct ISE analyzers."
+  },
+  {
+   "id": "mcx-thyrotoxic-periodic",
+   "q": "A 28-year-old Asian man has sudden leg paralysis at night after a high-carbohydrate meal and K 2.1 mEq/L. Which test is next?",
+   "correct": "Thyroid function tests",
+   "wrong": [
+    "Serum cortisol",
+    "Muscle biopsy",
+    "Urine metanephrines"
+   ],
+   "why": "Thyrotoxic periodic paralysis shifts potassium into cells; treat the thyrotoxicosis.",
+   "tags": [
+    "endocrine"
+   ],
+   "level": 10
+  },
+  {
+   "id": "mcx-vibrio",
+   "q": "A cirrhotic patient who ate raw oysters has fever, hypotension and hemorrhagic bullae on the legs. Which antibiotic combination is recommended?",
+   "correct": "Doxycycline plus ceftriaxone",
+   "wrong": [
+    "Vancomycin plus metronidazole",
+    "Ampicillin-sulbactam alone",
+    "Fluconazole plus doxycycline"
+   ],
+   "why": "Vibrio vulnificus is treated with doxycycline plus a third-generation cephalosporin.",
+   "tags": [
+    "infectious-disease"
+   ],
+   "level": 10
+  },
+  {
+   "id": "mcx-poems",
+   "q": "Polyneuropathy, organomegaly, endocrinopathy, a lambda M-protein, skin changes and sclerotic bone lesions. Which cytokine is characteristically elevated?",
+   "correct": "Vascular endothelial growth factor",
+   "wrong": [
+    "Interleukin-6",
+    "TNF-alpha",
+    "Soluble IL-2 receptor"
+   ],
+   "why": "POEMS syndrome has markedly raised VEGF.",
+   "tags": [
+    "oncology"
+   ],
+   "level": 10
+  },
+  {
+   "id": "mcx-d-lactate",
+   "q": "A patient with short bowel syndrome has confusion, ataxia and anion gap acidosis with normal L-lactate. What is the explanation?",
+   "correct": "D-lactic acidosis from bacterial overgrowth",
+   "wrong": [
+    "Ketoacidosis",
+    "Metformin-associated lactic acidosis",
+    "Salicylate toxicity"
+   ],
+   "why": "The standard lactate assay detects only L-lactate.",
+   "tags": [
+    "gi-hepatology"
+   ],
+   "level": 10
+  },
+  {
+   "id": "mcx-tio",
+   "q": "Hypophosphatemia and osteomalacia with normal calcium and PTH are caused by a small mesenchymal tumor. Which mediator is responsible?",
+   "correct": "FGF23",
+   "wrong": [
+    "PTH-related peptide",
+    "Calcitonin",
+    "Sclerostin"
+   ],
+   "why": "Tumor-induced osteomalacia is caused by excess phosphaturic FGF23.",
+   "tags": [
+    "endocrine"
+   ],
+   "level": 10
+  },
+  {
+   "id": "mcx-hlh-tx",
+   "q": "Fever, splenomegaly, pancytopenia, ferritin 30,000, high triglycerides and low fibrinogen are present. What is appropriate initial therapy?",
+   "correct": "Dexamethasone with etoposide",
+   "wrong": [
+    "Rituximab alone",
+    "Intravenous immunoglobulin alone",
+    "Plasma exchange alone"
+   ],
+   "why": "HLH-94 style regimens suppress the hyperinflammation; treat the trigger.",
+   "tags": [
+    "hematology"
+   ],
+   "level": 10,
+   "review_notes": "Newer agents (anakinra, ruxolitinib) are used in some centers."
+  },
+  {
+   "id": "mcx-pvod",
+   "q": "Which drug class risks precipitating pulmonary edema in pulmonary veno-occlusive disease?",
+   "correct": "Pulmonary vasodilators such as epoprostenol",
+   "wrong": [
+    "Loop diuretics",
+    "Supplemental oxygen",
+    "Anticoagulants"
+   ],
+   "why": "Vasodilating arterioles in a fixed venous obstruction raises capillary pressure.",
+   "tags": [
+    "pulm-critical-care"
+   ],
+   "level": 10
+  },
+  {
+   "id": "mcx-fabry",
+   "q": "Which enzyme deficiency causes X-linked acral pain, angiokeratomas, proteinuria and left ventricular hypertrophy?",
+   "correct": "Alpha-galactosidase A",
+   "wrong": [
+    "Glucocerebrosidase",
+    "Alpha-L-iduronidase",
+    "Acid alpha-glucosidase"
+   ],
+   "why": "Fabry disease causes globotriaosylceramide accumulation.",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 10
+  },
+  {
+   "id": "mcx-acquired-hemophilia",
+   "q": "A 70-year-old has spontaneous large ecchymoses, aPTT 80 seconds and normal PT, with no correction on 1:1 mixing and no thrombosis. What is the diagnosis?",
+   "correct": "Acquired hemophilia A",
+   "wrong": [
+    "Lupus anticoagulant",
+    "Factor XII deficiency",
+    "Heparin contamination"
+   ],
+   "why": "An autoantibody inhibits factor VIII, causing bleeding with a non-correcting aPTT.",
+   "tags": [
+    "hematology"
+   ],
+   "level": 10
+  },
+  {
+   "id": "mcx-avs",
+   "q": "Primary aldosteronism is confirmed in a 45-year-old, and CT shows a 1 cm adrenal adenoma. Which test should precede surgery?",
+   "correct": "Adrenal vein sampling",
+   "wrong": [
+    "Repeat CT in 6 months",
+    "Dexamethasone suppression test",
+    "Adrenal scintigraphy with MIBG"
+   ],
+   "why": "Imaging cannot reliably lateralize aldosterone excess over age 35, so AVS is recommended.",
+   "tags": [
+    "endocrine"
+   ],
+   "level": 10,
+   "review_notes": "Some centers use PET tracers; guidelines favor AVS."
+  }
+ ]
+}

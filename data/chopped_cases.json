@@ -1,0 +1,316 @@
+{
+  "version": 1,
+  "review_status": "unreviewed",
+  "generator": "AI-drafted for faculty review",
+  "cases": [
+    {
+      "id": "ch01",
+      "title": "Pleuritic chest pain after a long trip",
+      "diagnosis": "Pulmonary embolism",
+      "aliases": ["PE", "pulmonary embolus", "pulmonary thromboembolism", "acute pulmonary embolism"],
+      "stages": [
+        {"label": "Presentation", "text": "A 34-year-old woman has 3 days of sharp right-sided chest pain that worsens with deep breaths, with mild shortness of breath. She returned 4 days ago from a 14-hour flight and takes a combined oral contraceptive. No cough or fever."},
+        {"label": "Exam and vitals", "text": "Heart rate 108, blood pressure 124/78, respiratory rate 22, oxygen saturation 92 percent on room air, temperature normal. Lungs are clear and heart sounds normal without a rub. The right calf is slightly larger than the left and mildly tender."},
+        {"label": "Initial labs", "text": "ECG shows sinus tachycardia. Troponin is mildly elevated and BNP slightly high. D-dimer is 2,400 ng/mL. White cell count is 9.1. Arterial blood gas shows a PaO2 of 68 with respiratory alkalosis. Chest x-ray is normal."},
+        {"label": "Imaging or next test", "text": "CT angiography of the chest shows filling defects in both lobar pulmonary arteries with a right-to-left ventricular ratio of 1.2. Leg duplex shows a thrombus in the right popliteal vein."}
+      ],
+      "differential": [
+        {"name": "Pulmonary embolism", "aliases": ["PE", "pulmonary embolus", "pulmonary thromboembolism", "acute pulmonary embolism"], "points": 5, "kind": "leading", "from_stage": 1},
+        {"name": "Acute coronary syndrome", "aliases": ["myocardial infarction", "ACS", "heart attack", "NSTEMI", "unstable angina"], "points": 4, "kind": "must-not-miss", "from_stage": 0},
+        {"name": "Aortic dissection", "aliases": ["thoracic aortic dissection", "dissecting aortic aneurysm"], "points": 4, "kind": "must-not-miss", "from_stage": 0},
+        {"name": "Pneumothorax", "aliases": ["tension pneumothorax", "collapsed lung"], "points": 4, "kind": "must-not-miss", "from_stage": 0},
+        {"name": "Pneumonia", "aliases": ["community acquired pneumonia", "lobar pneumonia"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "Pericarditis", "aliases": ["acute pericarditis"], "points": 2, "kind": "reasonable", "from_stage": 0},
+        {"name": "Musculoskeletal chest pain", "aliases": ["costochondritis", "chest wall pain", "muscle strain"], "points": 2, "kind": "reasonable", "from_stage": 0},
+        {"name": "Deep vein thrombosis", "aliases": ["DVT", "leg clot"], "points": 3, "kind": "reasonable", "from_stage": 1},
+        {"name": "Myocarditis", "aliases": ["viral myocarditis"], "points": 2, "kind": "rare-but-valid", "from_stage": 2}
+      ],
+      "teaching": "Pleuritic pain, hypoxia and a swollen calf after a long flight on estrogen quickly raised pulmonary embolism, and the elevated D-dimer, troponin and BNP then showed strain on the right heart. Acute coronary syndrome, aortic dissection and pneumothorax stayed on the list early because they kill quickly and the first stage could not exclude them. The anchoring trap is pneumonia or a muscle strain explained by a normal chest x-ray: a clear film with hypoxia should widen the differential, not narrow it.",
+      "review_notes": "Wells criteria not given; D-dimer value is illustrative."
+    },
+    {
+      "id": "ch02",
+      "title": "Sudden tearing pain and different arm pressures",
+      "diagnosis": "Aortic dissection",
+      "aliases": ["acute aortic dissection", "thoracic aortic dissection", "type A aortic dissection", "dissecting aortic aneurysm"],
+      "stages": [
+        {"label": "Presentation", "text": "A 58-year-old man has 2 hours of abrupt severe chest pain that radiates between his shoulder blades and feels like tearing. He has poorly controlled hypertension and uses cocaine. He is sweaty and anxious."},
+        {"label": "Exam and vitals", "text": "Blood pressure is 188/104 in the right arm and 142/80 in the left, heart rate 96. There is a soft early diastolic murmur at the left sternal border and a weak left femoral pulse. Lungs are clear and the neurologic exam is normal."},
+        {"label": "Initial labs", "text": "ECG shows left ventricular hypertrophy with nonspecific ST changes. Troponin is slightly elevated, D-dimer markedly elevated, creatinine 1.5, hemoglobin 13. Chest x-ray shows a widened mediastinum. Urine toxicology is positive for cocaine."},
+        {"label": "Imaging or next test", "text": "CT angiography shows an intimal flap starting at the aortic root and extending to the iliac arteries, a small pericardial effusion, and compression of the true lumen. Cardiothoracic surgery is called emergently."}
+      ],
+      "differential": [
+        {"name": "Aortic dissection", "aliases": ["acute aortic dissection", "thoracic aortic dissection", "type A aortic dissection", "dissecting aortic aneurysm"], "points": 5, "kind": "leading", "from_stage": 1},
+        {"name": "Acute coronary syndrome", "aliases": ["myocardial infarction", "ACS", "heart attack", "STEMI", "NSTEMI"], "points": 4, "kind": "must-not-miss", "from_stage": 0},
+        {"name": "Pulmonary embolism", "aliases": ["PE", "pulmonary embolus"], "points": 4, "kind": "must-not-miss", "from_stage": 0},
+        {"name": "Esophageal rupture", "aliases": ["Boerhaave syndrome", "esophageal perforation"], "points": 4, "kind": "must-not-miss", "from_stage": 0},
+        {"name": "Pneumothorax", "aliases": ["tension pneumothorax"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "Cocaine-associated chest pain", "aliases": ["cocaine chest pain", "coronary vasospasm", "cocaine induced vasospasm"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "Hypertensive emergency", "aliases": ["hypertensive crisis", "hypertensive urgency"], "points": 3, "kind": "reasonable", "from_stage": 1},
+        {"name": "Acute pericarditis", "aliases": ["pericarditis"], "points": 2, "kind": "reasonable", "from_stage": 0},
+        {"name": "Aortic regurgitation", "aliases": ["aortic insufficiency"], "points": 2, "kind": "reasonable", "from_stage": 1},
+        {"name": "Cardiac tamponade", "aliases": ["pericardial tamponade", "hemopericardium"], "points": 3, "kind": "rare-but-valid", "from_stage": 3}
+      ],
+      "teaching": "Tearing pain to the back, a blood pressure difference between arms, a new diastolic murmur and a pulse deficit built the case for dissection, and the widened mediastinum supported it. Acute coronary syndrome, pulmonary embolism and esophageal rupture had to remain on the list, and thinking about a myocardial infarction matters because giving anticoagulants or thrombolytics for a missed dissection can be fatal. The anchoring trap is a mildly elevated troponin in a cocaine user: it is common in dissection and should not close the differential on a coronary cause.",
+      "review_notes": "Check that the proximal extension with a pericardial effusion matches Stanford type A teaching points."
+    },
+    {
+      "id": "ch03",
+      "title": "Cirrhosis with belly pain and new confusion",
+      "diagnosis": "Spontaneous bacterial peritonitis",
+      "aliases": ["SBP", "spontaneous bacterial peritonitis", "infected ascites", "ascitic fluid infection"],
+      "stages": [
+        {"label": "Presentation", "text": "A 61-year-old man with alcohol-related cirrhosis and ascites has 2 days of diffuse abdominal pain, low-grade fever and new confusion. He missed his last paracentesis and has run out of lactulose and spironolactone."},
+        {"label": "Exam and vitals", "text": "Temperature 38.1, heart rate 104, blood pressure 98/58. He is jaundiced with asterixis, a distended abdomen with a fluid wave and diffuse tenderness but no rigidity. Bowel sounds are reduced. There are spider angiomata and mild leg edema."},
+        {"label": "Initial labs", "text": "White cell count 15.2, creatinine 1.9 (baseline 1.0), bilirubin 4.1, INR 1.8, sodium 129, platelets 74, lactate 3.0. Ammonia is elevated and urinalysis is unremarkable. Blood cultures are drawn."},
+        {"label": "Imaging or next test", "text": "Diagnostic paracentesis returns cloudy fluid with 780 neutrophils per cubic millimeter, a serum-ascites albumin gradient of 1.9 and total protein 0.9 g/dL. Gram stain is negative and culture is pending."}
+      ],
+      "differential": [
+        {"name": "Spontaneous bacterial peritonitis", "aliases": ["SBP", "infected ascites", "ascitic fluid infection"], "points": 5, "kind": "leading", "from_stage": 2},
+        {"name": "Hepatic encephalopathy", "aliases": ["HE", "portosystemic encephalopathy"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "Perforated viscus", "aliases": ["bowel perforation", "secondary bacterial peritonitis", "perforated bowel"], "points": 4, "kind": "must-not-miss", "from_stage": 0},
+        {"name": "Variceal bleeding", "aliases": ["upper GI bleed", "gastrointestinal bleed", "esophageal varices"], "points": 4, "kind": "must-not-miss", "from_stage": 0},
+        {"name": "Hepatorenal syndrome", "aliases": ["HRS", "hepatorenal"], "points": 3, "kind": "reasonable", "from_stage": 2},
+        {"name": "Alcoholic hepatitis", "aliases": ["acute alcoholic hepatitis"], "points": 3, "kind": "reasonable", "from_stage": 1},
+        {"name": "Pneumonia", "aliases": ["aspiration pneumonia"], "points": 2, "kind": "reasonable", "from_stage": 0},
+        {"name": "Urinary tract infection", "aliases": ["UTI", "pyelonephritis"], "points": 2, "kind": "reasonable", "from_stage": 0},
+        {"name": "Acute pancreatitis", "aliases": ["pancreatitis"], "points": 2, "kind": "reasonable", "from_stage": 0},
+        {"name": "Mesenteric ischemia", "aliases": ["mesenteric thrombosis", "portal vein thrombosis"], "points": 3, "kind": "rare-but-valid", "from_stage": 1}
+      ],
+      "teaching": "Fever, tenderness and confusion in a cirrhotic with ascites and recent missed care point to infection of the ascitic fluid, and a diagnostic paracentesis with a neutrophil count at or above 250 cells settles it. Perforation, gastrointestinal bleeding and other sources of sepsis have to stay on the list until the fluid is analyzed. The anchoring trap is blaming the confusion on missed lactulose: hepatic encephalopathy is usually triggered by something, and the trigger here is infection that needs antibiotics and albumin.",
+      "review_notes": "Ascitic neutrophil threshold 250 cells/mm3 per AASLD."
+    },
+    {
+      "id": "ch04",
+      "title": "Dark urine after a hard workout",
+      "diagnosis": "Rhabdomyolysis",
+      "aliases": ["rhabdo", "exertional rhabdomyolysis", "rhabdomyolysis with acute kidney injury", "muscle breakdown"],
+      "stages": [
+        {"label": "Presentation", "text": "A 27-year-old man has 2 days of severe diffuse muscle pain, weakness and dark cola-colored urine. He started an intense group fitness class 3 days ago, drank little water, and takes creatine and a pre-workout supplement."},
+        {"label": "Exam and vitals", "text": "Heart rate 110, blood pressure 118/72, afebrile. Mucous membranes are dry. The thighs and shoulders are swollen, firm and tender with strength 4 of 5 diffusely. Compartments are soft. Urine output has been low. No rash."},
+        {"label": "Initial labs", "text": "Creatinine 3.4, potassium 6.1, calcium 7.6, phosphate 6.8, uric acid high, AST 980 and ALT 410. Urine dipstick is strongly positive for blood but microscopy shows no red blood cells. TSH is normal."},
+        {"label": "Imaging or next test", "text": "Creatine kinase returns at 62,000 U/L. ECG shows peaked T waves. Urine myoglobin is positive and renal ultrasound is normal. Toxicology screen is negative and he is given aggressive intravenous fluids."}
+      ],
+      "differential": [
+        {"name": "Rhabdomyolysis", "aliases": ["rhabdo", "exertional rhabdomyolysis", "rhabdomyolysis with acute kidney injury", "muscle breakdown"], "points": 5, "kind": "leading", "from_stage": 1},
+        {"name": "Acute tubular necrosis", "aliases": ["ATN", "acute kidney injury", "prerenal azotemia", "AKI"], "points": 3, "kind": "reasonable", "from_stage": 1},
+        {"name": "Hyperkalemia", "aliases": ["high potassium"], "points": 4, "kind": "must-not-miss", "from_stage": 2},
+        {"name": "Compartment syndrome", "aliases": ["acute compartment syndrome"], "points": 4, "kind": "must-not-miss", "from_stage": 0},
+        {"name": "Intravascular hemolysis", "aliases": ["hemolytic anemia", "hemoglobinuria", "hemolysis"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "Glomerulonephritis", "aliases": ["acute nephritis", "nephritic syndrome"], "points": 2, "kind": "reasonable", "from_stage": 0},
+        {"name": "Viral myositis", "aliases": ["influenza myositis", "infectious myositis"], "points": 2, "kind": "reasonable", "from_stage": 0},
+        {"name": "Sympathomimetic toxicity", "aliases": ["stimulant toxicity", "stimulant overdose"], "points": 2, "kind": "reasonable", "from_stage": 0},
+        {"name": "Hypothyroid myopathy", "aliases": ["hypothyroidism"], "points": 2, "kind": "rare-but-valid", "from_stage": 1},
+        {"name": "Inflammatory myopathy", "aliases": ["polymyositis", "dermatomyositis", "myositis"], "points": 2, "kind": "rare-but-valid", "from_stage": 1}
+      ],
+      "teaching": "Muscle pain and dark urine after unaccustomed exertion with a urine dipstick that is positive for blood but has no red cells is the classic clue to myoglobinuria, and the CK confirmed it. Hyperkalemia and compartment syndrome were the must-not-miss items because the potassium can cause arrhythmia before the creatinine tells the story. The anchoring trap is dark urine meaning glomerulonephritis or hemolysis: always check the microscopy, and treat first with fluids while the CK is pending.",
+      "review_notes": "Supplement history is illustrative; check mechanism language on creatine."
+    },
+    {
+      "id": "ch05",
+      "title": "Back pain, fatigue and a rising creatinine",
+      "diagnosis": "Multiple myeloma",
+      "aliases": ["myeloma", "MM", "plasma cell myeloma", "plasma cell dyscrasia"],
+      "stages": [
+        {"label": "Presentation", "text": "A 66-year-old woman has 4 months of low back pain, fatigue and constipation. Over the past week she has had intense thirst, nausea and confusion. She takes ibuprofen daily for the pain and has lost 8 pounds."},
+        {"label": "Exam and vitals", "text": "Blood pressure 134/82, heart rate 88, afebrile. She is pale with dry mucous membranes and mild confusion. There is midline tenderness over the lumbar spine. Strength, reflexes and sensation are normal and no lymph nodes are palpable."},
+        {"label": "Initial labs", "text": "Calcium 13.1, creatinine 3.0, hemoglobin 8.2 with normal cell size, total protein 9.4 with albumin 3.0, ESR 110. Urine dipstick protein is negative. The peripheral smear shows rouleaux formation."},
+        {"label": "Imaging or next test", "text": "Serum protein electrophoresis shows an IgG kappa spike and serum free kappa light chains are markedly elevated. A skeletal survey shows multiple punched-out lytic lesions. Bone marrow biopsy shows 45 percent plasma cells."}
+      ],
+      "differential": [
+        {"name": "Multiple myeloma", "aliases": ["myeloma", "MM", "plasma cell myeloma", "plasma cell dyscrasia"], "points": 5, "kind": "leading", "from_stage": 2},
+        {"name": "Metastatic cancer to bone", "aliases": ["bone metastases", "metastatic carcinoma", "hypercalcemia of malignancy"], "points": 4, "kind": "must-not-miss", "from_stage": 0},
+        {"name": "Spinal cord compression", "aliases": ["epidural cord compression", "cauda equina syndrome"], "points": 4, "kind": "must-not-miss", "from_stage": 0},
+        {"name": "Primary hyperparathyroidism", "aliases": ["hyperparathyroidism"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "NSAID nephropathy", "aliases": ["NSAID induced kidney injury", "analgesic nephropathy", "NSAID kidney injury"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "Vertebral compression fracture", "aliases": ["osteoporotic fracture", "vertebral fracture"], "points": 2, "kind": "reasonable", "from_stage": 0},
+        {"name": "Lymphoma", "aliases": ["non-Hodgkin lymphoma"], "points": 3, "kind": "reasonable", "from_stage": 1},
+        {"name": "Amyloidosis", "aliases": ["AL amyloidosis", "light chain amyloidosis"], "points": 2, "kind": "rare-but-valid", "from_stage": 2},
+        {"name": "Sarcoidosis", "aliases": ["sarcoid"], "points": 2, "kind": "rare-but-valid", "from_stage": 1},
+        {"name": "Milk-alkali syndrome", "aliases": ["calcium alkali syndrome", "vitamin D toxicity"], "points": 1, "kind": "rare-but-valid", "from_stage": 1}
+      ],
+      "teaching": "Bone pain, anemia, hypercalcemia and kidney injury summarize the CRAB features, and the high protein gap with rouleaux and a negative urine dipstick for protein pointed to light chains that the dipstick cannot detect. Metastatic cancer and cord compression had to remain on the list because cord compression needs urgent imaging and steroids. The anchoring trap is blaming daily NSAIDs for the kidney injury: they can contribute, but they do not explain the calcium, the anemia or the lytic lesions.",
+      "review_notes": "Confirm that dipstick-negative proteinuria with 24-hour 4 g teaching is accurate (dipstick detects albumin mainly)."
+    },
+    {
+      "id": "ch06",
+      "title": "Low blood pressure that fluids will not fix",
+      "diagnosis": "Adrenal crisis",
+      "aliases": ["addisonian crisis", "acute adrenal insufficiency", "Addison disease", "primary adrenal insufficiency"],
+      "stages": [
+        {"label": "Presentation", "text": "A 45-year-old woman has 2 days of vomiting, abdominal pain and profound weakness after a flu-like illness. For several months she has had fatigue, weight loss and salt craving. She has Hashimoto thyroiditis."},
+        {"label": "Exam and vitals", "text": "Blood pressure 78/44 after 2 liters of saline, heart rate 124, temperature 37.9. She is lethargic with cool extremities and diffuse abdominal tenderness without rigidity. Palmar creases and gums look darkly pigmented and there are patches of vitiligo."},
+        {"label": "Initial labs", "text": "Sodium 124, potassium 5.8, glucose 52, bicarbonate 17, creatinine 1.7, eosinophils elevated, white count 11, lactate 2.8, TSH 6.0. A random cortisol was drawn before treatment. Urine sodium is inappropriately high."},
+        {"label": "Imaging or next test", "text": "Cortisol returns at 2 mcg/dL with ACTH 480 pg/mL and high renin with low aldosterone. 21-hydroxylase antibodies are positive. CT shows small adrenal glands without hemorrhage. Blood pressure improves within hours of stress-dose hydrocortisone."}
+      ],
+      "differential": [
+        {"name": "Adrenal crisis", "aliases": ["addisonian crisis", "acute adrenal insufficiency", "Addison disease", "primary adrenal insufficiency"], "points": 5, "kind": "leading", "from_stage": 2},
+        {"name": "Septic shock", "aliases": ["sepsis", "septic shock from infection"], "points": 4, "kind": "must-not-miss", "from_stage": 0},
+        {"name": "Perforated viscus", "aliases": ["acute abdomen", "bowel perforation", "surgical abdomen"], "points": 4, "kind": "must-not-miss", "from_stage": 0},
+        {"name": "Viral gastroenteritis", "aliases": ["gastroenteritis", "hypovolemia from vomiting"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "Diabetic ketoacidosis", "aliases": ["DKA"], "points": 2, "kind": "reasonable", "from_stage": 0},
+        {"name": "Myxedema coma", "aliases": ["severe hypothyroidism", "hypothyroid crisis"], "points": 3, "kind": "reasonable", "from_stage": 1},
+        {"name": "Acute pancreatitis", "aliases": ["pancreatitis"], "points": 2, "kind": "reasonable", "from_stage": 0},
+        {"name": "Hypopituitarism", "aliases": ["pituitary apoplexy", "secondary adrenal insufficiency"], "points": 3, "kind": "rare-but-valid", "from_stage": 2},
+        {"name": "Adrenal hemorrhage", "aliases": ["Waterhouse-Friderichsen syndrome", "adrenal infarction"], "points": 3, "kind": "rare-but-valid", "from_stage": 2},
+        {"name": "SIADH", "aliases": ["syndrome of inappropriate antidiuretic hormone"], "points": 2, "kind": "rare-but-valid", "from_stage": 2}
+      ],
+      "teaching": "Shock that does not respond to fluids, hyponatremia with hyperkalemia, hypoglycemia, hyperpigmentation and an autoimmune history built the case for primary adrenal insufficiency, confirmed by a low cortisol with a high ACTH. Sepsis and a surgical abdomen stayed on the list since the same physiology is also seen in them, and the infection that triggered the crisis may be real. The anchoring trap is the gastroenteritis story: treat with stress-dose steroids while testing, and draw the cortisol first only if it does not delay treatment.",
+      "review_notes": "Confirm that stress-dose hydrocortisone should not be delayed for testing."
+    },
+    {
+      "id": "ch07",
+      "title": "Fever and a new murmur in someone who injects drugs",
+      "diagnosis": "Infective endocarditis",
+      "aliases": ["endocarditis", "IE", "tricuspid valve endocarditis", "bacterial endocarditis"],
+      "stages": [
+        {"label": "Presentation", "text": "A 34-year-old man has 3 weeks of fever, night sweats, fatigue and back pain, with several days of mild shortness of breath. He injects heroin. Oral antibiotics from urgent care did not help."},
+        {"label": "Exam and vitals", "text": "Temperature 38.9, heart rate 112, blood pressure 108/62. A new holosystolic murmur at the left lower sternal border grows louder with inspiration. There are splinter hemorrhages, tender nodules on the finger pads and track marks on both arms."},
+        {"label": "Initial labs", "text": "White cell count 17 with left shift, ESR 98, CRP high, hemoglobin 10.1, microscopic hematuria. Three of three blood culture bottles grow gram-positive cocci in clusters. Rheumatoid factor is positive. ECG is normal."},
+        {"label": "Imaging or next test", "text": "Chest x-ray shows multiple bilateral nodular opacities, some cavitating. Transthoracic echocardiography today shows a 1.5 cm mobile vegetation on the tricuspid valve with moderate regurgitation and no abscess."}
+      ],
+      "differential": [
+        {"name": "Infective endocarditis", "aliases": ["endocarditis", "IE", "tricuspid valve endocarditis", "bacterial endocarditis"], "points": 5, "kind": "leading", "from_stage": 1},
+        {"name": "Vertebral osteomyelitis", "aliases": ["spinal epidural abscess", "epidural abscess", "discitis"], "points": 4, "kind": "must-not-miss", "from_stage": 0},
+        {"name": "Staphylococcus aureus bacteremia", "aliases": ["MRSA bacteremia", "bacteremia", "S aureus bacteremia"], "points": 3, "kind": "reasonable", "from_stage": 1},
+        {"name": "Pneumonia", "aliases": ["community acquired pneumonia", "bacterial pneumonia"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "Tuberculosis", "aliases": ["TB", "miliary tuberculosis", "pulmonary tuberculosis"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "HIV infection", "aliases": ["HIV", "acute HIV", "AIDS"], "points": 2, "kind": "reasonable", "from_stage": 0},
+        {"name": "Septic pulmonary emboli", "aliases": ["septic emboli", "septic pulmonary embolism"], "points": 3, "kind": "reasonable", "from_stage": 2},
+        {"name": "Lymphoma", "aliases": ["Hodgkin lymphoma", "non-Hodgkin lymphoma"], "points": 2, "kind": "rare-but-valid", "from_stage": 0},
+        {"name": "Systemic vasculitis", "aliases": ["vasculitis", "ANCA vasculitis"], "points": 2, "kind": "rare-but-valid", "from_stage": 1}
+      ],
+      "teaching": "Fever in a person who injects drugs, a murmur that grows louder with inspiration, peripheral stigmata and bacteremia point to right-sided endocarditis, and the cavitating lung nodules are septic emboli from the tricuspid valve. Spinal infection had to stay on the list because the back pain is a red flag in bacteremia. The anchoring trap is treating a fever in someone who injects drugs as pneumonia from the chest x-ray alone: draw blood cultures before antibiotics and ask what the murmur means.",
+      "review_notes": "Check culture result wording; the isolate is not named to avoid giving organism details."
+    },
+    {
+      "id": "ch08",
+      "title": "Dry cough and oxygen levels that drop with walking",
+      "diagnosis": "Pneumocystis pneumonia",
+      "aliases": ["PJP", "PCP", "Pneumocystis jirovecii pneumonia", "pneumocystis"],
+      "stages": [
+        {"label": "Presentation", "text": "A 38-year-old man has 3 weeks of worsening dry cough, fevers and shortness of breath with exertion. He has lost 12 pounds and has had a sore, painful mouth. He has not seen a doctor in years and has had several sexual partners."},
+        {"label": "Exam and vitals", "text": "Temperature 38.4, heart rate 102, respiratory rate 24. Oxygen saturation is 93 percent at rest and drops to 84 percent walking the hallway. White plaques on the tongue and palate scrape off. Lungs have a few fine crackles. No lymphadenopathy."},
+        {"label": "Initial labs", "text": "White cell count 3.2 with 400 lymphocytes, LDH 640, beta-D-glucan markedly elevated, hemoglobin 11. HIV antigen and antibody screen is reactive. Blood cultures are negative. Chest x-ray shows bilateral diffuse interstitial infiltrates."},
+        {"label": "Imaging or next test", "text": "CD4 count is 42. CT shows diffuse ground-glass opacities with thin-walled cysts. Induced sputum silver stain is positive for the organism. Room-air arterial PaO2 is 62."}
+      ],
+      "differential": [
+        {"name": "Pneumocystis pneumonia", "aliases": ["PJP", "PCP", "Pneumocystis jirovecii pneumonia", "pneumocystis"], "points": 5, "kind": "leading", "from_stage": 2},
+        {"name": "Bacterial pneumonia", "aliases": ["community acquired pneumonia", "pneumonia", "CAP"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "Tuberculosis", "aliases": ["TB", "pulmonary tuberculosis", "miliary tuberculosis"], "points": 4, "kind": "must-not-miss", "from_stage": 0},
+        {"name": "Pulmonary embolism", "aliases": ["PE", "pulmonary embolus"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "Atypical pneumonia", "aliases": ["mycoplasma pneumonia", "legionella", "walking pneumonia"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "HIV infection", "aliases": ["HIV", "AIDS", "HIV/AIDS", "acute HIV"], "points": 3, "kind": "reasonable", "from_stage": 1},
+        {"name": "Viral pneumonia", "aliases": ["COVID-19", "influenza", "COVID"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "Endemic fungal pneumonia", "aliases": ["histoplasmosis", "coccidioidomycosis"], "points": 2, "kind": "rare-but-valid", "from_stage": 1},
+        {"name": "Lymphoma", "aliases": ["non-Hodgkin lymphoma"], "points": 2, "kind": "rare-but-valid", "from_stage": 1},
+        {"name": "Hypersensitivity pneumonitis", "aliases": ["extrinsic allergic alveolitis"], "points": 2, "kind": "rare-but-valid", "from_stage": 1}
+      ],
+      "teaching": "Subacute dry cough, exertional desaturation, oral thrush and weight loss in a young adult with unknown HIV status make Pneumocystis pneumonia likely once the lymphopenia, high LDH, beta-D-glucan and bilateral interstitial infiltrates appear. Tuberculosis had to remain on the list and the patient needs airborne isolation until it is excluded. The anchoring trap is calling a diffuse infiltrate with a clear chest examination a typical pneumonia and not asking why the host is immunocompromised.",
+      "review_notes": "Confirm CD4 threshold teaching (below 200)."
+    },
+    {
+      "id": "ch09",
+      "title": "Bruising, headache and anemia with very low platelets",
+      "diagnosis": "Thrombotic thrombocytopenic purpura",
+      "aliases": ["TTP", "immune TTP", "thrombotic thrombocytopenic purpura"],
+      "stages": [
+        {"label": "Presentation", "text": "A 29-year-old woman has 3 days of headache, fatigue, easy bruising and dark urine, with one episode of transient slurred speech. No new medications, no travel and no bloody diarrhea. She is not pregnant."},
+        {"label": "Exam and vitals", "text": "Temperature 37.9, heart rate 100, blood pressure 142/88. She is pale with scleral icterus, petechiae over both legs and mild confusion. No focal weakness at present. No lymphadenopathy or splenomegaly and the abdomen is benign."},
+        {"label": "Initial labs", "text": "Hemoglobin 7.2, platelets 9,000, white count 10. LDH 1,900, indirect bilirubin high, haptoglobin undetectable, creatinine 1.4. The smear shows many schistocytes. INR and fibrinogen are normal. Direct Coombs test is negative."},
+        {"label": "Imaging or next test", "text": "ADAMTS13 activity returns below 5 percent with an inhibitor antibody present. Pregnancy test is negative, stool Shiga toxin and HIV are negative, and CT of the head shows no hemorrhage."}
+      ],
+      "differential": [
+        {"name": "Thrombotic thrombocytopenic purpura", "aliases": ["TTP", "immune TTP", "thrombotic thrombocytopenic purpura"], "points": 5, "kind": "leading", "from_stage": 2},
+        {"name": "Hemolytic uremic syndrome", "aliases": ["HUS", "atypical HUS", "STEC HUS"], "points": 3, "kind": "reasonable", "from_stage": 2},
+        {"name": "Disseminated intravascular coagulation", "aliases": ["DIC"], "points": 4, "kind": "must-not-miss", "from_stage": 1},
+        {"name": "Immune thrombocytopenia", "aliases": ["ITP", "idiopathic thrombocytopenic purpura"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "Autoimmune hemolytic anemia", "aliases": ["AIHA", "Evans syndrome"], "points": 3, "kind": "reasonable", "from_stage": 1},
+        {"name": "Acute leukemia", "aliases": ["AML", "ALL", "leukemia", "acute myeloid leukemia"], "points": 4, "kind": "must-not-miss", "from_stage": 0},
+        {"name": "Stroke", "aliases": ["TIA", "transient ischemic attack", "cerebrovascular accident"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "Systemic lupus erythematosus", "aliases": ["SLE", "lupus"], "points": 3, "kind": "reasonable", "from_stage": 1},
+        {"name": "Catastrophic antiphospholipid syndrome", "aliases": ["CAPS", "antiphospholipid syndrome"], "points": 2, "kind": "rare-but-valid", "from_stage": 2}
+      ],
+      "teaching": "Fever, neurologic symptoms, hemolytic anemia with schistocytes, severe thrombocytopenia and kidney involvement describe the pentad, and a normal INR and fibrinogen separated this from DIC. Leukemia and DIC had to stay on the list until the smear and coagulation studies were seen. The anchoring trap is immune thrombocytopenia from the petechiae and platelet count: anemia with schistocytes and a negative Coombs test means a microangiopathy, and platelet transfusion and delay of plasma exchange can be dangerous.",
+      "review_notes": "Check that ADAMTS13 below 10 percent is the accepted threshold."
+    },
+    {
+      "id": "ch10",
+      "title": "Ascending weakness after a stomach bug",
+      "diagnosis": "Guillain-Barre syndrome",
+      "aliases": ["GBS", "Guillain Barre", "acute inflammatory demyelinating polyneuropathy", "AIDP"],
+      "stages": [
+        {"label": "Presentation", "text": "A 42-year-old man has 3 days of foot tingling followed by weakness that climbs up his legs and now makes it hard to stand from a chair. Two weeks ago he had 2 days of diarrhea after undercooked chicken. No back pain."},
+        {"label": "Exam and vitals", "text": "Heart rate 112 and blood pressure swings from 156/94 to 110/60. Leg strength is 3 of 5 and arm strength 4 of 5, symmetric. Ankle and knee reflexes are absent. There is mild facial weakness and reduced vibration at the toes. Rectal tone is normal."},
+        {"label": "Initial labs", "text": "Sodium 138, potassium 4.1, glucose, CK, TSH and B12 are normal. Forced vital capacity is 1.9 L (predicted 4.5 L) and negative inspiratory force is borderline. MRI of the spine has been ordered."},
+        {"label": "Imaging or next test", "text": "MRI shows no cord compression but enhancement of the lumbar nerve roots. Lumbar puncture shows protein 118 mg/dL with 2 white cells per cubic millimeter. Nerve conduction studies show prolonged distal latencies and conduction block."}
+      ],
+      "differential": [
+        {"name": "Guillain-Barre syndrome", "aliases": ["GBS", "Guillain Barre", "acute inflammatory demyelinating polyneuropathy", "AIDP"], "points": 5, "kind": "leading", "from_stage": 1},
+        {"name": "Spinal cord compression", "aliases": ["cord compression", "cauda equina syndrome", "epidural abscess", "epidural hematoma"], "points": 4, "kind": "must-not-miss", "from_stage": 0},
+        {"name": "Transverse myelitis", "aliases": ["myelitis", "acute myelitis"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "Hypokalemic periodic paralysis", "aliases": ["periodic paralysis", "hypokalemia"], "points": 2, "kind": "reasonable", "from_stage": 0},
+        {"name": "Myasthenia gravis", "aliases": ["MG", "myasthenic crisis"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "Botulism", "aliases": ["botulinum toxin poisoning", "foodborne botulism"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "Acute respiratory failure", "aliases": ["neuromuscular respiratory failure", "respiratory failure"], "points": 4, "kind": "must-not-miss", "from_stage": 2},
+        {"name": "West Nile virus infection", "aliases": ["acute flaccid myelitis", "West Nile virus", "poliomyelitis"], "points": 2, "kind": "rare-but-valid", "from_stage": 0},
+        {"name": "Tick paralysis", "aliases": ["tick bite paralysis"], "points": 2, "kind": "rare-but-valid", "from_stage": 0},
+        {"name": "Chronic inflammatory demyelinating polyneuropathy", "aliases": ["CIDP"], "points": 2, "kind": "rare-but-valid", "from_stage": 2}
+      ],
+      "teaching": "Symmetric ascending weakness with areflexia after a diarrheal illness suggests Guillain-Barre syndrome, and the albuminocytologic dissociation and conduction block confirmed it. Cord compression had to remain until imaging, and the falling vital capacity makes impending respiratory failure the must-not-miss in the first hours, with autonomic instability a second danger. The anchoring trap is a normal sensory level and early imaging being read as a reason to wait: monitor vital capacity and negative inspiratory force every few hours, not the oxygen saturation.",
+      "review_notes": "Check labeling of respiratory failure as a diagnosis entry; the alias list is intentionally broad."
+    },
+    {
+      "id": "ch11",
+      "title": "New headache and jaw pain in an older woman",
+      "diagnosis": "Giant cell arteritis",
+      "aliases": ["GCA", "temporal arteritis", "cranial arteritis", "giant cell temporal arteritis"],
+      "stages": [
+        {"label": "Presentation", "text": "A 74-year-old woman has 3 weeks of new right-sided temple headache, jaw pain when chewing, fatigue and low-grade fever. She also notes morning stiffness in her shoulders and hips and had a brief episode of blurred vision in the right eye yesterday."},
+        {"label": "Exam and vitals", "text": "Temperature 37.8, blood pressure 138/80. The right temporal artery is tender, thickened and has a weak pulse. The scalp hurts when she brushes her hair. Visual acuity is 20/30 right and 20/20 left. Neck is supple with no focal weakness."},
+        {"label": "Initial labs", "text": "ESR 96 mm/h, CRP 14 mg/dL, platelets 480, hemoglobin 10.8, normal creatinine, mildly raised alkaline phosphatase. CT of the head without contrast is normal. Blood cultures are negative at 24 hours."},
+        {"label": "Imaging or next test", "text": "High-dose prednisone is started the same day and ophthalmology sees her urgently. Temporal artery biopsy shows granulomatous inflammation with multinucleated giant cells and fragmentation of the internal elastic lamina."}
+      ],
+      "differential": [
+        {"name": "Giant cell arteritis", "aliases": ["GCA", "temporal arteritis", "cranial arteritis", "giant cell temporal arteritis"], "points": 5, "kind": "leading", "from_stage": 1},
+        {"name": "Polymyalgia rheumatica", "aliases": ["PMR"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "Stroke", "aliases": ["TIA", "transient ischemic attack", "amaurosis fugax", "cerebrovascular accident"], "points": 4, "kind": "must-not-miss", "from_stage": 0},
+        {"name": "Subarachnoid hemorrhage", "aliases": ["SAH", "intracranial hemorrhage"], "points": 4, "kind": "must-not-miss", "from_stage": 0},
+        {"name": "Bacterial meningitis", "aliases": ["meningitis", "CNS infection"], "points": 4, "kind": "must-not-miss", "from_stage": 0},
+        {"name": "Temporomandibular joint disorder", "aliases": ["TMJ dysfunction", "TMD"], "points": 2, "kind": "reasonable", "from_stage": 0},
+        {"name": "Migraine", "aliases": ["tension headache", "migraine headache"], "points": 2, "kind": "reasonable", "from_stage": 0},
+        {"name": "Sinusitis", "aliases": ["acute sinusitis"], "points": 2, "kind": "reasonable", "from_stage": 0},
+        {"name": "Acute angle-closure glaucoma", "aliases": ["angle closure glaucoma", "acute glaucoma"], "points": 3, "kind": "reasonable", "from_stage": 1},
+        {"name": "Herpes zoster ophthalmicus", "aliases": ["shingles", "herpes zoster"], "points": 2, "kind": "rare-but-valid", "from_stage": 1}
+      ],
+      "teaching": "New headache after age 50 with jaw claudication, scalp tenderness, a tender temporal artery, a very high ESR and visual symptoms makes giant cell arteritis the leading diagnosis, and it is an emergency because vision loss can be permanent. Stroke, hemorrhage and meningitis stayed on the list until the head CT and cultures were seen. The anchoring trap is waiting for the biopsy: start high-dose glucocorticoids on clinical suspicion since the biopsy stays positive for days after starting treatment.",
+      "review_notes": "Confirm biopsy-positivity window teaching (generally 2 weeks)."
+    },
+    {
+      "id": "ch12",
+      "title": "Fast breathing and ringing ears",
+      "diagnosis": "Salicylate toxicity",
+      "aliases": ["aspirin overdose", "salicylate poisoning", "salicylism", "aspirin toxicity"],
+      "stages": [
+        {"label": "Presentation", "text": "A 23-year-old woman is brought in after 12 hours of nausea, vomiting, ringing in the ears and rapid breathing, followed by agitation. She had a toothache and took many pain pills over 2 days. Her roommate says her mood has been low recently."},
+        {"label": "Exam and vitals", "text": "Temperature 38.3, heart rate 122, respiratory rate 32 with deep labored breathing, blood pressure 112/64, oxygen saturation 99 percent. She is sweaty, agitated and mildly disoriented, and confirms tinnitus. Lungs are clear and the abdomen is soft."},
+        {"label": "Initial labs", "text": "Arterial pH 7.48, pCO2 18, bicarbonate 13. Sodium 142, chloride 105, anion gap 24, glucose 68, potassium 3.1, lactate 4.0. Serum ethanol and acetaminophen are undetectable. Urine ketones are positive. Chest x-ray is normal."},
+        {"label": "Imaging or next test", "text": "Serum salicylate returns at 62 mg/dL and is rising at 4 hours. Treatment includes intravenous sodium bicarbonate, potassium replacement and a call to nephrology to arrange hemodialysis."}
+      ],
+      "differential": [
+        {"name": "Salicylate toxicity", "aliases": ["aspirin overdose", "salicylate poisoning", "salicylism", "aspirin toxicity"], "points": 5, "kind": "leading", "from_stage": 1},
+        {"name": "Acetaminophen overdose", "aliases": ["Tylenol overdose", "paracetamol toxicity", "acetaminophen toxicity"], "points": 4, "kind": "must-not-miss", "from_stage": 0},
+        {"name": "Toxic alcohol ingestion", "aliases": ["methanol poisoning", "ethylene glycol poisoning", "methanol toxicity"], "points": 4, "kind": "must-not-miss", "from_stage": 1},
+        {"name": "Sepsis", "aliases": ["septic shock", "bacteremia"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "Diabetic ketoacidosis", "aliases": ["DKA"], "points": 3, "kind": "reasonable", "from_stage": 1},
+        {"name": "Pulmonary embolism", "aliases": ["PE", "pulmonary embolus"], "points": 3, "kind": "reasonable", "from_stage": 0},
+        {"name": "Thyroid storm", "aliases": ["thyrotoxicosis", "hyperthyroidism"], "points": 3, "kind": "reasonable", "from_stage": 1},
+        {"name": "Panic attack", "aliases": ["anxiety", "hyperventilation syndrome", "hyperventilation"], "points": 2, "kind": "reasonable", "from_stage": 0},
+        {"name": "Sympathomimetic toxicity", "aliases": ["stimulant toxicity", "cocaine intoxication", "amphetamine toxicity"], "points": 2, "kind": "reasonable", "from_stage": 0},
+        {"name": "Serotonin syndrome", "aliases": ["serotonin toxicity"], "points": 2, "kind": "rare-but-valid", "from_stage": 1}
+      ],
+      "teaching": "Tinnitus, vomiting, hyperventilation and a mixed picture of respiratory alkalosis with an anion gap metabolic acidosis in a patient who took many pain pills is the signature of salicylate toxicity. Acetaminophen overdose and toxic alcohols stayed on the list because both are silent early, and an acetaminophen level should be checked in every intentional or unclear overdose. The anchoring trap is the clear chest and the alkalosis suggesting panic or hyperventilation: a normal pulse oximeter hides a patient who is deeply sick, and intubating without matching the ventilator to her minute ventilation can be lethal.",
+      "review_notes": "Check ABG numbers for internal consistency; confirm hemodialysis indications."
+    }
+  ]
+}

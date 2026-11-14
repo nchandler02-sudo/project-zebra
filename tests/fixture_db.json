@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "generated_at": "2026-11-12T02:53:09.237Z",
+  "generator": "test fixture",
+  "review_status": "unreviewed",
+  "prompts": [
+    {
+      "id": "fx-std",
+      "category": "Diagnostic Dilemmas",
+      "prompt": "Name causes of fever of unknown origin.",
+      "difficulty": "standard",
+      "source": "fixture",
+      "answers": [
+        {
+          "name": "Tuberculosis",
+          "score": 10,
+          "aliases": [
+            "tb"
+          ]
+        },
+        {
+          "name": "Lymphoma",
+          "score": 8,
+          "aliases": []
+        },
+        {
+          "name": "Endocarditis",
+          "score": 8,
+          "aliases": [
+            "infective endocarditis"
+          ]
+        },
+        {
+          "name": "Adult-onset Still disease",
+          "score": 30,
+          "aliases": [
+            "aosd"
+          ]
+        },
+        {
+          "name": "Whipple disease",
+          "score": -10,
+          "aliases": [
+            "tropheryma whipplei"
+          ]
+        },
+        {
+          "name": "Erdheim-Chester disease",
+          "score": 92,
+          "aliases": [
+            "ecd"
+          ],
+          "pearl": "Histiocytosis with long-bone sclerosis."
+        },
+        {
+          "name": "Schnitzler syndrome",
+          "score": 93,
+          "aliases": [],
+          "pearl": "Chronic urticaria with monoclonal IgM."
+        },
+        {
+          "name": "Hemophagocytic lymphohistiocytosis",
+          "score": 55,
+          "aliases": [
+            "hlh"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fx-imp",
+      "category": "Complex Pathophysiology",
+      "prompt": "Name paraneoplastic antibodies.",
+      "difficulty": "impossible",
+      "source": "fixture",
+      "answers": [
+        {
+          "name": "Anti-Hu antibody",
+          "score": 60,
+          "aliases": [
+            "anna-1"
+          ]
+        },
+        {
+          "name": "Anti-KLHL11 antibody",
+          "score": 100,
+          "aliases": [],
+          "pearl": "Seen with testicular germ cell tumours."
+        },
+        {
+          "name": "Anti-mGluR1 antibody",
+          "score": 100,
+          "aliases": []
+        },
+        {
+          "name": "Anti-GABA-B receptor encephalitis",
+          "score": 94,
+          "aliases": []
+        },
+        {
+          "name": "Anti-GABA-A receptor encephalitis",
+          "score": 100,
+          "aliases": []
+        }
+      ]
+    }
+  ]
+}

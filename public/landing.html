@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+<meta name="theme-color" content="#150f18">
+<meta name="text-scale" content="scale">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/icons/icon-180.png">
+<title>Project Zebra</title>
+<style>
+/* Layout: one centered column; three equal-weight entry points (solo, host, join). */
+:root {
+  --ground: #150f18; --surface: #2a1e2b; --line: #5a4458; --ink: #fbf1de; --ink-dim: #d8c6a6; --ink-faint: #a8957c;
+  --signal: #ffb020; --signal-ink: #1b1200;
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --font-ui: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+a { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+body {
+  background:
+    linear-gradient(180deg, rgba(21, 15, 24, 0.82), rgba(21, 15, 24, 0.94)),
+    url("/zebra-field-phone.jpg") center / cover fixed,
+    var(--ground);
+  color: var(--ink); font-family: var(--font-ui); line-height: 1.45; min-height: 100vh; min-height: 100dvh;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: max(28px, env(safe-area-inset-top, 0px)) max(40px, env(safe-area-inset-bottom, 0px));
+}
+.wrap { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+.eyebrow { font-size: 0.74rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-faint); font-weight: 700; }
+h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(2.4rem, 9vw, 3.8rem); line-height: 1.02; margin: 6px 0 12px; text-wrap: balance; }
+.lede { margin: 0; color: var(--ink-dim); max-width: 56ch; font-size: 1.05rem; }
+.choices { display: grid; gap: 14px; }
+a.choice {
+  display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 6px 16px; padding: 20px 22px; text-decoration: none; color: inherit;
+  background: rgba(42, 30, 43, 0.92); border: 1px solid var(--line); border-radius: 14px; transition: border-color .12s ease, transform .12s ease;
+}
+a.choice:hover, a.choice:focus-visible { border-color: var(--signal); transform: translateY(-1px); outline: none; }
+a.choice:focus-visible { box-shadow: 0 0 0 3px rgba(255, 176, 32, 0.45); }
+.choice h2 { margin: 0; font-family: var(--font-display); font-size: 1.55rem; }
+.choice p { margin: 0; grid-column: 1; color: var(--ink-dim); font-size: 0.97rem; }
+.choice .go { grid-row: 1 / span 2; grid-column: 2; align-self: center; font-weight: 700; color: var(--signal-ink); background: var(--signal); padding: 10px 16px; border-radius: 10px; white-space: nowrap; }
+.choice.primary { border-color: #8a6a3a; }
+.more { display: grid; gap: 10px; }
+.more-h { display: flex; align-items: center; gap: 10px; margin: 6px 0 0; }
+.more-h h2 { margin: 0; font-family: var(--font-display); font-size: 1.3rem; }
+.demo-pill { background: var(--signal); color: var(--signal-ink); font-weight: 800; letter-spacing: .14em; padding: 3px 10px; border-radius: 999px; font-size: .72rem; }
+.more-sub { margin: -4px 0 4px; color: var(--ink-dim); font-size: .92rem; }
+a.mini { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; align-items: center; padding: 14px 16px; text-decoration: none; color: inherit; background: rgba(42,30,43,.92); border: 1px dashed var(--line); border-radius: 14px; min-height: 64px; }
+a.mini:hover, a.mini:focus-visible { border-color: var(--signal); outline: none; }
+a.mini b { font-family: var(--font-display); font-size: 1.1rem; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+a.mini span.d { grid-column: 1; color: var(--ink-dim); font-size: .88rem; line-height: 1.35; }
+a.mini .arrow { grid-row: 1 / span 2; grid-column: 2; color: var(--signal); font-weight: 800; font-size: 1.2rem; }
+a.mini .demo-pill { font-size: .62rem; padding: 2px 8px; }
+@media (min-width: 640px) { .more { grid-template-columns: 1fr 1fr; } .more-h, .more-sub { grid-column: 1 / -1; } }
+.foot { color: var(--ink-faint); font-size: 0.82rem; max-width: 62ch; }
+@media (max-width: 480px) {
+  /* Compact cards so all three choices are visible on a phone without scrolling. The whole card is the tap target. */
+  body { padding-block: max(16px, env(safe-area-inset-top, 0px)) max(24px, env(safe-area-inset-bottom, 0px)); }
+  .wrap { gap: 16px; }
+  h1 { font-size: 2.1rem; margin: 2px 0 6px; }
+  .lede { font-size: 0.95rem; }
+  .choices { gap: 10px; }
+  a.choice { grid-template-columns: 1fr auto; padding: 14px 16px; min-height: 76px; }
+  .choice h2 { font-size: 1.3rem; }
+  .choice p { font-size: 0.88rem; line-height: 1.35; }
+  .choice .go { grid-row: 1 / span 2; font-size: 0; padding: 0; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; }
+  .choice .go::after { content: "\2192"; font-size: 1.25rem; }
+}
+@media (prefers-reduced-motion: reduce) { a.choice { transition: none; } }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <div class="eyebrow">Internal Medicine &middot; Clinical reasoning</div>
+    <h1>Project Zebra</h1>
+    <p class="lede">A rare-answer trivia game for residents and faculty. Name the diagnoses, drugs and mechanisms that most clinicians forget, and score by how rare each answer is.</p>
+  </header>
+
+  <nav class="choices" aria-label="Choose how to play">
+    <a class="choice" href="/solo">
+      <h2>Play Solo</h2>
+      <p>Practice on your own, at your own pace. Choose a difficulty and get instant feedback with a teaching point after every round.</p>
+      <span class="go">Start practicing</span>
+    </a>
+    <a class="choice primary" href="/host">
+      <h2>Host a Session</h2>
+      <p>Run a live session for your program. Show the host screen on a projector and let the room join from their phones.</p>
+      <span class="go">Open host screen</span>
+    </a>
+    <a class="choice" href="/play">
+      <h2>Join a Session</h2>
+      <p>Take part in a session someone else is hosting. Enter the room code or scan the QR code on the host screen.</p>
+      <span class="go">Join with a code</span>
+    </a>
+  </nav>
+
+  <section class="more" aria-label="More games, demo">
+    <div class="more-h"><h2>More games</h2><span class="demo-pill">DEMO</span></div>
+    <p class="more-sub">Try each one on your own. These are one-player demos of games you can host for a whole room.</p>
+    <a class="mini" href="/demo?game=confidence"><b>Confidence Bets <span class="demo-pill">DEMO</span></b><span class="d">Answer, then bet 1 to 5 chips on how sure you are.</span><span class="arrow" aria-hidden="true">&rarr;</span></a>
+    <a class="mini" href="/demo?game=connections"><b>Connections: Differentials <span class="demo-pill">DEMO</span></b><span class="d">Sort 16 findings into 4 hidden groups. Watch the decoys.</span><span class="arrow" aria-hidden="true">&rarr;</span></a>
+    <a class="mini" href="/demo?game=clueladder"><b>Clue Ladder <span class="demo-pill">DEMO</span></b><span class="d">Name the diagnosis from four clues. Earlier means more points.</span><span class="arrow" aria-hidden="true">&rarr;</span></a>
+    <a class="mini" href="/demo?game=ladder"><b>Confidence Ladder <span class="demo-pill">DEMO</span></b><span class="d">A Millionaire-style climb with lifelines and safe havens.</span><span class="arrow" aria-hidden="true">&rarr;</span></a>
+    <a class="mini" href="/demo?game=chopped"><b>Medical Chopped <span class="demo-pill">DEMO</span></b><span class="d">Build a differential as a case unfolds in stages.</span><span class="arrow" aria-hidden="true">&rarr;</span></a>
+    <a class="mini" href="/demo?game=debrief"><b>Debrief Round <span class="demo-pill">DEMO</span></b><span class="d">A short anonymous reflection on how we reasoned.</span><span class="arrow" aria-hidden="true">&rarr;</span></a>
+  </section>
+
+  <p class="foot">For education and practice only. Question content is AI-drafted and pending faculty review, so it is not a clinical reference.</p>
+</main>
+</body>
+</html>

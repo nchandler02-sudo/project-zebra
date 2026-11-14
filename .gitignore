@@ -1,0 +1,7 @@
+node_modules/
+*.log
+data/mock_db.json
+data/.bank_key
+data/solo.html
+data/*.before-*.json
+.env

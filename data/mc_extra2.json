@@ -1,0 +1,1093 @@
+{
+ "version": 1,
+ "review_status": "unreviewed",
+ "generator": "AI-drafted for faculty review",
+ "questions": [
+  {
+   "id": "mcy-asthma-ed",
+   "q": "A patient with an acute asthma exacerbation arrives in the ED wheezing and short of breath. Which bronchodilator should be given first?",
+   "correct": "Nebulized or inhaled albuterol",
+   "wrong": [
+    "IV magnesium sulfate",
+    "IV aminophylline",
+    "Oral montelukast"
+   ],
+   "why": "Short-acting beta agonists give the fastest bronchodilation and are the first step in an acute exacerbation.",
+   "tags": [
+    "pulm"
+   ],
+   "level": 1
+  },
+  {
+   "id": "mcy-co-furnace",
+   "q": "Several members of a household have headaches and nausea each winter morning; one has an SpO2 of 99%. What is the best immediate treatment for the suspected exposure?",
+   "correct": "100% oxygen by non-rebreather mask",
+   "wrong": [
+    "Methylene blue",
+    "Hydroxocobalamin",
+    "N-acetylcysteine"
+   ],
+   "why": "Carbon monoxide poisoning is treated with high-flow oxygen; standard pulse oximetry cannot tell carboxyhemoglobin from oxyhemoglobin.",
+   "tags": [
+    "tox"
+   ],
+   "level": 1
+  },
+  {
+   "id": "mcy-cystitis-nitro",
+   "q": "A healthy 25-year-old woman has dysuria and frequency with no fever or flank pain. Which is an appropriate first-line oral antibiotic regimen?",
+   "correct": "Nitrofurantoin for 5 days",
+   "wrong": [
+    "Levofloxacin for 14 days",
+    "IV ceftriaxone",
+    "Amoxicillin for 7 days"
+   ],
+   "why": "Nitrofurantoin for 5 days is a first-line option for uncomplicated cystitis; fluoroquinolones are reserved because of their adverse effects.",
+   "tags": [
+    "id"
+   ],
+   "level": 1,
+   "review_notes": "Guideline alternatives (TMP-SMX, fosfomycin) exist but are not offered as options."
+  },
+  {
+   "id": "mcy-hypoglycemia-oral",
+   "q": "A conscious, cooperative patient with type 1 diabetes has sweating, tremor and a glucose of 52 mg/dL. What is the best initial treatment?",
+   "correct": "15 to 20 g of oral fast-acting glucose",
+   "wrong": [
+    "Intramuscular glucagon",
+    "IV 50% dextrose bolus",
+    "A protein-rich snack"
+   ],
+   "why": "Alert patients who can swallow should get oral glucose, with the glucose rechecked in about 15 minutes.",
+   "tags": [
+    "endo"
+   ],
+   "level": 1
+  },
+  {
+   "id": "mcy-vte-prophylaxis",
+   "q": "A 70-year-old admitted with pneumonia is mostly bedbound and has no bleeding risk. Which is the best VTE prophylaxis?",
+   "correct": "Subcutaneous enoxaparin or unfractionated heparin",
+   "wrong": [
+    "Aspirin 81 mg daily",
+    "Warfarin with INR goal 2 to 3",
+    "No prophylaxis because the admission is not surgical"
+   ],
+   "why": "Acutely ill, immobile medical inpatients at low bleeding risk should receive pharmacologic prophylaxis with heparin or LMWH.",
+   "tags": [
+    "heme"
+   ],
+   "level": 1
+  },
+  {
+   "id": "mcy-afib-diltiazem",
+   "q": "A stable patient with atrial fibrillation at 140/min, normal ejection fraction and BP 128/80 needs rate control. Which IV drug is appropriate?",
+   "correct": "Diltiazem",
+   "wrong": [
+    "Adenosine",
+    "Atropine",
+    "Lidocaine"
+   ],
+   "why": "IV diltiazem or a beta blocker is first-line for rate control in stable AF without decompensated heart failure.",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 1
+  },
+  {
+   "id": "mcy-cdiff-soap",
+   "q": "Which hand hygiene method is preferred after caring for a patient with Clostridioides difficile infection?",
+   "correct": "Washing with soap and water",
+   "wrong": [
+    "Alcohol-based hand rub alone",
+    "Quaternary ammonium wipe applied to the hands",
+    "Alcohol rub, which is equivalent to soap and water for spores"
+   ],
+   "why": "Alcohol does not kill C. difficile spores, so mechanical removal with soap and water is preferred.",
+   "tags": [
+    "id"
+   ],
+   "level": 1
+  },
+  {
+   "id": "mcy-lung-screen",
+   "q": "Which patient qualifies for annual low-dose CT lung cancer screening under current USPSTF criteria?",
+   "correct": "A 62-year-old current smoker with 30 pack-years",
+   "wrong": [
+    "A 45-year-old who smoked 40 pack-years and quit 3 years ago",
+    "A 70-year-old never-smoker with a family history of lung cancer",
+    "A 58-year-old current smoker with 8 pack-years"
+   ],
+   "why": "Screening is for ages 50 to 80 with at least 20 pack-years who currently smoke or quit within 15 years.",
+   "tags": [
+    "preventive"
+   ],
+   "level": 2
+  },
+  {
+   "id": "mcy-pcv-65",
+   "q": "A healthy 66-year-old has never had a pneumococcal vaccine. Which approach is currently recommended?",
+   "correct": "One dose of PCV20 or PCV21",
+   "wrong": [
+    "Two doses of PPSV23 five years apart",
+    "No vaccine unless immunocompromised",
+    "Annual PCV13 boosters"
+   ],
+   "why": "Adults 50 and older with no prior pneumococcal conjugate vaccine need a single dose of PCV20 or PCV21 under current CDC guidance.",
+   "tags": [
+    "preventive"
+   ],
+   "level": 2,
+   "review_notes": "Age threshold and product list change; confirm against the current CDC schedule."
+  },
+  {
+   "id": "mcy-mammo-40",
+   "q": "For an average-risk woman, what mammography schedule does the 2024 USPSTF recommend?",
+   "correct": "Every 2 years from age 40 through 74",
+   "wrong": [
+    "Every year from age 35",
+    "Every 5 years from age 50 to 75",
+    "Every 2 years only from age 50 to 74"
+   ],
+   "why": "The 2024 USPSTF update moved the biennial screening start age from 50 to 40.",
+   "tags": [
+    "preventive"
+   ],
+   "level": 2
+  },
+  {
+   "id": "mcy-pericarditis-ecg",
+   "q": "A man has pleuritic chest pain that eases when he leans forward. ECG shows diffuse concave ST elevation with PR depression. What is the diagnosis?",
+   "correct": "Acute pericarditis",
+   "wrong": [
+    "Anterior STEMI",
+    "Pulmonary embolism",
+    "Aortic dissection"
+   ],
+   "why": "Diffuse ST elevation with PR depression and positional pain is classic for pericarditis.",
+   "tags": [
+    "ecg"
+   ],
+   "level": 2
+  },
+  {
+   "id": "mcy-nephrotic-def",
+   "q": "In adults, nephrotic-range proteinuria is defined as more than how much protein per 24 hours?",
+   "correct": "3.5 g",
+   "wrong": [
+    "150 mg",
+    "500 mg",
+    "1 g"
+   ],
+   "why": "Nephrotic syndrome pairs proteinuria above about 3.5 g/day with hypoalbuminemia, edema and hyperlipidemia.",
+   "tags": [
+    "nephrology"
+   ],
+   "level": 2
+  },
+  {
+   "id": "mcy-osler-nodes",
+   "q": "A patient with fever and a new murmur has painful, tender nodules on the finger pads. What are these lesions called?",
+   "correct": "Osler nodes",
+   "wrong": [
+    "Janeway lesions",
+    "Roth spots",
+    "Splinter hemorrhages"
+   ],
+   "why": "Osler nodes are tender immune-complex lesions in endocarditis; Janeway lesions are painless.",
+   "tags": [
+    "id"
+   ],
+   "level": 2
+  },
+  {
+   "id": "mcy-low-back-pain",
+   "q": "A 35-year-old has 3 days of low back pain after lifting, with a normal neurologic exam and no red-flag features. What is the best next step?",
+   "correct": "Reassurance, NSAIDs and staying active without imaging",
+   "wrong": [
+    "Lumbar spine MRI",
+    "Plain radiographs of the lumbar spine",
+    "One week of strict bed rest"
+   ],
+   "why": "Imaging in uncomplicated acute low back pain does not improve outcomes and is a standard high-value-care target.",
+   "tags": [
+    "highvalue"
+   ],
+   "level": 2
+  },
+  {
+   "id": "mcy-cushing-screen",
+   "q": "A patient with central obesity, violaceous striae and resistant hypertension is evaluated for Cushing syndrome. Which is an appropriate screening test?",
+   "correct": "1 mg overnight dexamethasone suppression test",
+   "wrong": [
+    "Single random serum cortisol",
+    "8 mg dexamethasone suppression test",
+    "Cosyntropin stimulation test"
+   ],
+   "why": "Overnight low-dose dexamethasone suppression, late-night salivary cortisol, or 24-hour urinary free cortisol are accepted screening tests.",
+   "tags": [
+    "endo"
+   ],
+   "level": 3
+  },
+  {
+   "id": "mcy-salicylate",
+   "q": "After an intentional overdose a patient has tinnitus, tachypnea, fever and confusion. ABG shows respiratory alkalosis with an anion gap metabolic acidosis. Which treatment is indicated?",
+   "correct": "IV sodium bicarbonate",
+   "wrong": [
+    "Fomepizole",
+    "N-acetylcysteine",
+    "Flumazenil"
+   ],
+   "why": "Bicarbonate alkalinizes serum and urine, trapping salicylate and enhancing its elimination.",
+   "tags": [
+    "tox"
+   ],
+   "level": 3
+  },
+  {
+   "id": "mcy-htn-urgency",
+   "q": "A patient has BP 195/110, no symptoms and no end-organ damage after missing his medications. What is the best management?",
+   "correct": "Resume or intensify oral therapy with outpatient follow-up",
+   "wrong": [
+    "IV nicardipine to lower mean pressure 25% in the first hour",
+    "Sublingual nifedipine",
+    "IV nitroprusside"
+   ],
+   "why": "Asymptomatic severe hypertension without target-organ injury does not need rapid parenteral lowering.",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 3
+  },
+  {
+   "id": "mcy-preop-lowrisk",
+   "q": "A 55-year-old who climbs two flights of stairs without symptoms is scheduled for elective laparoscopic cholecystectomy. What is the next step in cardiac risk assessment?",
+   "correct": "Proceed to surgery without further cardiac testing",
+   "wrong": [
+    "Pharmacologic stress echocardiogram",
+    "Coronary CT angiography",
+    "Start metoprolol on the morning of surgery"
+   ],
+   "why": "Low-risk surgery in a patient with good functional capacity needs no additional cardiac testing.",
+   "tags": [
+    "periop"
+   ],
+   "level": 3
+  },
+  {
+   "id": "mcy-graves-ab",
+   "q": "Which antibody directly causes the hyperthyroidism of Graves disease?",
+   "correct": "TSH receptor stimulating antibody",
+   "wrong": [
+    "Anti-thyroid peroxidase antibody",
+    "Anti-thyroglobulin antibody",
+    "Anti-21-hydroxylase antibody"
+   ],
+   "why": "Stimulating antibodies bind the TSH receptor and drive thyroid hormone production.",
+   "tags": [
+    "endo"
+   ],
+   "level": 3
+  },
+  {
+   "id": "mcy-af-cardioversion",
+   "q": "A stable patient has had atrial fibrillation for 4 days and is not anticoagulated. Elective cardioversion is planned. What is required?",
+   "correct": "Three weeks of therapeutic anticoagulation first, or TEE excluding left atrial thrombus",
+   "wrong": [
+    "Immediate cardioversion after aspirin",
+    "Cardioversion is safe if AF is under 7 days",
+    "Amiodarone alone with no anticoagulation"
+   ],
+   "why": "AF of unknown or over 48 hours duration carries stroke risk with cardioversion unless thrombus is excluded or anticoagulation is established.",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 3
+  },
+  {
+   "id": "mcy-gout-ckd",
+   "q": "A patient with eGFR 25 and prior GI bleeding has an acute gout flare of the knee. Which treatment is most appropriate?",
+   "correct": "A short course of oral prednisone",
+   "wrong": [
+    "Indomethacin",
+    "High-dose colchicine hourly until diarrhea",
+    "Allopurinol started at full dose"
+   ],
+   "why": "Glucocorticoids avoid the renal and GI risk of NSAIDs and the toxicity of colchicine in advanced CKD.",
+   "tags": [
+    "rheum"
+   ],
+   "level": 3
+  },
+  {
+   "id": "mcy-takotsubo",
+   "q": "A postmenopausal woman has chest pain and ST elevation after her husband's sudden death. Troponin is mildly elevated, angiography shows no obstructive disease, and the left ventricle is apically ballooned. What is the diagnosis?",
+   "correct": "Takotsubo cardiomyopathy",
+   "wrong": [
+    "Myocarditis",
+    "Spontaneous coronary artery dissection",
+    "Prinzmetal vasospastic angina"
+   ],
+   "why": "Apical ballooning after emotional stress with normal coronaries defines stress cardiomyopathy.",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 4
+  },
+  {
+   "id": "mcy-severe-as",
+   "q": "A 74-year-old with severe aortic stenosis has had exertional syncope. What is the best management?",
+   "correct": "Aortic valve replacement, surgical or transcatheter",
+   "wrong": [
+    "Start an ACE inhibitor and diuretic only",
+    "Balloon valvuloplasty as definitive therapy",
+    "Repeat echocardiogram in one year"
+   ],
+   "why": "Symptoms in severe AS mark a sharp rise in mortality and call for valve replacement.",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 4
+  },
+  {
+   "id": "mcy-aih",
+   "q": "A 28-year-old woman has ALT 900, elevated IgG, positive anti-smooth muscle antibody and negative viral serologies. What is the initial treatment?",
+   "correct": "Prednisone with or without azathioprine",
+   "wrong": [
+    "Ursodeoxycholic acid alone",
+    "Tenofovir",
+    "Referral for liver transplantation"
+   ],
+   "why": "Autoimmune hepatitis responds to immunosuppression with glucocorticoids and azathioprine.",
+   "tags": [
+    "gi"
+   ],
+   "level": 4
+  },
+  {
+   "id": "mcy-light-criteria",
+   "q": "Which pleural fluid finding meets Light criteria for an exudate?",
+   "correct": "Pleural fluid to serum protein ratio above 0.5",
+   "wrong": [
+    "Pleural to serum LDH ratio of 0.3",
+    "Pleural to serum protein ratio of 0.3",
+    "Pleural fluid LDH under one third of the serum upper limit of normal"
+   ],
+   "why": "A protein ratio above 0.5, an LDH ratio above 0.6, or fluid LDH above two thirds of the serum upper limit identifies an exudate.",
+   "tags": [
+    "pulm"
+   ],
+   "level": 4
+  },
+  {
+   "id": "mcy-ain-ppi",
+   "q": "Three weeks after starting omeprazole a patient has a rising creatinine, rash, pyuria and white cell casts. What is the best next step?",
+   "correct": "Stop the omeprazole",
+   "wrong": [
+    "Start cyclophosphamide",
+    "Continue omeprazole and increase IV fluids",
+    "Add an ACE inhibitor"
+   ],
+   "why": "Acute interstitial nephritis is managed by withdrawing the offending drug; steroids are considered if there is no recovery.",
+   "tags": [
+    "nephrology"
+   ],
+   "level": 4
+  },
+  {
+   "id": "mcy-masld-fib4",
+   "q": "A patient with obesity and diabetes has steatotic liver disease on ultrasound. Which is the best first noninvasive step to assess for advanced fibrosis?",
+   "correct": "Calculate the FIB-4 index",
+   "wrong": [
+    "Repeat the ALT in 6 months",
+    "Liver biopsy",
+    "Grade steatosis on ultrasound"
+   ],
+   "why": "FIB-4 uses age, AST, ALT and platelets and is the recommended initial fibrosis screen, followed by elastography if indeterminate.",
+   "tags": [
+    "gi"
+   ],
+   "level": 4
+  },
+  {
+   "id": "mcy-eoe-biopsy",
+   "q": "A young man with atopy has solid-food dysphagia and a prior food impaction. EGD shows rings and linear furrows. What confirms the diagnosis?",
+   "correct": "Esophageal biopsy showing at least 15 eosinophils per high-power field",
+   "wrong": [
+    "Elevated serum IgE",
+    "Barium swallow",
+    "Esophageal manometry"
+   ],
+   "why": "Eosinophilic esophagitis is a clinicopathologic diagnosis that requires esophageal eosinophilia on biopsy.",
+   "tags": [
+    "gi"
+   ],
+   "level": 4
+  },
+  {
+   "id": "mcy-papillary-rupture",
+   "q": "Four days after an inferior MI a patient has sudden pulmonary edema and hypotension, with a short, soft systolic murmur. What is the most likely cause?",
+   "correct": "Papillary muscle rupture with acute mitral regurgitation",
+   "wrong": [
+    "Dressler syndrome",
+    "Free wall rupture with tamponade",
+    "Acute aortic dissection"
+   ],
+   "why": "The posteromedial papillary muscle has a single blood supply and ruptures a few days after inferior infarction; the murmur can be soft because pressures equalize quickly.",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 5
+  },
+  {
+   "id": "mcy-myeloma-workup",
+   "q": "A 65-year-old has back pain, anemia, creatinine 3.0 mg/dL and calcium 12 mg/dL. Which tests are the best initial screen for plasma cell disease?",
+   "correct": "SPEP with immunofixation and serum free light chains",
+   "wrong": [
+    "Bone scintigraphy alone",
+    "Urine dipstick for protein",
+    "ANA with anti-dsDNA"
+   ],
+   "why": "A dipstick detects albumin, not light chains, so serum protein electrophoresis, immunofixation and free light chains are used.",
+   "tags": [
+    "heme"
+   ],
+   "level": 5
+  },
+  {
+   "id": "mcy-egpa",
+   "q": "An adult with late-onset asthma, eosinophils 25%, mononeuritis multiplex and a positive p-ANCA most likely has which vasculitis?",
+   "correct": "Eosinophilic granulomatosis with polyangiitis",
+   "wrong": [
+    "Granulomatosis with polyangiitis",
+    "Microscopic polyangiitis",
+    "Polyarteritis nodosa"
+   ],
+   "why": "Asthma plus marked eosinophilia and neuropathy defines EGPA.",
+   "tags": [
+    "rheum"
+   ],
+   "level": 5
+  },
+  {
+   "id": "mcy-a1at",
+   "q": "A 40-year-old nonsmoker has basilar-predominant panlobular emphysema and mildly elevated liver enzymes. Which test is most appropriate?",
+   "correct": "Serum alpha-1 antitrypsin level",
+   "wrong": [
+    "Sweat chloride test",
+    "Serum ACE level",
+    "Surgical lung biopsy"
+   ],
+   "why": "Early-onset basal emphysema without smoking suggests alpha-1 antitrypsin deficiency.",
+   "tags": [
+    "pulm"
+   ],
+   "level": 5
+  },
+  {
+   "id": "mcy-lupus-activity",
+   "q": "Which laboratory pattern best tracks active lupus nephritis?",
+   "correct": "Rising anti-dsDNA with falling C3 and C4",
+   "wrong": [
+    "High ANA titer",
+    "Positive anti-Smith antibody",
+    "Positive anti-Ro antibody"
+   ],
+   "why": "Anti-dsDNA and complement consumption correlate with renal disease activity; ANA and anti-Smith are diagnostic, not activity markers.",
+   "tags": [
+    "rheum"
+   ],
+   "level": 5
+  },
+  {
+   "id": "mcy-hypomg-hypok",
+   "q": "A patient on a PPI and a loop diuretic has persistent hypokalemia despite potassium repletion. What is the best next step?",
+   "correct": "Check and replace magnesium",
+   "wrong": [
+    "Double the oral potassium chloride indefinitely",
+    "Order a plasma aldosterone-renin ratio",
+    "Give sodium bicarbonate"
+   ],
+   "why": "Hypomagnesemia impairs renal potassium handling, so hypokalemia stays refractory until magnesium is replaced.",
+   "tags": [
+    "nephrology"
+   ],
+   "level": 5
+  },
+  {
+   "id": "mcy-esbl",
+   "q": "A septic patient has pyelonephritis with ESBL-producing E. coli bacteremia. Which antibiotic is preferred?",
+   "correct": "Meropenem",
+   "wrong": [
+    "Ceftriaxone",
+    "Piperacillin-tazobactam",
+    "Cefepime"
+   ],
+   "why": "Carbapenems are the treatment of choice for serious ESBL infections; piperacillin-tazobactam was inferior for bacteremia.",
+   "tags": [
+    "id"
+   ],
+   "level": 5
+  },
+  {
+   "id": "mcy-brugada",
+   "q": "A man survives cardiac arrest, and ECG shows coved ST elevation with T-wave inversion in V1 and V2. Which therapy is indicated?",
+   "correct": "Implantable cardioverter-defibrillator",
+   "wrong": [
+    "Amiodarone alone",
+    "Propranolol",
+    "Catheter ablation of the AV node"
+   ],
+   "why": "Brugada syndrome with a prior arrest requires an ICD; drugs do not replace it.",
+   "tags": [
+    "ecg"
+   ],
+   "level": 6
+  },
+  {
+   "id": "mcy-lead",
+   "q": "A battery recycler has abdominal colic, anemia with basophilic stippling and wrist drop. Which toxin is most likely responsible?",
+   "correct": "Lead",
+   "wrong": [
+    "Arsenic",
+    "Mercury",
+    "Thallium"
+   ],
+   "why": "Lead causes stippled anemia, colic and motor neuropathy.",
+   "tags": [
+    "tox"
+   ],
+   "level": 6
+  },
+  {
+   "id": "mcy-organophosphate",
+   "q": "A farmer has salivation, miosis, bradycardia, wheezing and fasciculations. Which antidotes should be given?",
+   "correct": "Atropine plus pralidoxime",
+   "wrong": [
+    "Physostigmine",
+    "Neostigmine",
+    "N-acetylcysteine"
+   ],
+   "why": "Atropine reverses muscarinic effects and pralidoxime reactivates acetylcholinesterase.",
+   "tags": [
+    "tox"
+   ],
+   "level": 6
+  },
+  {
+   "id": "mcy-cyanide-nitroprusside",
+   "q": "After days of high-dose nitroprusside in renal failure, a patient has confusion and severe lactic acidosis. What is the antidote?",
+   "correct": "Hydroxocobalamin",
+   "wrong": [
+    "Methylene blue",
+    "Fomepizole",
+    "Pralidoxime"
+   ],
+   "why": "Nitroprusside releases cyanide, which hydroxocobalamin binds to form cyanocobalamin.",
+   "tags": [
+    "tox"
+   ],
+   "level": 6
+  },
+  {
+   "id": "mcy-cll-observe",
+   "q": "A 70-year-old has lymphocytosis of 40,000/uL with smudge cells, normal hemoglobin and platelets, and no symptoms or adenopathy. What is the management?",
+   "correct": "Observation",
+   "wrong": [
+    "Fludarabine",
+    "Rituximab",
+    "Ibrutinib now"
+   ],
+   "why": "Early asymptomatic CLL is watched until symptoms or cytopenias develop; early treatment does not improve survival.",
+   "tags": [
+    "oncology"
+   ],
+   "level": 6
+  },
+  {
+   "id": "mcy-toxo",
+   "q": "A patient with CD4 count 40, not on prophylaxis, has fever, headache and multiple ring-enhancing brain lesions; toxoplasma IgG is positive. What is the initial management?",
+   "correct": "Pyrimethamine and sulfadiazine with leucovorin",
+   "wrong": [
+    "Immediate stereotactic brain biopsy",
+    "Whole-brain radiotherapy",
+    "Fluconazole"
+   ],
+   "why": "Empiric anti-toxoplasma therapy is given first, with biopsy reserved for nonresponse after about 2 weeks.",
+   "tags": [
+    "id"
+   ],
+   "level": 6
+  },
+  {
+   "id": "mcy-pv-hct",
+   "q": "A patient with JAK2 V617F, hematocrit 58% and itching after bathing has polycythemia vera. Which therapy is standard?",
+   "correct": "Phlebotomy to hematocrit below 45% plus low-dose aspirin",
+   "wrong": [
+    "Imatinib",
+    "Hydroxyurea to normalize the white count first",
+    "Erythropoietin"
+   ],
+   "why": "Keeping the hematocrit under 45% reduces thrombotic events in polycythemia vera.",
+   "tags": [
+    "heme"
+   ],
+   "level": 6
+  },
+  {
+   "id": "mcy-iga-nephropathy",
+   "q": "A young man has gross hematuria 1 to 2 days after each upper respiratory infection. What would renal biopsy most likely show?",
+   "correct": "Mesangial IgA deposits",
+   "wrong": [
+    "Linear IgG along the basement membrane",
+    "Subepithelial humps with low C3",
+    "Spike and dome basement membrane changes"
+   ],
+   "why": "Synpharyngitic hematuria is typical of IgA nephropathy.",
+   "tags": [
+    "nephrology"
+   ],
+   "level": 6
+  },
+  {
+   "id": "mcy-dress",
+   "q": "Three weeks after starting allopurinol a patient has fever, diffuse rash, facial edema, eosinophilia and ALT 300. What is the best management?",
+   "correct": "Stop the drug and start systemic glucocorticoids",
+   "wrong": [
+    "Reduce the dose and observe",
+    "Continue allopurinol and add an antihistamine",
+    "Rechallenge after the rash resolves"
+   ],
+   "why": "This is DRESS syndrome; the culprit must be stopped and steroids are usually given for organ involvement.",
+   "tags": [
+    "tox"
+   ],
+   "level": 7
+  },
+  {
+   "id": "mcy-ra-pleural",
+   "q": "A man with seropositive RA and nodules has an exudative effusion with glucose 10 mg/dL, pH 7.1 and very high LDH. What is the most likely cause?",
+   "correct": "Rheumatoid pleural effusion",
+   "wrong": [
+    "Hepatic hydrothorax",
+    "Heart failure transudate",
+    "Chylothorax"
+   ],
+   "why": "Rheumatoid effusions are classically very low in glucose and pH.",
+   "tags": [
+    "rheum"
+   ],
+   "level": 7,
+   "review_notes": "Tuberculosis, empyema and malignancy can also have low glucose; the stem is built around RA."
+  },
+  {
+   "id": "mcy-thyroid-storm",
+   "q": "Which treatment sequence is correct for thyroid storm?",
+   "correct": "A thionamide first, then iodine at least an hour later, with a beta blocker and hydrocortisone",
+   "wrong": [
+    "Iodine solution first, thionamide an hour later",
+    "Radioactive iodine ablation immediately",
+    "A beta blocker alone"
+   ],
+   "why": "Iodine given before a thionamide can supply substrate for more hormone synthesis.",
+   "tags": [
+    "endo"
+   ],
+   "level": 7
+  },
+  {
+   "id": "mcy-ogilvie",
+   "q": "A hospitalized patient has cecal diameter 11 cm from acute colonic pseudo-obstruction, no peritonitis, and has failed supportive care. Which drug is indicated?",
+   "correct": "IV neostigmine",
+   "wrong": [
+    "Metoclopramide",
+    "Bisacodyl",
+    "Oral polyethylene glycol"
+   ],
+   "why": "Neostigmine decompresses the colon in refractory pseudo-obstruction but requires cardiac monitoring because of bradycardia.",
+   "tags": [
+    "gi"
+   ],
+   "level": 7,
+   "review_notes": "Check contraindications (bradycardia, bronchospasm, mechanical obstruction)."
+  },
+  {
+   "id": "mcy-malignant-hyperthermia",
+   "q": "After succinylcholine and sevoflurane, a patient has rigidity, temperature 40.5 C and rising end-tidal CO2. Which drug is specific?",
+   "correct": "Dantrolene",
+   "wrong": [
+    "Bromocriptine",
+    "Cyproheptadine",
+    "Acetaminophen"
+   ],
+   "why": "Dantrolene blocks ryanodine receptor calcium release in malignant hyperthermia.",
+   "tags": [
+    "periop"
+   ],
+   "level": 7
+  },
+  {
+   "id": "mcy-hypona-seizure",
+   "q": "A patient with sodium 108 mEq/L has a seizure. What is the initial treatment?",
+   "correct": "A 100 to 150 mL bolus of 3% saline",
+   "wrong": [
+    "Fluid restriction alone",
+    "Tolvaptan",
+    "One liter of isotonic saline"
+   ],
+   "why": "Symptomatic severe hyponatremia needs a hypertonic saline bolus to raise sodium a few points quickly.",
+   "tags": [
+    "nephrology"
+   ],
+   "level": 7
+  },
+  {
+   "id": "mcy-crypto-induction",
+   "q": "A patient with AIDS has headache, CSF opening pressure 38 cm H2O and a positive cryptococcal antigen. Which regimen is preferred for induction?",
+   "correct": "Liposomal amphotericin B plus flucytosine, with therapeutic lumbar punctures",
+   "wrong": [
+    "Fluconazole alone",
+    "Caspofungin",
+    "Acetazolamide for the pressure"
+   ],
+   "why": "Induction uses amphotericin plus flucytosine; elevated pressure is managed with serial lumbar punctures.",
+   "tags": [
+    "id"
+   ],
+   "level": 7
+  },
+  {
+   "id": "mcy-lynch-scope",
+   "q": "What is the recommended colonoscopy surveillance for a confirmed Lynch syndrome mutation carrier?",
+   "correct": "Every 1 to 2 years starting at age 20 to 25",
+   "wrong": [
+    "Every 10 years starting at 50",
+    "Every 5 years starting at 45",
+    "Every 3 years starting at 40"
+   ],
+   "why": "Lynch syndrome carries a high risk of early, rapidly progressive colorectal cancer and needs intensive surveillance.",
+   "tags": [
+    "preventive"
+   ],
+   "level": 7
+  },
+  {
+   "id": "mcy-pap",
+   "q": "A patient has progressive dyspnea, crazy-paving on CT and milky bronchoalveolar lavage fluid. What is the treatment?",
+   "correct": "Whole-lung lavage",
+   "wrong": [
+    "High-dose prednisone",
+    "Cyclophosphamide",
+    "Lung transplantation as first-line"
+   ],
+   "why": "Pulmonary alveolar proteinosis is treated by lavage of the surfactant-filled alveoli.",
+   "tags": [
+    "pulm"
+   ],
+   "level": 8
+  },
+  {
+   "id": "mcy-aip-igg4",
+   "q": "An older man has obstructive jaundice, a diffusely enlarged sausage-shaped pancreas, elevated IgG4 and biliary strictures. What is the treatment?",
+   "correct": "Glucocorticoids",
+   "wrong": [
+    "Pancreaticoduodenectomy",
+    "Gemcitabine",
+    "Ursodiol alone"
+   ],
+   "why": "IgG4-related autoimmune pancreatitis responds quickly to steroids.",
+   "tags": [
+    "gi"
+   ],
+   "level": 8
+  },
+  {
+   "id": "mcy-hbv-rituximab",
+   "q": "An HBsAg-negative, anti-HBc-positive patient will start rituximab-based chemotherapy. What is the best strategy?",
+   "correct": "Start entecavir or tenofovir prophylaxis",
+   "wrong": [
+    "Monitor ALT only",
+    "Hepatitis B vaccine booster",
+    "Peginterferon"
+   ],
+   "why": "Rituximab carries a high risk of HBV reactivation, so antiviral prophylaxis is recommended.",
+   "tags": [
+    "gi"
+   ],
+   "level": 8
+  },
+  {
+   "id": "mcy-myasthenic-crisis",
+   "q": "A patient with myasthenia gravis develops respiratory failure. Which therapy is appropriate?",
+   "correct": "IVIG or plasma exchange",
+   "wrong": [
+    "Increase pyridostigmine alone",
+    "High-dose prednisone alone",
+    "Immediate thymectomy"
+   ],
+   "why": "Plasma exchange or IVIG treats crisis; steroids alone may transiently worsen weakness.",
+   "tags": [
+    "neurology"
+   ],
+   "level": 8
+  },
+  {
+   "id": "mcy-men1",
+   "q": "Which combination of tumors typifies MEN type 1?",
+   "correct": "Parathyroid, pituitary and pancreatic islet tumors",
+   "wrong": [
+    "Parathyroid, medullary thyroid and pheochromocytoma",
+    "Medullary thyroid, mucosal neuromas and marfanoid habitus",
+    "Pheochromocytoma, hemangioblastoma and renal cell carcinoma"
+   ],
+   "why": "MEN1 is the three Ps; the others are MEN2A, MEN2B and von Hippel-Lindau disease.",
+   "tags": [
+    "endo"
+   ],
+   "level": 8
+  },
+  {
+   "id": "mcy-cteph",
+   "q": "A patient has persistent dyspnea 6 months after pulmonary embolism, and echocardiography shows a high RV systolic pressure. Which is the best screening test for the likely diagnosis?",
+   "correct": "Ventilation-perfusion scan",
+   "wrong": [
+    "D-dimer",
+    "Pulmonary function tests alone",
+    "Exercise treadmill test"
+   ],
+   "why": "A normal V/Q scan effectively rules out chronic thromboembolic pulmonary hypertension.",
+   "tags": [
+    "pulm"
+   ],
+   "level": 8
+  },
+  {
+   "id": "mcy-tca-overdose",
+   "q": "A patient with tricyclic antidepressant overdose has QRS 140 ms and hypotension. What is the treatment?",
+   "correct": "IV sodium bicarbonate bolus",
+   "wrong": [
+    "Physostigmine",
+    "Flumazenil",
+    "Procainamide"
+   ],
+   "why": "Bicarbonate overcomes sodium channel blockade and narrows the QRS.",
+   "tags": [
+    "tox"
+   ],
+   "level": 8
+  },
+  {
+   "id": "mcy-ipss",
+   "q": "A patient has ACTH-dependent Cushing syndrome, and pituitary MRI shows no lesion larger than 6 mm. Which test best distinguishes a pituitary from an ectopic source?",
+   "correct": "Inferior petrosal sinus sampling with CRH stimulation",
+   "wrong": [
+    "Repeat 1 mg dexamethasone suppression test",
+    "CT of the adrenal glands",
+    "24-hour urinary free cortisol"
+   ],
+   "why": "A central-to-peripheral ACTH gradient localizes the source to the pituitary.",
+   "tags": [
+    "endo"
+   ],
+   "level": 9
+  },
+  {
+   "id": "mcy-nocardia",
+   "q": "A prednisone-treated transplant recipient has pulmonary nodules, and culture grows weakly acid-fast, branching gram-positive filaments. What is the preferred first-line therapy?",
+   "correct": "Trimethoprim-sulfamethoxazole",
+   "wrong": [
+    "Amphotericin B",
+    "Isoniazid and rifampin",
+    "Vancomycin"
+   ],
+   "why": "TMP-SMX is the backbone of Nocardia treatment; brain imaging is also needed to exclude CNS disease.",
+   "tags": [
+    "id"
+   ],
+   "level": 9
+  },
+  {
+   "id": "mcy-scleroderma-renal",
+   "q": "A patient with diffuse systemic sclerosis on prednisone 30 mg daily has BP 190/110, rising creatinine and microangiopathic hemolysis. What is the treatment?",
+   "correct": "An ACE inhibitor such as captopril",
+   "wrong": [
+    "Pulse methylprednisolone",
+    "A beta blocker",
+    "Cyclophosphamide"
+   ],
+   "why": "ACE inhibitors reduce scleroderma renal crisis mortality; high-dose steroids are a risk factor.",
+   "tags": [
+    "rheum"
+   ],
+   "level": 9
+  },
+  {
+   "id": "mcy-mala",
+   "q": "A patient has metformin overdose with pH 6.9, lactate 22 mmol/L, AKI and refractory shock. What is the best therapy?",
+   "correct": "Hemodialysis",
+   "wrong": [
+    "IV sodium bicarbonate alone",
+    "Fomepizole",
+    "Methylene blue"
+   ],
+   "why": "Dialysis clears metformin and corrects the acidosis in severe metformin-associated lactic acidosis.",
+   "tags": [
+    "tox"
+   ],
+   "level": 9
+  },
+  {
+   "id": "mcy-cold-agglutinin",
+   "q": "A patient has acrocyanosis and hemolysis worse in the cold; DAT is positive for C3 only with IgM cold agglutinins. Which treatment is favored over glucocorticoids?",
+   "correct": "Rituximab",
+   "wrong": [
+    "Prolonged high-dose prednisone",
+    "Splenectomy",
+    "IVIG"
+   ],
+   "why": "Cold agglutinin disease responds poorly to steroids and splenectomy because hemolysis occurs in the liver.",
+   "tags": [
+    "heme"
+   ],
+   "level": 9
+  },
+  {
+   "id": "mcy-anti-nmdar",
+   "q": "A young woman has psychosis, seizures, orofacial dyskinesias, autonomic instability and CSF lymphocytosis. Which tumor should be sought?",
+   "correct": "Ovarian teratoma on pelvic imaging",
+   "wrong": [
+    "Small-cell lung carcinoma on chest CT",
+    "Breast cancer on mammography",
+    "Renal cell carcinoma on ultrasound"
+   ],
+   "why": "Anti-NMDA receptor encephalitis is associated with ovarian teratoma in young women.",
+   "tags": [
+    "neurology"
+   ],
+   "level": 9
+  },
+  {
+   "id": "mcy-tenofovir-fanconi",
+   "q": "An HIV patient on tenofovir disoproxil has hypophosphatemia, glucosuria with normal serum glucose and a low bicarbonate. What is the diagnosis?",
+   "correct": "Proximal tubulopathy (Fanconi syndrome)",
+   "wrong": [
+    "Distal renal tubular acidosis",
+    "Nephrogenic diabetes insipidus",
+    "Diabetic nephropathy"
+   ],
+   "why": "Tenofovir injures proximal tubule cells, causing global proximal reabsorption defects.",
+   "tags": [
+    "nephrology"
+   ],
+   "level": 9
+  },
+  {
+   "id": "mcy-anti-mda5",
+   "q": "A patient has amyopathic dermatomyositis with painful finger ulcers and rapidly progressive interstitial lung disease. Which antibody is most likely?",
+   "correct": "Anti-MDA5",
+   "wrong": [
+    "Anti-Jo-1",
+    "Anti-Mi-2",
+    "Anti-TIF1-gamma"
+   ],
+   "why": "Anti-MDA5 identifies a form with skin ulcers and often fulminant ILD; TIF1-gamma signals malignancy.",
+   "tags": [
+    "rheum"
+   ],
+   "level": 10
+  },
+  {
+   "id": "mcy-calciphylaxis",
+   "q": "A dialysis patient has painful violaceous plaques with necrotic ulcers on the thighs, consistent with calciphylaxis. Which medication should be avoided?",
+   "correct": "Warfarin",
+   "wrong": [
+    "Sodium thiosulfate",
+    "Sevelamer",
+    "Apixaban"
+   ],
+   "why": "Warfarin is a recognized trigger; it should be stopped.",
+   "tags": [
+    "nephrology"
+   ],
+   "level": 10,
+   "review_notes": "Evidence for treatment is limited; the question asks only about the trigger."
+  },
+  {
+   "id": "mcy-heyde",
+   "q": "An elderly patient with severe aortic stenosis has recurrent GI bleeding from angiodysplasia and loss of high-molecular-weight von Willebrand multimers. Which intervention can resolve the bleeding?",
+   "correct": "Aortic valve replacement",
+   "wrong": [
+    "Long-term desmopressin",
+    "Iron therapy alone",
+    "Repeated endoscopic cautery alone"
+   ],
+   "why": "Shear stress from the stenotic valve degrades vWF, and valve replacement corrects the acquired defect.",
+   "tags": [
+    "cardiology"
+   ],
+   "level": 10
+  },
+  {
+   "id": "mcy-pct",
+   "q": "A man with chronic hepatitis C and heavy alcohol use has fragile blisters on the dorsal hands and facial hypertrichosis. Which test is most diagnostic?",
+   "correct": "Urine or plasma porphyrin profile showing elevated uroporphyrin",
+   "wrong": [
+    "Urine porphobilinogen only",
+    "Skin biopsy for linear IgA",
+    "Anti-desmoglein antibodies"
+   ],
+   "why": "Porphyria cutanea tarda raises uroporphyrins, while porphobilinogen is normal.",
+   "tags": [
+    "derm"
+   ],
+   "level": 10,
+   "review_notes": "Check that the 'porphobilinogen only' distractor is not seen as correct."
+  },
+  {
+   "id": "mcy-sweet",
+   "q": "A patient with AML has fever and tender erythematous plaques; biopsy shows dense neutrophilic infiltrate without vasculitis. What is the diagnosis?",
+   "correct": "Sweet syndrome",
+   "wrong": [
+    "Erythema nodosum",
+    "Pyoderma gangrenosum",
+    "Bacterial cellulitis"
+   ],
+   "why": "Acute febrile neutrophilic dermatosis is associated with hematologic malignancy.",
+   "tags": [
+    "heme"
+   ],
+   "level": 10
+  },
+  {
+   "id": "mcy-lemierre",
+   "q": "A young adult has sore throat followed by fever, neck pain and septic pulmonary emboli. Which organism is most likely?",
+   "correct": "Fusobacterium necrophorum",
+   "wrong": [
+    "Group A Streptococcus",
+    "Staphylococcus aureus",
+    "Haemophilus influenzae"
+   ],
+   "why": "Lemierre syndrome is septic thrombophlebitis of the internal jugular vein, classically caused by Fusobacterium.",
+   "tags": [
+    "id"
+   ],
+   "level": 10
+  },
+  {
+   "id": "mcy-carcinoid-crisis",
+   "q": "During surgery a patient with a carcinoid tumor develops severe flushing, bronchospasm and hypotension. Which drug is the treatment of choice?",
+   "correct": "IV octreotide",
+   "wrong": [
+    "Epinephrine",
+    "Dopamine",
+    "Diphenhydramine alone"
+   ],
+   "why": "Catecholamines can worsen carcinoid crisis, whereas octreotide blocks mediator release.",
+   "tags": [
+    "oncology"
+   ],
+   "level": 10
+  }
+ ]
+}

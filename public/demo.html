@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+<meta name="theme-color" content="#150f18">
+<meta name="text-scale" content="scale">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/icons/icon-180.png">
+<title>Project Zebra Demo</title>
+<style>
+/* One-player practice run of a multiplayer game. The page quietly runs its own host, so nobody else is needed. */
+:root {
+  --ground: #150f18; --surface: #2a1e2b; --surface-2: #3a2a3a; --line: #5a4458; --ink: #fbf1de; --ink-dim: #d8c6a6; --ink-faint: #a8957c;
+  --signal: #ffb020; --signal-ink: #1b1200; --danger: #ff8a8a; --ok: #5fd3a5;
+  --t-student: #b9a2ee; --t-intern: #7cc4ee; --t-senior: #86d98a; --t-fellow: #f2e05a; --t-attending: #f58ad4; --t-bazo: #ff3b5c; --t-trap: #ff8a3d; --t-none: #a8978a;
+  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px; --sp-5: 24px; --sp-6: 32px;
+  --fs-xs: 0.75rem; --fs-sm: 0.875rem; --fs-md: 1rem; --fs-lg: 1.25rem;
+  --font-ui: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  background: linear-gradient(180deg, rgba(21,15,24,.84), rgba(21,15,24,.94)), url("/zebra-field-phone.jpg") center / cover fixed, var(--ground);
+  color: var(--ink); font-family: var(--font-ui); line-height: 1.45; overscroll-behavior-y: none;
+  display: flex; flex-direction: column; min-height: 100dvh;
+}
+button, input { font: inherit; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 3px solid var(--signal); outline-offset: 2px; }
+/* The header scrolls away with the page so it never covers the answer buttons on a short phone screen. */
+header.bar {
+  display: flex; align-items: center; gap: 8px 10px; flex-wrap: wrap;
+  padding: max(10px, env(safe-area-inset-top, 0px)) max(14px, env(safe-area-inset-right, 0px)) 10px max(14px, env(safe-area-inset-left, 0px));
+  background: rgba(21,15,24,.96); border-bottom: 1px solid var(--line);
+}
+.hacts { display: flex; gap: 8px; align-items: center; margin-left: auto; }
+.btn.sm { min-height: 40px; padding: 8px 14px; font-size: .9rem; border-radius: 10px; }
+.demo-pill { background: var(--signal); color: var(--signal-ink); font-weight: 800; letter-spacing: .14em; padding: 4px 12px; border-radius: 999px; font-size: .8rem; }
+.title { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; flex: 1; min-width: 0; }
+.score { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--ink-dim); font-size: .9rem; }
+.note { width: 100%; margin: 0; color: var(--ink-faint); font-size: .78rem; }
+main { flex: 1; min-height: 0; width: 100%; max-width: 520px; margin: 0 auto; padding: var(--sp-4) max(var(--sp-4), env(safe-area-inset-right, 0px)) var(--sp-4) max(var(--sp-4), env(safe-area-inset-left, 0px)); display: flex; flex-direction: column; }
+#actRoot { display: flex; flex-direction: column; gap: var(--sp-4); flex: 1; min-height: 0; }
+.status { margin: auto; text-align: center; color: var(--ink-dim); padding: 40px 0; }
+footer.dock {
+  position: sticky; bottom: 0; z-index: 20; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;
+  padding: 10px max(14px, env(safe-area-inset-right, 0px)) max(12px, env(safe-area-inset-bottom, 0px)) max(14px, env(safe-area-inset-left, 0px));
+  background: rgba(21,15,24,.96); border-top: 1px solid var(--line);
+}
+.btn { cursor: pointer; border: 0; border-radius: 12px; padding: 12px 20px; min-height: 48px; font-weight: 700; background: var(--signal); color: var(--signal-ink); text-decoration: none; display: inline-flex; align-items: center; }
+.btn.ghost { background: transparent; color: var(--ink); border: 2px solid var(--line); }
+.done {
+  display: none; margin: 0 auto; max-width: 520px; width: 100%; padding: 16px; border-radius: 14px; background: var(--surface); border: 1px solid var(--signal); text-align: center;
+}
+.done.on { display: block; }
+.done h2 { margin: 0 0 6px; font-family: var(--font-display); }
+.done p { margin: 0 0 12px; color: var(--ink-dim); }
+#actRoot button, #actRoot input { touch-action: manipulation; }
+</style>
+</head>
+<body>
+<header class="bar">
+  <span class="demo-pill" aria-label="Demo">DEMO</span>
+  <div class="title" id="title">Project Zebra</div>
+  <div class="score" id="score"></div>
+  <p class="note">One-player demo. A real session uses a projector screen and everyone's phone.</p>
+  <div class="hacts" id="hacts">
+    <button class="btn sm" id="skip" type="button" hidden>Next &rsaquo;</button>
+    <a class="btn sm ghost" href="/">Exit</a>
+  </div>
+</header>
+<main>
+  <div id="status" class="status">Starting your demo&hellip;</div>
+  <div id="actRoot"></div>
+  <div id="done" class="done" role="status">
+    <h2>Demo complete</h2>
+    <p>That was a one-player demo. Run it with your residents from the Host screen.</p>
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+      <button class="btn" id="again" type="button">Play the demo again</button>
+      <a class="btn ghost" href="/">All games</a>
+    </div>
+  </div>
+</main>
+<script src="/activities/core.js"></script>
+<script>
+(function () {
+  'use strict';
+  var GAMES = {
+    confidence: { title: 'Confidence Bets', ghosts: 0 },
+    connections: { title: 'Connections: Differentials', ghosts: 0 },
+    clueladder: { title: 'Clue Ladder', ghosts: 0 },
+    ladder: { title: 'Confidence Ladder', ghosts: 0 },
+    chopped: { title: 'Medical Chopped', ghosts: 1 },
+    debrief: { title: 'Debrief Round', ghosts: 0 }
+  };
+  var game = '';
+  try { game = new URLSearchParams(location.search).get('game') || ''; } catch (e) { /* ignore */ }
+  if (!GAMES[game]) { location.replace('/'); return; }
+  var $ = function (id) { return document.getElementById(id); };
+  $('title').textContent = GAMES[game].title + ' (demo)';
+  document.title = GAMES[game].title + ' (demo) - Project Zebra';
+
+  var url = (location.protocol === 'https:' ? 'wss://' : 'ws://') + location.host + '/ws';
+  var host = null, me = null, ghosts = [], code = '', started = false, finished = false;
+  var hs = null, lastStage = '', stageAt = Date.now(), lastAct = null, lastP = null, ghostWelcome = 0, timers = [], endTimer = 0;
+
+  function send(ws, o) { try { if (ws && ws.readyState === 1) ws.send(JSON.stringify(o)); } catch (e) { /* ignore */ } }
+  function status(t) { var s = $('status'); s.textContent = t; s.style.display = t ? '' : 'none'; }
+  function lost(msg) {
+    if (finished) return;
+    status(msg || 'The connection dropped.');
+    var b = document.createElement('button'); b.className = 'btn'; b.type = 'button'; b.textContent = 'Try again';
+    b.onclick = function () { location.reload(); };
+    $('status').appendChild(document.createElement('br')); $('status').appendChild(b);
+  }
+
+  function startActivity() {
+    if (started) return;
+    started = true;
+    send(host, { t: 'start_activity', type: game });
+    // helper players only exist to satisfy a minimum player count; they leave as soon as the game starts
+    setTimeout(function () { ghosts.forEach(function (g) { try { g.close(); } catch (e) { /* ignore */ } }); ghosts = []; }, 1200);
+  }
+
+  function connectHost() {
+    host = new WebSocket(url);
+    host.onopen = function () { send(host, { t: 'host_create' }); };
+    host.onclose = function () { lost('The demo server dropped the connection.'); };
+    host.onmessage = function (ev) {
+      var m; try { m = JSON.parse(ev.data); } catch (e) { return; }
+      if (m.t === 'hosted') { code = m.code; connectPlayer(); }
+      else if (m.t === 'host_state') onHostState(m);
+      else if (m.t === 'error') lost(m.message || 'The demo could not start.');
+    };
+  }
+
+  function connectPlayer() {
+    me = new WebSocket(url);
+    me.onopen = function () { send(me, { t: 'join', code: code, name: 'You' }); };
+    me.onclose = function () { lost('The demo server dropped the connection.'); };
+    me.onmessage = function (ev) {
+      var m; try { m = JSON.parse(ev.data); } catch (e) { return; }
+      if (m.t === 'welcome') {
+        for (var i = 0; i < GAMES[game].ghosts; i++) addGhost(i);
+        if (!GAMES[game].ghosts) startActivity();
+      } else if (m.t === 'p_state') onPState(m);
+      else if (m.t === 'act_ack') {
+        if (window.ZebraAct && lastAct) window.ZebraAct.onAck(lastAct.type, m.d, { root: $('actRoot'), send: actSend });
+        // a one-player room never "all finished", so close the stage a moment after the answer goes in
+        if (m.d && m.d.ok && ((game === 'chopped' && hs && hs.activity && hs.activity.stage === 'think') || (game === 'debrief' && hs && hs.activity && hs.activity.stage === 'prompt'))) {
+          timers.push(setTimeout(skip, 2500));
+        }
+      } else if (m.t === 'error') lost(m.message);
+    };
+  }
+
+  function addGhost(i) {
+    var g = new WebSocket(url);
+    ghosts.push(g);
+    g.onopen = function () { send(g, { t: 'join', code: code, name: 'Dr. Guest ' + (i + 1) }); };
+    g.onmessage = function (ev) {
+      var m; try { m = JSON.parse(ev.data); } catch (e) { return; }
+      if (m.t === 'welcome' && ++ghostWelcome >= GAMES[game].ghosts) startActivity();
+    };
+  }
+
+  function actSend(d) { send(me, { t: 'act', d: d }); }
+
+  function onHostState(m) {
+    hs = m;
+    var a = m.activity;
+    if (!a) return;
+    var key = a.stage + '|' + (a.n || a.caseNo || a.puzzleNo || a.step || a.round || '');
+    if (key !== lastStage) { lastStage = key; stageAt = Date.now(); }
+    if ((a.finished || a.stage === 'done') && !finished && lastAct) { finished = true; showDone(); }
+    updateSkip();
+  }
+
+  function onPState(m) {
+    lastP = m;
+    if (typeof m.score === 'number') $('score').textContent = 'Score ' + m.score;
+    if (m.phase === 'activity' && m.activity) {
+      lastAct = m.activity;
+      status('');
+      render();
+      // a climber who has fallen or walked away has nothing left to play: let them read the result, then wrap up the demo
+      if (game === 'ladder' && lastAct.status && lastAct.status !== 'climbing' && !endTimer) {
+        endTimer = setTimeout(function () { if (!finished) { finished = true; showDone(); } }, 8000);
+      }
+    } else if (started && lastAct && m.phase === 'lobby' && !finished) { finished = true; showDone(); } // back in the lobby only counts as "over" once the game has been on screen
+  }
+
+  function render() {
+    if (!window.ZebraAct || !lastAct) return;
+    window.ZebraAct.rerender = render;
+    window.ZebraAct.render('phone', $('actRoot'), lastAct, { send: actSend, st: lastP });
+  }
+
+  // What the "next" button does at each stage. Only moments where moving on cannot cost the player their run are listed:
+  // skipping a live question would count it as unanswered, so those stages have no button.
+  var NEXT = {
+    confidence: { reveal: 'Next question' },
+    connections: { play: 'Skip puzzle', reveal: 'Next puzzle' },
+    clueladder: { play: 'Reveal answer', reveal: 'Next case' },
+    ladder: { reveal: 'Next question' },
+    chopped: { think: 'Done writing', result: 'Continue', reveal: 'Continue' },
+    debrief: { prompt: 'Show results', cloud: 'Finish' }
+  };
+  function updateSkip() {
+    var a = hs && hs.activity, b = $('skip');
+    var label = a && !finished && NEXT[game] ? NEXT[game][a.stage] : '';
+    b.hidden = !label;
+    if (label) b.innerHTML = label + ' &rsaquo;';
+  }
+
+  function skip() {
+    var a = hs && hs.activity;
+    if (!a || finished) return;
+    var cmd = 'next';
+    if (game === 'debrief') cmd = a.stage === 'prompt' ? 'close' : a.stage === 'cloud' ? 'done' : 'next';
+    send(host, { t: 'act_host', cmd: cmd });
+  }
+  $('skip').addEventListener('click', skip);
+
+  function showDone() {
+    $('hacts').style.display = 'none';
+    $('done').classList.add('on');
+    $('done').scrollIntoView({ block: 'end', behavior: 'smooth' });
+  }
+  $('again').addEventListener('click', function () { location.reload(); });
+
+  // the quiet host: some stages wait for a host button in a real session
+  setInterval(function () {
+    var a = hs && hs.activity;
+    if (!a || finished) return;
+    var age = Date.now() - stageAt;
+    if (game === 'chopped' && ((a.stage === 'result' && age > 12000) || (a.stage === 'reveal' && age > 18000))) { send(host, { t: 'act_host', cmd: 'next' }); stageAt = Date.now(); }
+    if (game === 'debrief' && a.stage === 'cloud' && age > 18000) { send(host, { t: 'act_host', cmd: 'done' }); stageAt = Date.now(); }
+  }, 1000);
+
+  window.addEventListener('pagehide', function () {
+    [host, me].concat(ghosts).forEach(function (w) { try { if (w) { w.onclose = null; w.close(); } } catch (e) { /* ignore */ } });
+  });
+
+  connectHost();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,523 @@
+<title>Project Zebra Solo</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+<meta name="theme-color" content="#150f18">
+<meta name="text-scale" content="scale">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/icons/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;700&display=swap">
+<style>
+/* Layout: one centered column. Start screen with three mode cards, then round, then a reveal that lists every answer with its points. */
+:root {
+  --ground: #150f18;
+  --ground-2: #1d1422;
+  --surface: #2a1e2b;
+  --surface-2: #3a2a3a;
+  --line: #5a4458;
+  --ink: #fbf1de;
+  --ink-dim: #d8c6a6;
+  --ink-faint: #a8957c;
+  --signal: #ffb020;
+  --signal-ink: #1b1200;
+  --danger: #ff8a8a;
+  --ok: #5fd3a5;
+  --t-student: #b9a2ee;
+  --t-intern: #7cc4ee;
+  --t-senior: #86d98a;
+  --t-fellow: #f2e05a;
+  --t-attending: #f58ad4;
+  --t-bazo: #ff3b5c;
+  --t-trap: #ff8a3d;
+  --t-none: #a8978a;
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-ui: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+/* Phone handling: no double-tap zoom delay, no grey tap flash, no pull-to-refresh in the middle of a round. */
+button, a, input, summary { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+body { overscroll-behavior-y: none; }
+body {
+  background:
+    repeating-linear-gradient(115deg, transparent 0 46px, rgba(251, 241, 222, 0.025) 46px 58px),
+    var(--ground);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: 16px;
+  line-height: 1.45;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 20px 56px;
+}
+.wrap { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--signal); outline-offset: 2px; }
+
+header.top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.brand { font-family: var(--font-display); font-weight: 800; font-size: 1.35rem; letter-spacing: 0.01em; }
+.brand small { font-family: var(--font-ui); font-weight: 500; font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-faint); margin-left: 8px; }
+.tally { display: flex; gap: 16px; font-variant-numeric: tabular-nums; text-align: right; }
+.tally div { display: flex; flex-direction: column; }
+.tally b { font-size: 1.25rem; line-height: 1.1; }
+.tally span { font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-faint); }
+
+h1, h2 { font-family: var(--font-display); font-weight: 800; margin: 0; text-wrap: balance; }
+h1 { font-size: clamp(2rem, 8vw, 3rem); line-height: 1.05; }
+.lede { color: var(--ink-dim); margin: 0; max-width: 60ch; }
+.eyebrow { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-faint); font-weight: 700; }
+
+.modes { display: grid; gap: 12px; }
+.mode {
+  text-align: left; cursor: pointer; background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+  padding: 16px 18px; display: grid; gap: 4px; transition: transform .12s ease, border-color .12s ease;
+}
+.mode:hover { border-color: var(--signal); transform: translateY(-1px); }
+.mode h2 { font-size: 1.4rem; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.mode .best { font-family: var(--font-ui); font-size: 0.78rem; font-weight: 500; color: var(--ink-faint); }
+.mode p { margin: 0; color: var(--ink-dim); font-size: 0.95rem; }
+.mode.hot { background: #2d1420; border-color: #6b2438; }
+
+.ladder { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 700; border: 1px solid currentColor; color: var(--c, var(--ink-dim)); background: color-mix(in srgb, var(--c, var(--ink-dim)) 14%, transparent); white-space: nowrap; }
+.chip.student { --c: var(--t-student); } .chip.intern { --c: var(--t-intern); } .chip.senior { --c: var(--t-senior); }
+.chip.fellow { --c: var(--t-fellow); } .chip.attending { --c: var(--t-attending); } .chip.bazo { --c: var(--t-bazo); }
+.chip.trap { --c: var(--t-trap); } .chip.none { --c: var(--t-none); }
+
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.prompt { font-family: var(--font-display); font-weight: 800; font-size: clamp(1.5rem, 6vw, 2.15rem); line-height: 1.12; text-wrap: balance; margin: 0; }
+
+/* The clock stays on screen while the keyboard is open or the list scrolls. */
+.timer { display: flex; align-items: center; gap: 12px; position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); padding: 8px 0; margin-block: -8px; }
+.bar { flex: 1; height: 10px; border-radius: 999px; background: var(--ground-2); border: 1px solid var(--line); overflow: hidden; }
+.bar i { display: block; height: 100%; width: 100%; background: var(--signal); transform-origin: left; }
+.bar.low i { background: var(--danger); }
+.secs { font-variant-numeric: tabular-nums; font-weight: 800; font-size: 1.5rem; min-width: 2.6ch; text-align: right; }
+.secs.low { color: var(--danger); }
+
+form.ans { display: flex; gap: 10px; flex-wrap: wrap; }
+form.ans input {
+  flex: 1 1 220px; min-width: 0; font: inherit; font-size: 1.1rem; padding: 14px 16px; border-radius: 12px; border: 2px solid var(--line);
+  background: var(--ground-2); color: var(--ink);
+}
+form.ans input:focus { border-color: var(--signal); outline: none; }
+.btn {
+  cursor: pointer; border: 0; border-radius: 12px; padding: 14px 22px; font-weight: 700; font-size: 1rem; min-height: 52px;
+  background: var(--signal); color: var(--signal-ink);
+}
+.btn:hover { filter: brightness(1.08); }
+.btn.ghost { background: transparent; color: var(--ink); border: 2px solid var(--line); }
+.btn.ghost:hover { border-color: var(--ink-dim); }
+.btn:disabled { opacity: 0.45; cursor: default; }
+.row { display: flex; gap: 10px; flex-wrap: wrap; }
+/* Reveal actions stay under the thumb at the bottom of the screen. */
+.dock {
+  position: sticky; bottom: 0; z-index: 6; display: flex; gap: 10px; padding: 12px 0 max(12px, env(safe-area-inset-bottom, 0px));
+  background: linear-gradient(180deg, rgba(21, 15, 24, 0), var(--ground) 38%);
+}
+.dock .btn { flex: 1 1 0; }
+details summary { min-height: 44px; display: flex; align-items: center; }
+.toggle { display: flex; align-items: center; gap: 10px; min-height: 44px; color: var(--ink-dim); font-size: 0.95rem; }
+.toggle input { width: 22px; height: 22px; accent-color: var(--signal); }
+.slots { color: var(--ink-dim); font-size: 0.9rem; }
+.msg { min-height: 1.4em; font-size: 0.92rem; color: var(--danger); }
+
+ul.plain { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.sub { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 6px 10px; padding: 10px 12px; border-radius: 10px; background: var(--ground-2); border-left: 4px solid var(--line); min-width: 0; }
+.sub span.t { overflow-wrap: anywhere; }
+.sub.ok { border-left-color: var(--ok); } .sub.no { border-left-color: var(--t-none); }
+
+.score { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.score big { font-family: var(--font-display); font-weight: 800; font-size: clamp(2.6rem, 12vw, 4rem); line-height: 1; font-variant-numeric: tabular-nums; }
+.score .of { color: var(--ink-dim); }
+
+.pts { color: var(--c, var(--ink)); font-weight: 800; font-variant-numeric: tabular-nums; }
+.al { display: grid; gap: 6px; }
+.alr { --c: var(--t-none); display: grid; grid-template-columns: 3.4em 1fr; gap: 10px; align-items: center; padding: 7px 10px; border-left: 4px solid var(--c); border-radius: 8px; background: rgba(255, 255, 255, 0.04); min-width: 0; }
+.alr .p { text-align: right; font-weight: 800; color: var(--c); font-variant-numeric: tabular-nums; }
+.alr .n { overflow-wrap: anywhere; font-size: 0.95rem; }
+.alr small { display: block; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-faint); }
+.alr.mine { background: color-mix(in srgb, var(--c) 20%, transparent); font-weight: 700; outline: 2px solid var(--c); }
+.alr.student { --c: var(--t-student); } .alr.intern { --c: var(--t-intern); } .alr.senior { --c: var(--t-senior); }
+.alr.fellow { --c: var(--t-fellow); } .alr.attending { --c: var(--t-attending); } .alr.bazo { --c: var(--t-bazo); } .alr.trap { --c: var(--t-trap); }
+
+.pearl { padding: 12px 14px; border-radius: 10px; background: var(--ground-2); display: grid; gap: 4px; }
+.pearl b { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.pearl p { margin: 0; color: var(--ink-dim); font-size: 0.93rem; }
+details summary { cursor: pointer; font-weight: 700; padding: 6px 0; }
+.foot { color: var(--ink-faint); font-size: 0.8rem; }
+.hidden-note { color: var(--ink-faint); font-size: 0.88rem; }
+@media (max-width: 380px) { .brand { font-size: 1.15rem; white-space: nowrap; } .brand small { display: none; } .tally { gap: 12px; } }
+@media (prefers-reduced-motion: reduce) { .mode { transition: none; } }
+</style>
+
+<div class="wrap" id="app"></div>
+
+<script>
+/*MATCHER*/
+</script>
+<script>
+var DB = /*DATA*/;
+</script>
+<script>
+(function () {
+  'use strict';
+
+  var TIER_LABELS = { student: 'Med Student', intern: 'Intern', senior: 'Senior Resident', fellow: 'Fellow', attending: 'Attending', bazo: 'Dr. Bazo', trap: 'Board Prep Trap', none: 'No match' };
+  var TIER_ORDER = ['student', 'intern', 'senior', 'fellow', 'attending', 'bazo'];
+  function tierFor(s) {
+    if (s < 0) return 'trap';
+    if (s >= 100) return 'bazo';
+    if (s >= 80) return 'attending';
+    if (s >= 56) return 'fellow';
+    if (s >= 36) return 'senior';
+    if (s >= 16) return 'intern';
+    if (s >= 1) return 'student';
+    return 'none';
+  }
+  var MODES = {
+    casual: { label: 'Casual', seconds: 60, maxAnswers: 5, maxTries: 10, feedback: true,
+      blurb: 'Common topics. 60 seconds, up to 5 answers. Every match scores at least 10, traps cost nothing, and you are told whether each answer is on the list.' },
+    zebra: { label: 'Zebra', seconds: 45, maxAnswers: 3, maxTries: 3, feedback: false,
+      blurb: 'Harder topics. 45 seconds, 3 answers, no hints while you play. Board-prep traps cost 10 points. The rarer the answer, the more it scores.' },
+    impossible: { label: 'Impossible', seconds: 45, maxAnswers: 3, maxTries: 3, feedback: false,
+      blurb: 'Two brutal topics where a few answers are worth 100 and Dr. Bazo is the only one who knows them all. Same rules as Zebra.' }
+  };
+
+  var S = { mode: null, total: 0, roundNo: 0, used: {}, prompt: null, matcher: null, entries: [], endsAt: 0, timer: 0, phase: 'start', roundPoints: 0 };
+  var app = document.getElementById('app');
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  function clear(n) { while (n.firstChild) n.removeChild(n.firstChild); }
+  function fmt(n) { return (n > 0 ? '+' : '') + n; }
+
+  function store(key, val) {
+    try { if (val === undefined) return JSON.parse(localStorage.getItem(key) || 'null'); localStorage.setItem(key, JSON.stringify(val)); } catch (e) { /* storage unavailable */ }
+    return null;
+  }
+  function bestOf(mode) { var v = store('zebra-solo-best-' + mode); return typeof v === 'number' ? v : null; }
+
+  /* Phone niceties: short vibration on a hit and at the end (Android), and keep the screen awake during a round. */
+  var haptics = store('zebra-solo-haptics') !== false;
+  function buzz(pattern) { try { if (haptics && navigator.vibrate) navigator.vibrate(pattern); } catch (e) { /* unsupported */ } }
+  var wake = null;
+  function keepAwake(on) {
+    try {
+      if (on && navigator.wakeLock && !wake) {
+        navigator.wakeLock.request('screen').then(function (l) { wake = l; l.addEventListener('release', function () { wake = null; }); }, function () { /* refused */ });
+      } else if (!on && wake) { wake.release(); wake = null; }
+    } catch (e) { /* unsupported */ }
+  }
+  document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'visible' && S.phase === 'round') keepAwake(true); });
+
+  function pointsFor(mode, base) {
+    if (base < 0) return mode === 'casual' ? 0 : base;
+    if (mode === 'casual' && base > 0 && base < 10) return 10;
+    return base;
+  }
+
+  function pool(mode) {
+    return DB.prompts.filter(function (p) {
+      if (mode === 'impossible') return p.difficulty === 'impossible';
+      if (p.difficulty === 'impossible') return false;
+      return mode === 'casual' ? p.level === 'easy' : p.level !== 'easy';
+    });
+  }
+  function pickPrompt(mode) {
+    var all = pool(mode);
+    var used = S.used[mode] || (S.used[mode] = {});
+    var fresh = all.filter(function (p) { return !used[p.id]; });
+    if (!fresh.length) { S.used[mode] = used = {}; fresh = all; }
+    var p = fresh[Math.floor(Math.random() * fresh.length)];
+    used[p.id] = 1;
+    return p;
+  }
+
+  function header() {
+    var h = el('header', 'top');
+    var b = el('div', 'brand', 'Project Zebra'); b.appendChild(el('small', null, 'Solo'));
+    h.appendChild(b);
+    if (S.phase !== 'start') {
+      var t = el('div', 'tally');
+      var a = el('div'); a.appendChild(el('b', null, String(S.total))); a.appendChild(el('span', null, 'Score')); t.appendChild(a);
+      var r = el('div'); r.appendChild(el('b', null, String(S.roundNo))); r.appendChild(el('span', null, 'Round')); t.appendChild(r);
+      h.appendChild(t);
+    }
+    return h;
+  }
+
+  /* ---------- start screen ---------- */
+  function renderStart() {
+    S.phase = 'start';
+    clear(app);
+    app.appendChild(header());
+    app.appendChild(el('div', 'eyebrow', 'Rare-answer medicine trivia'));
+    app.appendChild(el('h1', null, 'Name what most people forget.'));
+    app.appendChild(el('p', 'lede', 'You get a clinical prompt, like causes of hematuria or drugs that raise potassium. Type answers before time runs out. Common answers score little. Rare ones score a lot. Board-prep traps can cost you points.'));
+    var lad = el('div', 'ladder');
+    TIER_ORDER.forEach(function (k) { lad.appendChild(el('span', 'chip ' + k, TIER_LABELS[k])); });
+    app.appendChild(lad);
+    app.appendChild(el('div', 'eyebrow', 'Pick a mode'));
+    var modes = el('div', 'modes');
+    ['casual', 'zebra', 'impossible'].forEach(function (k) {
+      var m = MODES[k];
+      var btn = el('button', 'mode' + (k === 'impossible' ? ' hot' : ''));
+      btn.type = 'button';
+      var h2 = el('h2', null, m.label);
+      var best = bestOf(k);
+      h2.appendChild(el('span', 'best', best == null ? '' : 'Best round ' + best));
+      btn.appendChild(h2);
+      btn.appendChild(el('p', null, m.blurb));
+      btn.addEventListener('click', function () { newGame(k); });
+      modes.appendChild(btn);
+    });
+    app.appendChild(modes);
+    var tg = el('label', 'toggle');
+    var cb = el('input'); cb.type = 'checkbox'; cb.id = 'haptics'; cb.checked = haptics;
+    cb.addEventListener('change', function () { haptics = cb.checked; store('zebra-solo-haptics', haptics); if (haptics) buzz(30); });
+    tg.appendChild(cb); tg.appendChild(el('span', null, 'Vibrate on a correct answer (Android phones)'));
+    app.appendChild(tg);
+    app.appendChild(el('p', 'foot', DB.prompts.length + ' topics, ' + DB.prompts.reduce(function (n, p) { return n + p.answers.length; }, 0).toLocaleString() + ' scored answers. Content is AI-drafted and not yet faculty reviewed, so treat it as a game and not a reference.'));
+  }
+
+  function newGame(mode) {
+    S.mode = mode; S.total = 0; S.roundNo = 0;
+    startRound();
+  }
+
+  /* ---------- round ---------- */
+  var ui = {};
+  function slotsUsed() { return S.entries.filter(function (e) { return e.counts; }).length; }
+
+  function startRound() {
+    var cfg = MODES[S.mode];
+    S.prompt = pickPrompt(S.mode);
+    S.matcher = new PromptMatcher({ answers: S.prompt.answers.map(function (a) { return { name: a.name, aliases: a.aliases }; }) });
+    S.entries = []; S.roundNo += 1; S.phase = 'round';
+    keepAwake(true);
+    S.endsAt = Date.now() + cfg.seconds * 1000;
+    clear(app);
+    app.appendChild(header());
+
+    var card = el('div', 'card');
+    card.appendChild(el('div', 'eyebrow', S.prompt.category + ' · ' + cfg.label));
+    card.appendChild(el('h2', 'prompt', S.prompt.prompt));
+    var tm = el('div', 'timer');
+    var bar = el('div', 'bar'); var fill = el('i'); bar.appendChild(fill);
+    var secs = el('div', 'secs', String(cfg.seconds));
+    tm.appendChild(bar); tm.appendChild(secs);
+    card.appendChild(tm);
+
+    var form = el('form', 'ans');
+    form.setAttribute('autocomplete', 'off');
+    var input = el('input'); input.type = 'text'; input.id = 'answer'; input.maxLength = 80;
+    input.setAttribute('aria-label', 'Your answer'); input.placeholder = 'Type an answer and press Enter';
+    input.setAttribute('autocapitalize', 'off'); input.setAttribute('autocorrect', 'off'); input.spellcheck = false; input.enterKeyHint = 'send';
+    var go = el('button', 'btn', 'Submit'); go.type = 'submit';
+    form.appendChild(input); form.appendChild(go);
+    card.appendChild(form);
+    var msg = el('div', 'msg'); msg.setAttribute('role', 'status'); card.appendChild(msg);
+    var slots = el('div', 'slots'); card.appendChild(slots);
+    var list = el('ul', 'plain'); list.setAttribute('aria-live', 'polite'); card.appendChild(list);
+    var done = el('button', 'btn ghost', 'I’m done'); done.type = 'button';
+    var row = el('div', 'row'); row.appendChild(done); card.appendChild(row);
+    app.appendChild(card);
+    ui = { fill: fill, secs: secs, bar: bar, input: input, msg: msg, slots: slots, list: list, go: go };
+    updateSlots();
+
+    form.addEventListener('submit', function (ev) { ev.preventDefault(); submit(input.value); });
+    done.addEventListener('click', endRound);
+    input.focus();
+    clearInterval(S.timer);
+    S.timer = setInterval(tick, 200);
+    tick();
+  }
+
+  function tick() {
+    if (S.phase !== 'round') return;
+    var cfg = MODES[S.mode];
+    var left = Math.max(0, S.endsAt - Date.now());
+    var s = Math.ceil(left / 1000);
+    ui.secs.textContent = String(s);
+    ui.fill.style.transform = 'scaleX(' + (left / (cfg.seconds * 1000)).toFixed(4) + ')';
+    var low = s <= 10;
+    ui.secs.classList.toggle('low', low); ui.bar.classList.toggle('low', low);
+    if (left <= 0) endRound();
+  }
+
+  function updateSlots() {
+    var cfg = MODES[S.mode];
+    var left = cfg.maxAnswers - slotsUsed();
+    ui.slots.textContent = left > 0 ? left + ' of ' + cfg.maxAnswers + ' answers left' + (cfg.feedback ? '' : '. Each try uses one.') : 'All answers used. Press I’m done or wait for the clock.';
+    var full = left <= 0 || S.entries.length >= cfg.maxTries;
+    ui.input.disabled = full; ui.go.disabled = full;
+  }
+
+  function submit(raw) {
+    if (S.phase !== 'round') return;
+    var cfg = MODES[S.mode];
+    var text = String(raw || '').replace(/\s+/g, ' ').trim().slice(0, 80);
+    ui.msg.textContent = '';
+    if (!text) { ui.msg.textContent = 'Type an answer first.'; return; }
+    if (slotsUsed() >= cfg.maxAnswers) { ui.msg.textContent = 'No answers left this round.'; return; }
+    if (S.entries.length >= cfg.maxTries) { ui.msg.textContent = 'No more tries this round.'; return; }
+    var m = S.matcher.match(text);
+    if (m.method === 'ambiguous' && cfg.feedback) { ui.msg.textContent = 'Be more specific.'; return; }
+    var key = m.matched ? 'i' + m.index : 'n' + m.normalized;
+    if (S.entries.some(function (e) { return e.norm === m.normalized; })) { ui.msg.textContent = 'You already submitted that.'; return; }
+    if (m.matched && S.entries.some(function (e) { return e.key === key; })) {
+      if (cfg.feedback) ui.msg.textContent = 'You already submitted that.';
+      ui.input.value = ''; return;
+    }
+    var entry = { key: key, norm: m.normalized, text: text, matched: m.matched, idx: m.matched ? m.index : -1, counts: cfg.feedback ? m.matched : true };
+    S.entries.push(entry);
+    ui.input.value = '';
+    var li = el('li', 'sub' + (cfg.feedback ? (m.matched ? ' ok' : ' no') : ''));
+    li.appendChild(el('span', 't', text));
+    li.appendChild(el('span', 'chip ' + (cfg.feedback ? (m.matched ? 'senior' : 'none') : 'none'), cfg.feedback ? (m.matched ? 'On the list' : 'Not on the list') : 'Locked in'));
+    ui.list.appendChild(li);
+    if (cfg.feedback && m.matched) buzz(35);
+    updateSlots();
+    if (slotsUsed() >= cfg.maxAnswers) { ui.msg.textContent = ''; }
+    if (!ui.input.disabled) ui.input.focus();
+  }
+
+  /* ---------- reveal ---------- */
+  function teachingMisses(found) {
+    var missed = [];
+    S.prompt.answers.forEach(function (a, i) { if (!found[i] && a.score > 0) missed.push(a); });
+    var byAttain = function (a, b) { return (b.pearl ? 1 : 0) - (a.pearl ? 1 : 0) || a.score - b.score; };
+    var teach = missed.filter(function (a) { return a.score >= 5 && a.score <= 59; }).sort(byAttain);
+    var zebras = missed.filter(function (a) { return a.score >= 80; }).sort(byAttain);
+    var out = [];
+    [teach[0], teach[1], zebras[0], teach[2]].forEach(function (a) { if (a && out.indexOf(a) < 0) out.push(a); });
+    if (out.length < 4) {
+      missed.sort(byAttain).forEach(function (a) { if (out.length < 4 && out.indexOf(a) < 0) out.push(a); });
+    }
+    return out;
+  }
+
+  function endRound() {
+    if (S.phase !== 'round') return;
+    S.phase = 'reveal';
+    clearInterval(S.timer);
+    keepAwake(false);
+    if (document.activeElement && document.activeElement.blur) document.activeElement.blur(); // closes the phone keyboard
+    buzz([60, 40, 60]);
+    var mode = S.mode;
+    var found = {};
+    var mine = S.entries.filter(function (e) { return e.matched; });
+    mine.forEach(function (e) { found[e.idx] = 1; });
+    var points = mine.reduce(function (sum, e) { return sum + pointsFor(mode, S.prompt.answers[e.idx].score); }, 0);
+    S.roundPoints = points; S.total += points;
+    var prev = bestOf(mode);
+    if (prev == null || points > prev) store('zebra-solo-best-' + mode, points);
+
+    var best = null;
+    mine.forEach(function (e) { var a = S.prompt.answers[e.idx]; if (a.score > 0 && (!best || a.score > best.score)) best = a; });
+
+    clear(app);
+    app.appendChild(header());
+    var card = el('div', 'card');
+    card.appendChild(el('div', 'eyebrow', 'Round ' + S.roundNo + ' · ' + S.prompt.category));
+    card.appendChild(el('h2', 'prompt', S.prompt.prompt));
+    var sc = el('div', 'score');
+    sc.appendChild(el('big', null, fmt(points)));
+    sc.appendChild(el('span', 'of', 'Found ' + mine.length + ' of ' + S.prompt.answers.length));
+    card.appendChild(sc);
+    if (best) {
+      var bt = tierFor(best.score);
+      var l = el('div', 'row'); l.appendChild(el('span', 'eyebrow', 'Best find'));
+      l.appendChild(el('span', 'chip ' + bt, TIER_LABELS[bt]));
+      l.appendChild(el('b', null, best.name));
+      card.appendChild(l);
+    } else {
+      card.appendChild(el('p', 'lede', S.entries.length ? 'No scoring answers this time.' : 'No answers submitted.'));
+    }
+
+    if (S.entries.length) {
+      var ul = el('ul', 'plain');
+      S.entries.forEach(function (e) {
+        var li = el('li', 'sub ' + (e.matched ? 'ok' : 'no'));
+        var t = el('span', 't', e.text);
+        if (e.matched) { var a = S.prompt.answers[e.idx]; if (a.name.toLowerCase() !== e.text.toLowerCase()) t.appendChild(el('small', 'foot', '  = ' + a.name)); }
+        li.appendChild(t);
+        if (e.matched) {
+          var a2 = S.prompt.answers[e.idx]; var tk = tierFor(a2.score); var p = pointsFor(mode, a2.score);
+          var r = el('span', 'row'); r.style.flexWrap = 'nowrap'; r.style.alignItems = 'center';
+          var chip = el('span', 'chip ' + tk, TIER_LABELS[tk] + (tk === 'trap' && p === 0 ? ' (no penalty)' : ''));
+          var pt = el('span', 'pts', fmt(p)); pt.style.color = 'var(--t-' + tk + ')';
+          r.appendChild(chip); r.appendChild(pt); li.appendChild(r);
+        } else {
+          li.appendChild(el('span', 'chip none', 'Not on the list'));
+        }
+        ul.appendChild(li);
+      });
+      card.appendChild(ul);
+    }
+    app.appendChild(card);
+
+    var miss = teachingMisses(found);
+    if (miss.length) {
+      var tc = el('div', 'card');
+      tc.appendChild(el('div', 'eyebrow', 'Worth knowing'));
+      miss.forEach(function (a) {
+        var tk = tierFor(a.score);
+        var p = el('div', 'pearl');
+        var b = el('b', null, a.name + ' '); b.appendChild(el('span', 'chip ' + tk, TIER_LABELS[tk] + ' · ' + pointsFor(mode, a.score)));
+        p.appendChild(b);
+        if (a.pearl) p.appendChild(el('p', null, a.pearl));
+        tc.appendChild(p);
+      });
+      app.appendChild(tc);
+    }
+
+    var d = el('details', 'card');
+    d.appendChild(el('summary', null, 'All ' + S.prompt.answers.length + ' answers and their points'));
+    var al = el('div', 'al');
+    var rows = S.prompt.answers.map(function (a, i) { return { a: a, i: i, p: pointsFor(mode, a.score), t: tierFor(a.score) }; });
+    rows.sort(function (x, y) { return (y.t === 'trap' ? 0 : 1) - (x.t === 'trap' ? 0 : 1) || y.p - x.p || (x.a.name < y.a.name ? -1 : 1); });
+    rows.forEach(function (r) {
+      var row = el('div', 'alr ' + r.t + (found[r.i] ? ' mine' : ''));
+      row.appendChild(el('span', 'p', fmt(r.p)));
+      var n = el('span', 'n', r.a.name + (found[r.i] ? '  ✓' : '')); n.appendChild(el('small', null, TIER_LABELS[r.t]));
+      row.appendChild(n); al.appendChild(row);
+    });
+    d.appendChild(al);
+    app.appendChild(d);
+
+    var act = el('div', 'dock');
+    var next = el('button', 'btn', 'Next round'); next.type = 'button'; next.addEventListener('click', startRound);
+    var quit = el('button', 'btn ghost', 'Finish game'); quit.type = 'button'; quit.addEventListener('click', renderEnd);
+    act.appendChild(next); act.appendChild(quit);
+    app.appendChild(act);
+    next.focus();
+    window.scrollTo(0, 0);
+  }
+
+  function renderEnd() {
+    S.phase = 'start';
+    clear(app);
+    app.appendChild(header());
+    var card = el('div', 'card');
+    card.appendChild(el('div', 'eyebrow', MODES[S.mode].label + ' game over'));
+    var sc = el('div', 'score'); sc.appendChild(el('big', null, String(S.total))); sc.appendChild(el('span', 'of', 'points in ' + S.roundNo + (S.roundNo === 1 ? ' round' : ' rounds')));
+    card.appendChild(sc);
+    var again = el('button', 'btn', 'Play ' + MODES[S.mode].label + ' again'); again.type = 'button'; again.addEventListener('click', function () { newGame(S.mode); });
+    var menu = el('button', 'btn ghost', 'Change mode'); menu.type = 'button'; menu.addEventListener('click', renderStart);
+    var row = el('div', 'row'); row.appendChild(again); row.appendChild(menu); card.appendChild(row);
+    app.appendChild(card);
+  }
+
+  renderStart();
+})();
+</script>

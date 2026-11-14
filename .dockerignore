@@ -1,0 +1,11 @@
+node_modules
+data/drafts
+data/*.log
+data/.bank_key
+data/solo.html
+data/*.before-*.json
+data/backup_*
+tests
+tools
+docs
+.git

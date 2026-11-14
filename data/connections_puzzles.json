@@ -1,0 +1,1333 @@
+{
+ "version": 1,
+ "review_status": "unreviewed",
+ "generator": "AI-drafted for faculty review",
+ "puzzles": [
+  {
+   "id": "cn001",
+   "title": "Acid-base disorders",
+   "groups": [
+    {
+     "category": "Causes of high anion gap metabolic acidosis",
+     "level": 1,
+     "items": [
+      "Methanol",
+      "Ethylene glycol",
+      "Lactic acidosis",
+      "Diabetic ketoacidosis"
+     ],
+     "explain": "Unmeasured anions (formate, glycolate, lactate, ketones) raise the anion gap."
+    },
+    {
+     "category": "Causes of respiratory acidosis",
+     "level": 2,
+     "items": [
+      "Opioid overdose",
+      "COPD exacerbation",
+      "Obesity hypoventilation",
+      "Myasthenic crisis"
+     ],
+     "explain": "Hypoventilation retains CO2, whether from drive, airway or muscle failure."
+    },
+    {
+     "category": "Causes of metabolic alkalosis",
+     "level": 3,
+     "items": [
+      "Vomiting",
+      "Loop diuretics",
+      "Primary hyperaldosteronism",
+      "Milk-alkali syndrome"
+     ],
+     "explain": "Volume contraction, chloride loss, mineralocorticoid excess or alkali load generate bicarbonate."
+    },
+    {
+     "category": "Causes of normal anion gap (hyperchloremic) acidosis",
+     "level": 4,
+     "items": [
+      "Diarrhea",
+      "Type 1 renal tubular acidosis",
+      "Acetazolamide",
+      "Normal saline infusion"
+     ],
+     "explain": "Bicarbonate loss (GI or renal) with chloride retention leaves the gap normal."
+    }
+   ],
+   "review_notes": "Decoys: Acetazolamide and Loop diuretics both sound like diuretics but one causes NAGMA and one alkalosis; Diarrhea sounds like fluid loss/alkalosis. Least sure: Milk-alkali syndrome (also causes hypercalcemia, still alkalosis)."
+  },
+  {
+   "id": "cn002",
+   "title": "Drug adverse effects: set 1",
+   "groups": [
+    {
+     "category": "Adverse effects of ACE inhibitors",
+     "level": 1,
+     "items": [
+      "Dry cough",
+      "Hyperkalemia",
+      "Angioedema",
+      "First-dose hypotension"
+     ],
+     "explain": "ACE inhibitors raise bradykinin (cough, angioedema) and reduce aldosterone (hyperkalemia)."
+    },
+    {
+     "category": "Adverse effects of loop diuretics",
+     "level": 2,
+     "items": [
+      "Ototoxicity",
+      "Hypokalemia",
+      "Hypomagnesemia",
+      "Hyperuricemia"
+     ],
+     "explain": "Loops waste K, Mg and Ca, compete with urate secretion and can damage the cochlea."
+    },
+    {
+     "category": "Adverse effects of statins",
+     "level": 3,
+     "items": [
+      "Myalgias",
+      "Elevated transaminases",
+      "Rhabdomyolysis",
+      "New-onset diabetes"
+     ],
+     "explain": "Statins cause muscle toxicity, transaminase rise and a small increase in diabetes risk."
+    },
+    {
+     "category": "Adverse effects of amiodarone",
+     "level": 4,
+     "items": [
+      "Pulmonary fibrosis",
+      "Corneal microdeposits",
+      "Blue-gray skin",
+      "Photosensitivity"
+     ],
+     "explain": "Amiodarone is lipophilic and deposits in lung, cornea and skin."
+    }
+   ],
+   "review_notes": "Decoys: Hyperkalemia vs Hypokalemia; Rhabdomyolysis and Ototoxicity could be mis-sorted. Least sure: Hyperuricemia (loop effect via urate competition, well established); Photosensitivity (also occurs with other drugs, but valid for amiodarone)."
+  },
+  {
+   "id": "cn003",
+   "title": "Electrolyte culprits",
+   "groups": [
+    {
+     "category": "Causes of hypercalcemia",
+     "level": 1,
+     "items": [
+      "Primary hyperparathyroidism",
+      "Sarcoidosis",
+      "Multiple myeloma",
+      "Milk-alkali syndrome"
+     ],
+     "explain": "Hyperparathyroidism and malignancy account for most hypercalcemia; granulomas make calcitriol."
+    },
+    {
+     "category": "Causes of hyperkalemia",
+     "level": 2,
+     "items": [
+      "Spironolactone",
+      "Trimethoprim",
+      "Succinylcholine",
+      "Digoxin toxicity"
+     ],
+     "explain": "Aldosterone or ENaC blockade, depolarizing paralytics and Na/K-ATPase inhibition all raise K."
+    },
+    {
+     "category": "Causes of hypokalemia",
+     "level": 3,
+     "items": [
+      "Diarrhea",
+      "Bartter syndrome",
+      "Amphotericin B",
+      "Albuterol"
+     ],
+     "explain": "GI loss, renal wasting and beta-agonist cellular shift all lower serum K."
+    },
+    {
+     "category": "Causes of hypocalcemia",
+     "level": 4,
+     "items": [
+      "Hypoparathyroidism",
+      "Vitamin D deficiency",
+      "Acute pancreatitis",
+      "Massive transfusion"
+     ],
+     "explain": "Low PTH or vitamin D, saponification in pancreatitis and citrate chelation lower ionized calcium."
+    }
+   ],
+   "review_notes": "Decoys: Spironolactone (diuretic, sounds like K loss) is hyperkalemia; Amphotericin B and Bartter are K wasters. Dropped thiazides and rhabdomyolysis because they fit two groups. Least sure: Digoxin toxicity (acute toxicity raises K)."
+  },
+  {
+   "id": "cn004",
+   "title": "Valve and murmur findings",
+   "groups": [
+    {
+     "category": "Aortic regurgitation findings",
+     "level": 1,
+     "items": [
+      "Water-hammer pulse",
+      "Austin Flint murmur",
+      "Quincke pulsations",
+      "Widened pulse pressure"
+     ],
+     "explain": "Large stroke volume with diastolic runoff produces the peripheral signs of AR."
+    },
+    {
+     "category": "Mitral stenosis findings",
+     "level": 2,
+     "items": [
+      "Opening snap",
+      "Mid-diastolic rumble",
+      "Loud S1",
+      "Mitral facies"
+     ],
+     "explain": "A stenotic mitral leaflet snaps open and produces a low-pitched diastolic rumble."
+    },
+    {
+     "category": "Aortic stenosis findings",
+     "level": 3,
+     "items": [
+      "Pulsus parvus et tardus",
+      "Soft single S2",
+      "Radiation to carotids",
+      "Narrow pulse pressure"
+     ],
+     "explain": "Fixed outflow obstruction gives a late, weak pulse and an ejection murmur radiating to the neck."
+    },
+    {
+     "category": "Hypertrophic cardiomyopathy findings",
+     "level": 4,
+     "items": [
+      "Murmur louder with Valsalva",
+      "Systolic anterior motion",
+      "Asymmetric septal hypertrophy",
+      "Sudden death in athletes"
+     ],
+     "explain": "Reduced preload worsens dynamic LVOT obstruction in HOCM."
+    }
+   ],
+   "review_notes": "Decoys: AS vs HCM (both systolic murmurs); Widened vs Narrow pulse pressure. Dropped ejection murmur, syncope, paradoxical S2, LA enlargement (shared). Least sure: Soft single S2 for AS (severe, calcific AS)."
+  },
+  {
+   "id": "cn005",
+   "title": "Pleura and lung",
+   "groups": [
+    {
+     "category": "Causes of exudative pleural effusion",
+     "level": 1,
+     "items": [
+      "Parapneumonic effusion",
+      "Malignancy",
+      "Tuberculosis",
+      "Pancreatitis"
+     ],
+     "explain": "Inflammation or malignancy increases capillary permeability and protein in pleural fluid."
+    },
+    {
+     "category": "Causes of transudative pleural effusion",
+     "level": 2,
+     "items": [
+      "Heart failure",
+      "Cirrhosis",
+      "Nephrotic syndrome",
+      "Peritoneal dialysis"
+     ],
+     "explain": "Hydrostatic or oncotic pressure shifts create protein-poor fluid."
+    },
+    {
+     "category": "Obstructive lung diseases",
+     "level": 3,
+     "items": [
+      "Asthma",
+      "Emphysema",
+      "Chronic bronchitis",
+      "Alpha-1 antitrypsin deficiency"
+     ],
+     "explain": "Reduced FEV1/FVC defines obstruction."
+    },
+    {
+     "category": "Restrictive lung diseases",
+     "level": 4,
+     "items": [
+      "Idiopathic pulmonary fibrosis",
+      "Hypersensitivity pneumonitis",
+      "Asbestosis",
+      "Kyphoscoliosis"
+     ],
+     "explain": "Reduced lung volumes with preserved FEV1/FVC define restriction."
+    }
+   ],
+   "review_notes": "Decoys: Pancreatitis (abdominal, sounds like transudative ascites) is exudative. Least sure: Peritoneal dialysis as transudate (uncommon but classic teaching); Malignancy (occasionally transudative)."
+  },
+  {
+   "id": "cn006",
+   "title": "Endocrine culprits",
+   "groups": [
+    {
+     "category": "Causes of Cushing syndrome",
+     "level": 1,
+     "items": [
+      "Exogenous glucocorticoids",
+      "ACTH-secreting pituitary tumor",
+      "Ectopic ACTH",
+      "Adrenal adenoma"
+     ],
+     "explain": "Glucocorticoid excess is most often iatrogenic; then ACTH-dependent and adrenal causes."
+    },
+    {
+     "category": "Causes of hyperthyroidism",
+     "level": 2,
+     "items": [
+      "Graves disease",
+      "Toxic adenoma",
+      "Toxic multinodular goiter",
+      "Factitious thyrotoxicosis"
+     ],
+     "explain": "Autonomous hormone production or excess intake produces thyrotoxicosis with low TSH."
+    },
+    {
+     "category": "Causes of hypothyroidism",
+     "level": 3,
+     "items": [
+      "Hashimoto thyroiditis",
+      "Iodine deficiency",
+      "Radioiodine ablation",
+      "Lithium"
+     ],
+     "explain": "Autoimmune destruction, iodine lack, ablation or lithium reduce hormone output."
+    },
+    {
+     "category": "Causes of adrenal insufficiency",
+     "level": 4,
+     "items": [
+      "Autoimmune adrenalitis",
+      "Adrenal tuberculosis",
+      "Adrenal hemorrhage",
+      "Pituitary apoplexy"
+     ],
+     "explain": "Destruction of cortex or loss of ACTH drive causes cortisol deficiency."
+    }
+   ],
+   "review_notes": "Decoys: ACTH-secreting pituitary tumor vs Pituitary apoplexy; Exogenous steroids (can suppress axis). Dropped amiodarone and subacute thyroiditis (fit both thyroid groups). Least sure: ACTH-secreting pituitary tumor (a macroadenoma can cause hypopituitarism, but this item is Cushing disease)."
+  },
+  {
+   "id": "cn007",
+   "title": "Kidney patterns",
+   "groups": [
+    {
+     "category": "Causes of nephrotic syndrome",
+     "level": 1,
+     "items": [
+      "Minimal change disease",
+      "Membranous nephropathy",
+      "Focal segmental glomerulosclerosis",
+      "Diabetic nephropathy"
+     ],
+     "explain": "Podocyte or basement membrane injury causes heavy proteinuria."
+    },
+    {
+     "category": "Causes of nephritic syndrome",
+     "level": 2,
+     "items": [
+      "Post-streptococcal GN",
+      "IgA nephropathy",
+      "Anti-GBM disease",
+      "Granulomatosis with polyangiitis"
+     ],
+     "explain": "Inflammatory glomerular injury gives hematuria, RBC casts and hypertension."
+    },
+    {
+     "category": "Causes of acute tubular necrosis",
+     "level": 3,
+     "items": [
+      "Prolonged hypotension",
+      "Contrast media",
+      "Aminoglycosides",
+      "Rhabdomyolysis"
+     ],
+     "explain": "Ischemia and tubular toxins injure tubular cells, leaving muddy brown casts."
+    },
+    {
+     "category": "Causes of acute interstitial nephritis",
+     "level": 4,
+     "items": [
+      "Proton pump inhibitors",
+      "Penicillins",
+      "Rifampin",
+      "Allopurinol"
+     ],
+     "explain": "Drug hypersensitivity causes interstitial inflammation with WBC casts and eosinophils."
+    }
+   ],
+   "review_notes": "Decoys: Aminoglycosides and NSAIDs sound like AIN but aminoglycosides cause ATN; NSAIDs deliberately excluded. Least sure: IgA nephropathy (can be nephrotic rarely); Diabetic nephropathy placement."
+  },
+  {
+   "id": "cn008",
+   "title": "Liver and pancreas",
+   "groups": [
+    {
+     "category": "Causes of markedly elevated transaminases (over 1000)",
+     "level": 1,
+     "items": [
+      "Acetaminophen toxicity",
+      "Ischemic hepatitis",
+      "Acute hepatitis A",
+      "Herpes simplex hepatitis"
+     ],
+     "explain": "Massive hepatocyte injury gives ALT/AST in the thousands."
+    },
+    {
+     "category": "Complications of cirrhosis",
+     "level": 2,
+     "items": [
+      "Spontaneous bacterial peritonitis",
+      "Hepatic encephalopathy",
+      "Hepatorenal syndrome",
+      "Esophageal varices"
+     ],
+     "explain": "Portal hypertension and liver failure drive these complications."
+    },
+    {
+     "category": "Causes of acute pancreatitis",
+     "level": 3,
+     "items": [
+      "Hypercalcemia",
+      "Hypertriglyceridemia",
+      "Post-ERCP",
+      "Valproic acid"
+     ],
+     "explain": "Gallstones and alcohol dominate; metabolic, procedural and drug causes follow."
+    },
+    {
+     "category": "Causes of cholestatic pattern (high ALP)",
+     "level": 4,
+     "items": [
+      "Primary biliary cholangitis",
+      "Primary sclerosing cholangitis",
+      "Choledocholithiasis",
+      "Cholangiocarcinoma"
+     ],
+     "explain": "Bile duct injury or obstruction raises ALP and GGT out of proportion to ALT."
+    }
+   ],
+   "review_notes": "Decoys: Choledocholithiasis (gallstones sound like a pancreatitis cause). Dropped alcohol, gallstones, pancreatic head cancer (valid in multiple groups). Least sure: Herpes simplex hepatitis (rare, classically over 1000)."
+  },
+  {
+   "id": "cn009",
+   "title": "Infections by category",
+   "groups": [
+    {
+     "category": "Causes of atypical pneumonia",
+     "level": 1,
+     "items": [
+      "Mycoplasma pneumoniae",
+      "Legionella",
+      "Chlamydophila pneumoniae",
+      "Coxiella burnetii"
+     ],
+     "explain": "Atypicals are not seen on Gram stain and are not covered by beta-lactams."
+    },
+    {
+     "category": "Bacterial causes of diarrhea",
+     "level": 2,
+     "items": [
+      "Campylobacter",
+      "Shigella",
+      "Enterohemorrhagic E. coli",
+      "Vibrio cholerae"
+     ],
+     "explain": "Common enteric pathogens by exposure."
+    },
+    {
+     "category": "Encapsulated bacteria (risk in asplenia)",
+     "level": 3,
+     "items": [
+      "Streptococcus pneumoniae",
+      "Haemophilus influenzae",
+      "Neisseria meningitidis",
+      "Klebsiella pneumoniae"
+     ],
+     "explain": "Encapsulated organisms need splenic opsonization for clearance."
+    },
+    {
+     "category": "Opportunistic conditions with CD4 below 100",
+     "level": 4,
+     "items": [
+      "Cerebral toxoplasmosis",
+      "CMV retinitis",
+      "Disseminated MAC",
+      "Primary CNS lymphoma"
+     ],
+     "explain": "Advanced HIV allows these to emerge as CD4 falls."
+    }
+   ],
+   "review_notes": "Decoys: Klebsiella and Legionella both cause pneumonia but only Klebsiella is an encapsulated bacterium; Salmonella dropped (encapsulated and diarrheal). Least sure: Primary CNS lymphoma (a neoplasm, category worded loosely); Coxiella as atypical."
+  },
+  {
+   "id": "cn010",
+   "title": "Neurologic signs",
+   "groups": [
+    {
+     "category": "Parkinson disease features",
+     "level": 1,
+     "items": [
+      "Resting tremor",
+      "Bradykinesia",
+      "Cogwheel rigidity",
+      "Postural instability"
+     ],
+     "explain": "Dopaminergic loss produces the parkinsonian tetrad."
+    },
+    {
+     "category": "Cerebellar signs",
+     "level": 2,
+     "items": [
+      "Intention tremor",
+      "Dysdiadochokinesia",
+      "Scanning speech",
+      "Nystagmus"
+     ],
+     "explain": "Cerebellar lesions cause ataxia and dysmetria."
+    },
+    {
+     "category": "Upper motor neuron signs",
+     "level": 3,
+     "items": [
+      "Spasticity",
+      "Hyperreflexia",
+      "Babinski sign",
+      "Clonus"
+     ],
+     "explain": "Loss of descending inhibition produces spastic weakness."
+    },
+    {
+     "category": "Lower motor neuron signs",
+     "level": 4,
+     "items": [
+      "Fasciculations",
+      "Hyporeflexia",
+      "Muscle atrophy",
+      "Flaccid weakness"
+     ],
+     "explain": "Anterior horn or nerve injury produces flaccid weakness with atrophy."
+    }
+   ],
+   "review_notes": "Decoys: Resting vs Intention tremor; Hyperreflexia vs Hyporeflexia; Cogwheel rigidity vs Spasticity. Least sure: Nystagmus (also vestibular but valid cerebellar)."
+  },
+  {
+   "id": "cn011",
+   "title": "Anemia and blood counts",
+   "groups": [
+    {
+     "category": "Causes of microcytic anemia",
+     "level": 1,
+     "items": [
+      "Iron deficiency",
+      "Lead poisoning",
+      "Sideroblastic anemia",
+      "Alpha-thalassemia trait"
+     ],
+     "explain": "Reduced hemoglobin synthesis gives small red cells."
+    },
+    {
+     "category": "Causes of macrocytosis",
+     "level": 2,
+     "items": [
+      "Vitamin B12 deficiency",
+      "Folate deficiency",
+      "Alcohol use",
+      "Hydroxyurea"
+     ],
+     "explain": "Impaired DNA synthesis or toxins enlarge red cells."
+    },
+    {
+     "category": "Causes of hemolytic anemia",
+     "level": 3,
+     "items": [
+      "G6PD deficiency",
+      "Hereditary spherocytosis",
+      "Autoimmune hemolytic anemia",
+      "Sickle cell disease"
+     ],
+     "explain": "Red-cell destruction raises LDH and indirect bilirubin and lowers haptoglobin."
+    },
+    {
+     "category": "Causes of secondary polycythemia",
+     "level": 4,
+     "items": [
+      "COPD",
+      "Obstructive sleep apnea",
+      "Renal cell carcinoma",
+      "Testosterone therapy"
+     ],
+     "explain": "Hypoxia or EPO excess raises red cell mass."
+    }
+   ],
+   "review_notes": "Decoys: Hydroxyurea is used in sickle cell (sounds hemolytic) but causes macrocytosis. Least sure: Alpha-thalassemia trait (mild hemolysis possible), Lead poisoning (can be normocytic)."
+  },
+  {
+   "id": "cn012",
+   "title": "Joint pain",
+   "groups": [
+    {
+     "category": "Seronegative spondyloarthropathies",
+     "level": 1,
+     "items": [
+      "Ankylosing spondylitis",
+      "Psoriatic arthritis",
+      "Reactive arthritis",
+      "Enteropathic arthritis"
+     ],
+     "explain": "HLA-B27-associated arthropathies without rheumatoid factor."
+    },
+    {
+     "category": "Gout findings",
+     "level": 2,
+     "items": [
+      "Needle-shaped crystals",
+      "Negatively birefringent crystals",
+      "Tophi",
+      "Hyperuricemia"
+     ],
+     "explain": "Monosodium urate deposition causes gout."
+    },
+    {
+     "category": "Pseudogout findings",
+     "level": 3,
+     "items": [
+      "Rhomboid-shaped crystals",
+      "Positively birefringent crystals",
+      "Chondrocalcinosis",
+      "Hemochromatosis"
+     ],
+     "explain": "Calcium pyrophosphate crystals deposit in cartilage."
+    },
+    {
+     "category": "Primary vasculitides",
+     "level": 4,
+     "items": [
+      "Giant cell arteritis",
+      "Takayasu arteritis",
+      "Polyarteritis nodosa",
+      "Kawasaki disease"
+     ],
+     "explain": "Inflammation of vessel walls, classified by vessel size."
+    }
+   ],
+   "review_notes": "Decoys: crystal findings (negative vs positive birefringence, needle vs rhomboid) trade places easily. Least sure: Hemochromatosis as a pseudogout association (established), Hyperuricemia (not specific but gout group)."
+  },
+  {
+   "id": "cn013",
+   "title": "Toxidromes and antidotes",
+   "groups": [
+    {
+     "category": "Opioid toxidrome",
+     "level": 1,
+     "items": [
+      "Pinpoint pupils",
+      "Respiratory depression",
+      "Hypoactive bowel sounds",
+      "Depressed consciousness"
+     ],
+     "explain": "Mu agonism causes miosis, hypoventilation, reduced gut motility and sedation."
+    },
+    {
+     "category": "Anticholinergic toxidrome",
+     "level": 2,
+     "items": [
+      "Dry skin",
+      "Mydriasis",
+      "Urinary retention",
+      "Hyperthermia"
+     ],
+     "explain": "Blocked muscarinic signaling: dry as a bone, blind as a bat, mad as a hatter."
+    },
+    {
+     "category": "Salicylate toxicity features",
+     "level": 3,
+     "items": [
+      "Tinnitus",
+      "Tachypnea",
+      "Noncardiogenic pulmonary edema",
+      "Mixed acid-base disorder"
+     ],
+     "explain": "Salicylate stimulates the respiratory center and uncouples oxidative phosphorylation."
+    },
+    {
+     "category": "Antidotes",
+     "level": 4,
+     "items": [
+      "Naloxone",
+      "Flumazenil",
+      "Fomepizole",
+      "Hydroxocobalamin"
+     ],
+     "explain": "Specific agents reverse opioids, benzodiazepines, toxic alcohols and cyanide."
+    }
+   ],
+   "review_notes": "Decoys: Naloxone sounds like part of the opioid toxidrome but is an antidote; Hyperthermia is shared by salicylate toxicity but listed as anticholinergic. Least sure: Hyperthermia (also in salicylate toxicity), Hypoactive bowel sounds."
+  },
+  {
+   "id": "cn014",
+   "title": "ECG patterns",
+   "groups": [
+    {
+     "category": "ECG findings of hyperkalemia",
+     "level": 1,
+     "items": [
+      "Peaked T waves",
+      "Widened QRS",
+      "Loss of P waves",
+      "Sine wave pattern"
+     ],
+     "explain": "Progressive hyperkalemia flattens atrial activity and widens QRS to a sine wave."
+    },
+    {
+     "category": "Acute pericarditis findings",
+     "level": 2,
+     "items": [
+      "Diffuse ST elevation",
+      "PR depression",
+      "Friction rub",
+      "Pain relieved by sitting forward"
+     ],
+     "explain": "Epicardial inflammation causes diffuse ST/PR changes and positional pain."
+    },
+    {
+     "category": "ECG findings of hypokalemia",
+     "level": 3,
+     "items": [
+      "Prominent U waves",
+      "Flattened T waves",
+      "Frequent PVCs",
+      "Apparent QT prolongation"
+     ],
+     "explain": "Low K delays repolarization and exposes U waves."
+    },
+    {
+     "category": "ECG findings of pulmonary embolism",
+     "level": 4,
+     "items": [
+      "S1Q3T3 pattern",
+      "Right axis deviation",
+      "New right bundle branch block",
+      "T inversion V1-V4"
+     ],
+     "explain": "Acute right heart strain produces right-sided ECG changes."
+    }
+   ],
+   "review_notes": "Decoys: Widened QRS vs New RBBB; Friction rub is an exam sign rather than an ECG finding (category worded for acute pericarditis). Least sure: Frequent PVCs for hypokalemia; Apparent QT prolongation."
+  },
+  {
+   "id": "cn015",
+   "title": "Diabetes drug classes",
+   "groups": [
+    {
+     "category": "SGLT2 inhibitors",
+     "level": 1,
+     "items": [
+      "Empagliflozin",
+      "Dapagliflozin",
+      "Canagliflozin",
+      "Ertugliflozin"
+     ],
+     "explain": "The -gliflozins block renal glucose reabsorption."
+    },
+    {
+     "category": "GLP-1 receptor agonists",
+     "level": 2,
+     "items": [
+      "Semaglutide",
+      "Liraglutide",
+      "Dulaglutide",
+      "Exenatide"
+     ],
+     "explain": "Incretin mimetics: -glutide and -natide."
+    },
+    {
+     "category": "DPP-4 inhibitors",
+     "level": 3,
+     "items": [
+      "Sitagliptin",
+      "Linagliptin",
+      "Saxagliptin",
+      "Alogliptin"
+     ],
+     "explain": "The -gliptins prolong endogenous incretin action."
+    },
+    {
+     "category": "Sulfonylureas",
+     "level": 4,
+     "items": [
+      "Glipizide",
+      "Glyburide",
+      "Glimepiride",
+      "Tolbutamide"
+     ],
+     "explain": "Insulin secretagogues that risk hypoglycemia."
+    }
+   ],
+   "review_notes": "Decoys are the look-alike suffixes (-gliflozin, -gliptin, -glutide, -gli-). Least sure: none; all are standard class memberships."
+  },
+  {
+   "id": "cn016",
+   "title": "Antibiotic adverse effects",
+   "groups": [
+    {
+     "category": "Fluoroquinolone adverse effects",
+     "level": 1,
+     "items": [
+      "Tendon rupture",
+      "Peripheral neuropathy",
+      "Cartilage damage in children",
+      "Aortic aneurysm risk"
+     ],
+     "explain": "Fluoroquinolones carry boxed warnings for tendon, nerve and CNS effects."
+    },
+    {
+     "category": "Aminoglycoside adverse effects",
+     "level": 2,
+     "items": [
+      "Ototoxicity",
+      "Nephrotoxicity",
+      "Vestibular toxicity",
+      "Neuromuscular blockade"
+     ],
+     "explain": "Dose-dependent toxicity of cochlea, vestibule, kidney and neuromuscular junction."
+    },
+    {
+     "category": "Tetracycline adverse effects",
+     "level": 3,
+     "items": [
+      "Tooth discoloration",
+      "Pill esophagitis",
+      "Pseudotumor cerebri",
+      "Impaired bone growth in children"
+     ],
+     "explain": "Tetracyclines bind calcium and irritate the esophagus."
+    },
+    {
+     "category": "Linezolid adverse effects",
+     "level": 4,
+     "items": [
+      "Serotonin syndrome",
+      "Thrombocytopenia",
+      "Optic neuropathy",
+      "Lactic acidosis"
+     ],
+     "explain": "Linezolid is a weak MAO inhibitor and inhibits mitochondrial protein synthesis."
+    }
+   ],
+   "review_notes": "Decoys: Ototoxicity and Cartilage damage easily swap; Peripheral vs Optic neuropathy between FQ and linezolid. Least sure: Impaired bone growth (tetracycline in children, standard); Aortic aneurysm risk for FQ (FDA warning)."
+  },
+  {
+   "id": "cn017",
+   "title": "Blood pressure patterns",
+   "groups": [
+    {
+     "category": "Secondary causes of hypertension",
+     "level": 1,
+     "items": [
+      "Primary aldosteronism",
+      "Renal artery stenosis",
+      "Pheochromocytoma",
+      "Coarctation of aorta"
+     ],
+     "explain": "Identifiable endocrine, renal or vascular causes."
+    },
+    {
+     "category": "Drugs that raise blood pressure",
+     "level": 2,
+     "items": [
+      "NSAIDs",
+      "Pseudoephedrine",
+      "Cyclosporine",
+      "Erythropoietin"
+     ],
+     "explain": "Fluid retention, vasoconstriction or increased viscosity raise BP."
+    },
+    {
+     "category": "Causes of wide pulse pressure",
+     "level": 3,
+     "items": [
+      "Aortic regurgitation",
+      "Patent ductus arteriosus",
+      "Severe anemia",
+      "Arteriovenous fistula"
+     ],
+     "explain": "Large stroke volume with low diastolic runoff widens the pulse pressure."
+    },
+    {
+     "category": "Causes of narrow pulse pressure",
+     "level": 4,
+     "items": [
+      "Cardiac tamponade",
+      "Aortic stenosis",
+      "Severe heart failure",
+      "Hypovolemic shock"
+     ],
+     "explain": "Low stroke volume narrows the pulse pressure."
+    }
+   ],
+   "review_notes": "Decoys: Hyperthyroidism dropped (raises systolic BP and widens pulse pressure). Least sure: Severe anemia for wide pulse pressure; Cyclosporine hypertension."
+  },
+  {
+   "id": "cn018",
+   "title": "Shock types",
+   "groups": [
+    {
+     "category": "Distributive shock",
+     "level": 1,
+     "items": [
+      "Septic shock",
+      "Anaphylaxis",
+      "Neurogenic shock",
+      "Toxic shock syndrome"
+     ],
+     "explain": "Vasodilation drops SVR."
+    },
+    {
+     "category": "Cardiogenic shock",
+     "level": 2,
+     "items": [
+      "Acute myocardial infarction",
+      "Acute mitral regurgitation",
+      "Fulminant myocarditis",
+      "Ventricular septal rupture"
+     ],
+     "explain": "Pump failure reduces cardiac output with high filling pressures."
+    },
+    {
+     "category": "Obstructive shock",
+     "level": 3,
+     "items": [
+      "Tension pneumothorax",
+      "Cardiac tamponade",
+      "Massive pulmonary embolism",
+      "Auto-PEEP"
+     ],
+     "explain": "A physical obstruction limits venous return or outflow."
+    },
+    {
+     "category": "Hypovolemic shock",
+     "level": 4,
+     "items": [
+      "Massive GI bleed",
+      "Severe burns",
+      "Ruptured ectopic pregnancy",
+      "Ruptured aortic aneurysm"
+     ],
+     "explain": "Loss of intravascular volume lowers preload."
+    }
+   ],
+   "review_notes": "Decoys: Cardiac tamponade (sounds cardiac) is obstructive; Toxic shock syndrome overlaps septic shock but both distributive. Least sure: Auto-PEEP (obstructive by impaired venous return); Severe burns (hypovolemic with distributive component)."
+  },
+  {
+   "id": "cn019",
+   "title": "Drug-induced syndromes",
+   "groups": [
+    {
+     "category": "Drugs that prolong the QT interval",
+     "level": 1,
+     "items": [
+      "Haloperidol",
+      "Ondansetron",
+      "Azithromycin",
+      "Methadone"
+     ],
+     "explain": "HERG potassium channel blockade lengthens repolarization."
+    },
+    {
+     "category": "Drugs that cause gynecomastia",
+     "level": 2,
+     "items": [
+      "Spironolactone",
+      "Cimetidine",
+      "Digoxin",
+      "Finasteride"
+     ],
+     "explain": "Antiandrogen or estrogen-like effects cause breast tissue growth."
+    },
+    {
+     "category": "Drugs that cause SIADH",
+     "level": 3,
+     "items": [
+      "Carbamazepine",
+      "Vincristine",
+      "Cyclophosphamide",
+      "Sertraline"
+     ],
+     "explain": "ADH release or potentiation causes euvolemic hyponatremia."
+    },
+    {
+     "category": "Drugs that cause drug-induced lupus",
+     "level": 4,
+     "items": [
+      "Hydralazine",
+      "Isoniazid",
+      "Minocycline",
+      "Infliximab"
+     ],
+     "explain": "Anti-histone antibodies appear; procainamide is classic but also prolongs QT."
+    }
+   ],
+   "review_notes": "Decoys: Dropped procainamide (lupus and QT) and ketoconazole (QT and gynecomastia). Least sure: Sertraline for SIADH (SSRIs generally, valid); Digoxin gynecomastia."
+  },
+  {
+   "id": "cn020",
+   "title": "Chemotherapy toxicities",
+   "groups": [
+    {
+     "category": "Cisplatin toxicities",
+     "level": 1,
+     "items": [
+      "Nephrotoxicity",
+      "Ototoxicity",
+      "Severe nausea",
+      "Hypomagnesemia"
+     ],
+     "explain": "Cisplatin injures proximal tubules and the cochlea."
+    },
+    {
+     "category": "Bleomycin toxicities",
+     "level": 2,
+     "items": [
+      "Pulmonary fibrosis",
+      "Interstitial pneumonitis",
+      "Flagellate hyperpigmentation",
+      "Worse injury with high oxygen"
+     ],
+     "explain": "Lung is the dose-limiting organ for bleomycin."
+    },
+    {
+     "category": "Doxorubicin toxicities",
+     "level": 3,
+     "items": [
+      "Dilated cardiomyopathy",
+      "Cumulative-dose toxicity",
+      "Red-orange urine",
+      "Secondary leukemia"
+     ],
+     "explain": "Anthracyclines cause dose-related cardiomyopathy."
+    },
+    {
+     "category": "Cyclophosphamide toxicities",
+     "level": 4,
+     "items": [
+      "Hemorrhagic cystitis",
+      "Bladder cancer",
+      "Prevented by mesna",
+      "Acrolein metabolite"
+     ],
+     "explain": "Acrolein injures bladder urothelium; mesna binds it."
+    }
+   ],
+   "review_notes": "Decoys: Pulmonary fibrosis vs cardiomyopathy as organ-specific toxicity. Least sure: Secondary leukemia for doxorubicin; Hypomagnesemia (valid for cisplatin)."
+  },
+  {
+   "id": "cn021",
+   "title": "Vector-borne and zoonotic",
+   "groups": [
+    {
+     "category": "Tick-borne infections",
+     "level": 1,
+     "items": [
+      "Lyme disease",
+      "Rocky Mountain spotted fever",
+      "Ehrlichiosis",
+      "Anaplasmosis"
+     ],
+     "explain": "Ixodes, Dermacentor and Amblyomma ticks transmit these."
+    },
+    {
+     "category": "Mosquito-borne infections",
+     "level": 2,
+     "items": [
+      "Malaria",
+      "Dengue",
+      "West Nile virus",
+      "Chikungunya"
+     ],
+     "explain": "Anopheles and Aedes/Culex mosquitoes are the vectors."
+    },
+    {
+     "category": "Flea- or louse-borne infections",
+     "level": 3,
+     "items": [
+      "Plague",
+      "Epidemic typhus",
+      "Murine typhus",
+      "Trench fever"
+     ],
+     "explain": "Fleas and body lice transmit these."
+    },
+    {
+     "category": "Direct animal exposure without arthropod vector",
+     "level": 4,
+     "items": [
+      "Brucellosis",
+      "Leptospirosis",
+      "Psittacosis",
+      "Anthrax"
+     ],
+     "explain": "Livestock, rodents, birds or hides transmit these directly."
+    }
+   ],
+   "review_notes": "Decoys: Typhus and RMSF are both rickettsial but have different vectors; Plague is zoonotic but flea-borne. Least sure: Anthrax and Plague boundaries; Anaplasmosis (Ixodes ticks)."
+  },
+  {
+   "id": "cn022",
+   "title": "Chest pain differential",
+   "groups": [
+    {
+     "category": "Acute pericarditis",
+     "level": 1,
+     "items": [
+      "Pain relieved by leaning forward",
+      "Friction rub",
+      "Diffuse ST elevation",
+      "PR depression"
+     ],
+     "explain": "Pericardial inflammation causes positional pleuritic pain."
+    },
+    {
+     "category": "Pulmonary embolism clues",
+     "level": 2,
+     "items": [
+      "Unilateral leg swelling",
+      "Hemoptysis",
+      "Recent long flight",
+      "Hampton hump"
+     ],
+     "explain": "Venous thromboembolism risk factors and infarct signs point to PE."
+    },
+    {
+     "category": "Aortic dissection clues",
+     "level": 3,
+     "items": [
+      "Tearing pain radiating to back",
+      "Arm blood pressure differential",
+      "Widened mediastinum",
+      "New aortic regurgitation murmur"
+     ],
+     "explain": "Intimal tear findings affect pulses, imaging and the aortic valve."
+    },
+    {
+     "category": "Esophageal rupture (Boerhaave) clues",
+     "level": 4,
+     "items": [
+      "Vomiting before chest pain",
+      "Subcutaneous emphysema",
+      "Pneumomediastinum",
+      "Left pleural effusion"
+     ],
+     "explain": "Forceful emesis ruptures the distal esophagus."
+    }
+   ],
+   "review_notes": "Decoys: Dropped pleuritic pain (pericarditis and PE) and sinus tachycardia. Least sure: Hampton hump (PE infarct sign); Left pleural effusion for Boerhaave."
+  },
+  {
+   "id": "cn023",
+   "title": "Hyperglycemic emergencies and adrenal crisis",
+   "groups": [
+    {
+     "category": "Diabetic ketoacidosis",
+     "level": 1,
+     "items": [
+      "High anion gap",
+      "Positive serum beta-hydroxybutyrate",
+      "Kussmaul respirations",
+      "Low bicarbonate"
+     ],
+     "explain": "Ketone accumulation causes gap acidosis and compensatory hyperventilation."
+    },
+    {
+     "category": "Hyperosmolar hyperglycemic state",
+     "level": 2,
+     "items": [
+      "Glucose over 600",
+      "Osmolality over 320",
+      "Minimal ketosis",
+      "Bicarbonate over 18"
+     ],
+     "explain": "Severe hyperglycemia and osmolality with little ketosis."
+    },
+    {
+     "category": "Primary hyperaldosteronism labs",
+     "level": 3,
+     "items": [
+      "Low renin",
+      "High aldosterone",
+      "Hypokalemia",
+      "Metabolic alkalosis"
+     ],
+     "explain": "Mineralocorticoid excess wastes K and H and suppresses renin."
+    },
+    {
+     "category": "Primary adrenal insufficiency labs",
+     "level": 4,
+     "items": [
+      "Hyponatremia",
+      "Hyperkalemia",
+      "Hypoglycemia",
+      "Eosinophilia"
+     ],
+     "explain": "Cortisol and aldosterone deficiency produce these abnormalities."
+    }
+   ],
+   "review_notes": "Decoys: Hypokalemia vs Hyperkalemia; Hyperglycemia dropped from DKA items (shared with HHS). Least sure: Low bicarbonate/Bicarbonate over 18 thresholds; Eosinophilia in adrenal insufficiency."
+  },
+  {
+   "id": "cn024",
+   "title": "Hyponatremia by mechanism",
+   "groups": [
+    {
+     "category": "Hypovolemic hyponatremia",
+     "level": 1,
+     "items": [
+      "Diarrhea",
+      "Thiazide diuretics",
+      "Cerebral salt wasting",
+      "Addison disease"
+     ],
+     "explain": "Volume depletion drives ADH release and water retention."
+    },
+    {
+     "category": "Hypervolemic hyponatremia",
+     "level": 2,
+     "items": [
+      "Heart failure",
+      "Cirrhosis",
+      "Nephrotic syndrome",
+      "Advanced CKD"
+     ],
+     "explain": "Low effective arterial volume causes ADH release."
+    },
+    {
+     "category": "Euvolemic hyponatremia",
+     "level": 3,
+     "items": [
+      "SIADH",
+      "Hypothyroidism",
+      "Primary polydipsia",
+      "Beer potomania"
+     ],
+     "explain": "Impaired water excretion without edema or volume depletion."
+    },
+    {
+     "category": "Hyponatremia with normal or high osmolality",
+     "level": 4,
+     "items": [
+      "Hyperglycemia",
+      "Mannitol infusion",
+      "Severe hypertriglyceridemia",
+      "Paraproteinemia"
+     ],
+     "explain": "Osmotic water shifts or lab artifact lower measured sodium."
+    }
+   ],
+   "review_notes": "Decoys: Addison disease (endocrine, sounds euvolemic) is hypovolemic; Hypothyroidism vs Cirrhosis. Least sure: Hypothyroidism (euvolemic, debated mechanism); Advanced CKD."
+  },
+  {
+   "id": "cn025",
+   "title": "Infective endocarditis",
+   "groups": [
+    {
+     "category": "Peripheral stigmata of endocarditis",
+     "level": 1,
+     "items": [
+      "Janeway lesions",
+      "Osler nodes",
+      "Roth spots",
+      "Splinter hemorrhages"
+     ],
+     "explain": "Embolic and immune phenomena appear in the skin, nails and retina."
+    },
+    {
+     "category": "Common causative organisms",
+     "level": 2,
+     "items": [
+      "Viridans streptococci",
+      "Staphylococcus aureus",
+      "Enterococcus",
+      "Streptococcus gallolyticus"
+     ],
+     "explain": "Skin, oral and gut flora are the usual culprits."
+    },
+    {
+     "category": "Risk factors for endocarditis",
+     "level": 3,
+     "items": [
+      "Injection drug use",
+      "Prosthetic heart valve",
+      "Rheumatic heart disease",
+      "Hemodialysis catheter"
+     ],
+     "explain": "Bacteremia plus an abnormal surface or foreign material predisposes."
+    },
+    {
+     "category": "Complications of endocarditis",
+     "level": 4,
+     "items": [
+      "Septic emboli",
+      "Valve perforation",
+      "Perivalvular abscess",
+      "New PR prolongation"
+     ],
+     "explain": "Local invasion and embolization cause the major complications."
+    }
+   ],
+   "review_notes": "Decoys: Staph aureus and Injection drug use are linked but belong to different groups; Janeway lesions vs Septic emboli. Least sure: Hemodialysis catheter as a risk factor; New PR prolongation (marker of abscess)."
+  },
+  {
+   "id": "cn026",
+   "title": "Antithrombotic drugs",
+   "groups": [
+    {
+     "category": "P2Y12 inhibitors",
+     "level": 1,
+     "items": [
+      "Clopidogrel",
+      "Prasugrel",
+      "Ticagrelor",
+      "Cangrelor"
+     ],
+     "explain": "These block platelet ADP signaling."
+    },
+    {
+     "category": "Factor Xa inhibitors",
+     "level": 2,
+     "items": [
+      "Apixaban",
+      "Rivaroxaban",
+      "Edoxaban",
+      "Fondaparinux"
+     ],
+     "explain": "Direct or indirect factor Xa inhibition."
+    },
+    {
+     "category": "Direct thrombin inhibitors",
+     "level": 3,
+     "items": [
+      "Dabigatran",
+      "Argatroban",
+      "Bivalirudin",
+      "Desirudin"
+     ],
+     "explain": "These bind thrombin directly."
+    },
+    {
+     "category": "Fibrinolytics",
+     "level": 4,
+     "items": [
+      "Alteplase",
+      "Tenecteplase",
+      "Reteplase",
+      "Streptokinase"
+     ],
+     "explain": "Plasminogen activators dissolve clot."
+    }
+   ],
+   "review_notes": "Decoys: Dabigatran (a DOAC) sits with thrombin inhibitors, not the Xa DOACs; Fondaparinux is a parenteral Xa inhibitor. Least sure: Fondaparinux (indirect via antithrombin)."
+  }
+ ]
+}

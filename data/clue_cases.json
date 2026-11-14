@@ -1,0 +1,1060 @@
+{
+  "version": 1,
+  "review_status": "unreviewed",
+  "generator": "AI-drafted for faculty review",
+  "cases": [
+    {
+      "id": "cl001",
+      "category": "Diagnostic Dilemmas",
+      "diagnosis": "Pheochromocytoma",
+      "aliases": [
+        "pheo",
+        "phaeochromocytoma",
+        "catecholamine secreting tumor",
+        "adrenal paraganglioma"
+      ],
+      "clues": [
+        "A 38-year-old woman has months of episodic headaches and palpitations that her clinic has attributed to anxiety.",
+        "Her blood pressure is 190/110 and drops markedly on standing; spells are triggered by abdominal pressure or certain medications.",
+        "A random glucose is elevated and CT shows a 4 cm heterogeneous adrenal mass with high attenuation before contrast.",
+        "Plasma free metanephrines are more than four times the upper limit of normal."
+      ],
+      "common_wrong": [
+        "panic disorder",
+        "hyperthyroidism",
+        "essential hypertension"
+      ],
+      "teaching": "Start alpha blockade before beta blockade to avoid unopposed alpha stimulation and a hypertensive crisis.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl002",
+      "category": "Diagnostic Dilemmas",
+      "diagnosis": "Primary Aldosteronism",
+      "aliases": [
+        "Conn syndrome",
+        "Conns syndrome",
+        "hyperaldosteronism",
+        "aldosterone producing adenoma",
+        "primary hyperaldosteronism"
+      ],
+      "clues": [
+        "A 45-year-old man has hypertension that remains uncontrolled despite three antihypertensive drugs including a diuretic.",
+        "He reports muscle weakness and cramps; sodium is 144 mEq/L and serum bicarbonate is mildly elevated.",
+        "Potassium is 3.0 mEq/L with inappropriate urinary potassium wasting, and a 1.5 cm adrenal nodule is seen on CT.",
+        "Plasma aldosterone to renin ratio is markedly elevated with a suppressed renin level."
+      ],
+      "common_wrong": [
+        "renal artery stenosis",
+        "Cushing syndrome",
+        "essential hypertension"
+      ],
+      "teaching": "Screen for primary aldosteronism in resistant hypertension, hypokalemia, or an adrenal incidentaloma using the aldosterone to renin ratio.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl003",
+      "category": "Diagnostic Dilemmas",
+      "diagnosis": "Thrombotic Thrombocytopenic Purpura",
+      "aliases": [
+        "TTP",
+        "ADAMTS13 deficiency",
+        "Moschcowitz syndrome"
+      ],
+      "clues": [
+        "A 32-year-old woman has several days of fatigue, headache, and a low-grade fever.",
+        "She is confused and mildly jaundiced; creatinine is 1.6 mg/dL and platelets are 12,000/uL.",
+        "Hemoglobin is 7.8 g/dL with elevated LDH and indirect bilirubin, a negative Coombs test, and normal PT and aPTT.",
+        "The peripheral smear shows numerous schistocytes and ADAMTS13 activity is below 10 percent."
+      ],
+      "common_wrong": [
+        "immune thrombocytopenia",
+        "DIC",
+        "hemolytic uremic syndrome"
+      ],
+      "teaching": "Start plasma exchange emergently when a pentad-like picture with schistocytes and thrombocytopenia appears; do not wait for ADAMTS13 results and avoid platelet transfusion.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl004",
+      "category": "Diagnostic Dilemmas",
+      "diagnosis": "Adrenal Insufficiency",
+      "aliases": [
+        "Addison disease",
+        "Addisons disease",
+        "adrenal crisis",
+        "primary adrenal insufficiency",
+        "hypoadrenalism"
+      ],
+      "clues": [
+        "A 52-year-old woman has months of fatigue, weight loss, and nausea with vague abdominal pain.",
+        "She is lightheaded on standing and her blood pressure is 88/54; sodium is 126 mEq/L and potassium is 5.6 mEq/L.",
+        "Her skin is darkened in the palmar creases and buccal mucosa, and she has mild hypoglycemia and eosinophilia.",
+        "Morning cortisol is low with a high ACTH and a flat response to cosyntropin stimulation."
+      ],
+      "common_wrong": [
+        "depression",
+        "SIADH",
+        "gastroenteritis"
+      ],
+      "teaching": "Hyperpigmentation plus hyperkalemia suggests primary adrenal failure; give stress-dose steroids before the diagnosis is confirmed in crisis.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl005",
+      "category": "Diagnostic Dilemmas",
+      "diagnosis": "Acute Intermittent Porphyria",
+      "aliases": [
+        "AIP",
+        "porphyria",
+        "acute porphyria",
+        "porphobilinogen deaminase deficiency"
+      ],
+      "clues": [
+        "A 27-year-old woman has repeated emergency visits for severe abdominal pain with a normal examination and normal imaging.",
+        "The pain began a week before her menses after a crash diet; she also has constipation and a heart rate of 120.",
+        "She develops proximal weakness, seizures, and a sodium of 124 mEq/L, and her urine darkens after standing in sunlight.",
+        "Urine porphobilinogen is markedly elevated during an attack."
+      ],
+      "common_wrong": [
+        "appendicitis",
+        "conversion disorder",
+        "Guillain-Barre syndrome"
+      ],
+      "teaching": "Treat acute attacks with IV hemin and glucose, and review the drug list to remove porphyrinogenic agents.",
+      "review_notes": "Some may answer just 'porphyria' which is intentionally allowed as an alias."
+    },
+    {
+      "id": "cl006",
+      "category": "Diagnostic Dilemmas",
+      "diagnosis": "Wilson Disease",
+      "aliases": [
+        "hepatolenticular degeneration",
+        "Wilsons disease",
+        "copper overload disease",
+        "ATP7B deficiency"
+      ],
+      "clues": [
+        "A 19-year-old college student has two months of unexplained fatigue and mildly elevated aminotransferases.",
+        "Over the same time his handwriting worsened and he developed a tremor and slurred speech.",
+        "Alkaline phosphatase is surprisingly low relative to bilirubin, and he has a Coombs-negative hemolytic anemia.",
+        "Slit-lamp examination shows Kayser-Fleischer rings and ceruloplasmin is low."
+      ],
+      "common_wrong": [
+        "autoimmune hepatitis",
+        "Huntington disease",
+        "hemochromatosis"
+      ],
+      "teaching": "Test for Wilson disease in anyone under 40 with unexplained liver disease, especially with psychiatric or movement symptoms.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl007",
+      "category": "Diagnostic Dilemmas",
+      "diagnosis": "Takayasu Arteritis",
+      "aliases": [
+        "Takayasu",
+        "Takayasus arteritis",
+        "pulseless disease",
+        "aortic arch syndrome"
+      ],
+      "clues": [
+        "A 26-year-old woman has several months of low-grade fevers, fatigue, and weight loss.",
+        "She notices left arm fatigue with use and has lightheadedness when turning her head quickly.",
+        "Blood pressure is 150/90 in the right arm and 96/60 in the left arm, with a subclavian bruit and elevated ESR.",
+        "CT angiography shows long smooth stenoses of the aortic arch branches with wall thickening."
+      ],
+      "common_wrong": [
+        "giant cell arteritis",
+        "atherosclerosis",
+        "fibromuscular dysplasia"
+      ],
+      "teaching": "Suspect Takayasu in a young woman with absent pulses or a blood pressure discrepancy between arms.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl008",
+      "category": "Diagnostic Dilemmas",
+      "diagnosis": "Multiple Myeloma",
+      "aliases": [
+        "myeloma",
+        "plasma cell myeloma",
+        "MM",
+        "Kahler disease"
+      ],
+      "clues": [
+        "A 66-year-old man has several months of fatigue and back pain that worsens at night.",
+        "Hemoglobin is 9.1 g/dL, creatinine is 2.3 mg/dL, and total protein is high with a low anion gap.",
+        "Calcium is 12.1 mg/dL and a rouleaux formation is seen on the smear; urine dipstick is negative for protein.",
+        "Serum protein electrophoresis shows an M spike and bone marrow biopsy has 40 percent clonal plasma cells with lytic skull lesions."
+      ],
+      "common_wrong": [
+        "metastatic prostate cancer",
+        "MGUS",
+        "osteoporosis"
+      ],
+      "teaching": "A negative urine dipstick with heavy proteinuria suggests Bence Jones light chains, which dipsticks do not detect.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl009",
+      "category": "Diagnostic Dilemmas",
+      "diagnosis": "Sarcoidosis",
+      "aliases": [
+        "sarcoid",
+        "pulmonary sarcoidosis",
+        "Lofgren syndrome",
+        "Besnier-Boeck disease"
+      ],
+      "clues": [
+        "A 34-year-old Black woman has a persistent dry cough and fatigue for several months.",
+        "She has tender red shins and ankle swelling, and her calcium is mildly high.",
+        "Chest radiograph shows bilateral hilar enlargement and the ACE level is elevated.",
+        "Biopsy shows non-caseating granulomas, and cultures and stains for organisms are negative."
+      ],
+      "common_wrong": [
+        "tuberculosis",
+        "lymphoma",
+        "hypersensitivity pneumonitis"
+      ],
+      "teaching": "Sarcoid is a diagnosis of exclusion that requires non-caseating granulomas and exclusion of infection and other causes.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl010",
+      "category": "Diagnostic Dilemmas",
+      "diagnosis": "Hemophagocytic Lymphohistiocytosis",
+      "aliases": [
+        "HLH",
+        "hemophagocytic syndrome",
+        "macrophage activation syndrome",
+        "hemophagocytosis"
+      ],
+      "clues": [
+        "A 41-year-old man has two weeks of fever above 39 C that has not responded to broad antibiotics.",
+        "He now has splenomegaly, pancytopenia, and rising liver enzymes with a falling fibrinogen.",
+        "Ferritin is 28,000 ng/mL and triglycerides are markedly elevated.",
+        "Bone marrow shows macrophages engulfing blood cells and soluble IL-2 receptor is very high."
+      ],
+      "common_wrong": [
+        "sepsis",
+        "lymphoma",
+        "adult Still disease"
+      ],
+      "teaching": "Very high ferritin with fever and cytopenias should prompt HScore calculation, and a search for the trigger such as infection or lymphoma.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl011",
+      "category": "Atypical Presentations of Common Diseases",
+      "diagnosis": "Thyroid Storm",
+      "aliases": [
+        "thyrotoxic crisis",
+        "thyrotoxicosis",
+        "thyroid crisis",
+        "hyperthyroid storm"
+      ],
+      "clues": [
+        "A 29-year-old woman is brought in after a fall; her partner says she has had weight loss for months.",
+        "Temperature is 39.8 C, heart rate is 150 and irregular, and she is agitated and tremulous.",
+        "Examination shows a diffuse goiter, lid lag, and warm moist skin; she recently had an infection and stopped her medicines.",
+        "TSH is undetectable with markedly elevated free T4 and a Burch-Wartofsky score above 45."
+      ],
+      "common_wrong": [
+        "sepsis",
+        "anxiety disorder",
+        "heat stroke"
+      ],
+      "teaching": "Treat thyroid storm with a thionamide first, iodine an hour later, a beta blocker, and steroids.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl012",
+      "category": "Atypical Presentations of Common Diseases",
+      "diagnosis": "Myocardial Infarction",
+      "aliases": [
+        "heart attack",
+        "MI",
+        "acute myocardial infarction",
+        "STEMI",
+        "NSTEMI",
+        "acute coronary syndrome"
+      ],
+      "clues": [
+        "A 68-year-old woman with diabetes has two hours of nausea, fatigue, and a sense of indigestion that is not relieved by antacids.",
+        "She is diaphoretic and short of breath, and her vital signs show mild hypotension.",
+        "ECG shows ST elevation in the inferior leads with reciprocal changes in aVL.",
+        "Troponin is rising and angiography shows an occluded right coronary artery."
+      ],
+      "common_wrong": [
+        "gastritis",
+        "panic attack",
+        "gastroesophageal reflux disease"
+      ],
+      "teaching": "Women, older adults, and patients with diabetes often present with atypical symptoms, so get an ECG early.",
+      "review_notes": "Aliases like 'ACS' and 'STEMI' are accepted for simplicity."
+    },
+    {
+      "id": "cl013",
+      "category": "Atypical Presentations of Common Diseases",
+      "diagnosis": "Pulmonary Embolism",
+      "aliases": [
+        "PE",
+        "pulmonary embolus",
+        "pulmonary thromboembolism",
+        "saddle embolus"
+      ],
+      "clues": [
+        "A 55-year-old man has had three days of new fatigue and a brief fainting spell while climbing stairs.",
+        "He recently returned from a long flight and now has pleuritic chest pain with a heart rate of 112.",
+        "The oxygen saturation is 90 percent on room air with a clear chest radiograph and a swollen left calf.",
+        "CT pulmonary angiography shows a filling defect in the right pulmonary artery."
+      ],
+      "common_wrong": [
+        "pneumonia",
+        "pericarditis",
+        "anxiety"
+      ],
+      "teaching": "Syncope with a clear chest film and hypoxia should raise PE high on the differential, and the right ventricle should be assessed.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl014",
+      "category": "Atypical Presentations of Common Diseases",
+      "diagnosis": "Diabetic Ketoacidosis",
+      "aliases": [
+        "DKA",
+        "ketoacidosis",
+        "diabetic acidosis"
+      ],
+      "clues": [
+        "A 22-year-old man has two days of vomiting and abdominal pain and was told he has a stomach virus.",
+        "He is breathing deeply and quickly with dry mucous membranes and a heart rate of 118.",
+        "Glucose is 520 mg/dL with an anion gap of 28 and a pH of 7.1.",
+        "Serum and urine ketones are strongly positive, and he has no known diabetes history."
+      ],
+      "common_wrong": [
+        "gastroenteritis",
+        "pancreatitis",
+        "appendicitis"
+      ],
+      "teaching": "Replace fluids first, then give insulin only once potassium is above 3.3 mEq/L, and look for the precipitant.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl015",
+      "category": "Atypical Presentations of Common Diseases",
+      "diagnosis": "Infective Endocarditis",
+      "aliases": [
+        "endocarditis",
+        "bacterial endocarditis",
+        "IE",
+        "subacute bacterial endocarditis",
+        "SBE"
+      ],
+      "clues": [
+        "A 47-year-old man has had two weeks of fatigue, night sweats, and low back pain.",
+        "He has a new heart murmur and painless red spots on the palms, and his hemoglobin is 10 g/dL.",
+        "He has splinter hemorrhages and painful nodules on his finger pads, and an IV drug use history.",
+        "Blood cultures grow Staphylococcus aureus in four of four bottles and echo shows a mobile valve vegetation."
+      ],
+      "common_wrong": [
+        "vertebral osteomyelitis",
+        "influenza",
+        "rheumatic fever"
+      ],
+      "teaching": "Obtain at least three sets of blood cultures before antibiotics when endocarditis is suspected, and apply the Duke criteria.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl016",
+      "category": "Atypical Presentations of Common Diseases",
+      "diagnosis": "Giant Cell Arteritis",
+      "aliases": [
+        "GCA",
+        "temporal arteritis",
+        "Horton disease",
+        "cranial arteritis"
+      ],
+      "clues": [
+        "A 72-year-old woman has a new headache, fatigue, and a low-grade fever for several weeks.",
+        "She has aching in her shoulders and hips and pain when she chews food.",
+        "ESR is 94 mm/h, and she describes a brief loss of vision in one eye yesterday.",
+        "Temporal artery biopsy shows granulomatous inflammation with multinucleated giant cells."
+      ],
+      "common_wrong": [
+        "polymyalgia rheumatica",
+        "migraine",
+        "trigeminal neuralgia"
+      ],
+      "teaching": "Start high-dose glucocorticoids immediately when GCA is suspected with visual symptoms, before the biopsy.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl017",
+      "category": "Atypical Presentations of Common Diseases",
+      "diagnosis": "Hypothyroidism",
+      "aliases": [
+        "myxedema",
+        "underactive thyroid",
+        "Hashimoto thyroiditis",
+        "myxedema coma"
+      ],
+      "clues": [
+        "A 61-year-old woman has progressive fatigue and a feeling that her memory has slipped over the past year.",
+        "She has constipation, weight gain, a hoarse voice, and cold intolerance, and her LDL cholesterol is newly elevated.",
+        "Examination shows dry skin, delayed relaxation of ankle reflexes, and a heart rate of 52.",
+        "TSH is 78 mIU/L with a low free T4, and anti-TPO antibodies are positive."
+      ],
+      "common_wrong": [
+        "depression",
+        "dementia",
+        "anemia"
+      ],
+      "teaching": "Check TSH in patients with cognitive decline, hyperlipidemia, or unexplained fatigue.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl018",
+      "category": "Atypical Presentations of Common Diseases",
+      "diagnosis": "Celiac Disease",
+      "aliases": [
+        "celiac",
+        "coeliac disease",
+        "gluten sensitive enteropathy",
+        "celiac sprue",
+        "sprue"
+      ],
+      "clues": [
+        "A 35-year-old woman has long-standing iron deficiency that has not improved despite oral supplements.",
+        "She also has mild osteopenia, intermittent bloating, and recurrent mouth ulcers.",
+        "She has an itchy blistering rash on her elbows and knees, and her aminotransferases are mildly elevated.",
+        "Anti-tissue transglutaminase IgA is strongly positive and duodenal biopsy shows villous atrophy."
+      ],
+      "common_wrong": [
+        "irritable bowel syndrome",
+        "Crohn disease",
+        "menorrhagia"
+      ],
+      "teaching": "Refractory iron deficiency without a bleeding source warrants celiac testing, and the patient must be on gluten when tested.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl019",
+      "category": "Atypical Presentations of Common Diseases",
+      "diagnosis": "Aortic Dissection",
+      "aliases": [
+        "dissecting aortic aneurysm",
+        "aortic dissection type A",
+        "thoracic aortic dissection",
+        "aortic tear"
+      ],
+      "clues": [
+        "A 58-year-old man with uncontrolled hypertension has abrupt severe pain that began in his chest and moves to his back.",
+        "The pain is maximal at onset and he describes it as tearing; blood pressure differs by 30 mmHg between his arms.",
+        "He has a new diastolic murmur, and a chest radiograph shows a widened mediastinum.",
+        "CT angiography demonstrates an intimal flap in the ascending aorta."
+      ],
+      "common_wrong": [
+        "myocardial infarction",
+        "pulmonary embolism",
+        "pericarditis"
+      ],
+      "teaching": "Avoid anticoagulation and thrombolysis when dissection is possible, and control heart rate before blood pressure.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl020",
+      "category": "Atypical Presentations of Common Diseases",
+      "diagnosis": "Subarachnoid Hemorrhage",
+      "aliases": [
+        "SAH",
+        "subarachnoid bleed",
+        "ruptured cerebral aneurysm",
+        "aneurysmal subarachnoid hemorrhage"
+      ],
+      "clues": [
+        "A 44-year-old woman reports the worst headache of her life that peaked within a minute while she was exercising.",
+        "She vomited twice and has a stiff neck and sensitivity to light but no focal weakness.",
+        "Her blood pressure is 176/98 and a non-contrast head CT is performed six hours after onset.",
+        "CT shows blood in the basal cisterns and angiography identifies a posterior communicating artery aneurysm."
+      ],
+      "common_wrong": [
+        "migraine",
+        "meningitis",
+        "tension headache"
+      ],
+      "teaching": "Non-contrast CT within six hours of onset is nearly 100 percent sensitive; nimodipine reduces delayed ischemia.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl021",
+      "category": "Complex Pathophysiology",
+      "diagnosis": "Goodpasture Syndrome",
+      "aliases": [
+        "Goodpastures syndrome",
+        "anti-GBM disease",
+        "anti glomerular basement membrane disease",
+        "anti-GBM nephritis"
+      ],
+      "clues": [
+        "A 24-year-old man who smokes has had a week of cough, fatigue, and dark tea-colored urine after a recent viral illness.",
+        "He coughs up small amounts of blood, and his hemoglobin has fallen to 8.5 g/dL with iron deficiency pattern.",
+        "Creatinine rises from 1.0 to 4.5 mg/dL over days; urine shows dysmorphic red cells and red cell casts, and chest imaging shows alveolar opacities.",
+        "Serum anti-glomerular basement membrane antibodies are positive and kidney biopsy shows linear IgG staining."
+      ],
+      "common_wrong": [
+        "ANCA vasculitis",
+        "lupus nephritis",
+        "pneumonia"
+      ],
+      "teaching": "Treat anti-GBM disease urgently with plasma exchange, cyclophosphamide, and steroids, and advise the patient to stop smoking.",
+      "review_notes": "Linear IgG is on immunofluorescence; clue wording could be tightened."
+    },
+    {
+      "id": "cl022",
+      "category": "Complex Pathophysiology",
+      "diagnosis": "Tumor Lysis Syndrome",
+      "aliases": [
+        "TLS",
+        "tumour lysis syndrome",
+        "spontaneous tumor lysis syndrome"
+      ],
+      "clues": [
+        "A 55-year-old man was admitted yesterday and started treatment for a bulky lymphoma with a very high white count.",
+        "Overnight he has nausea, muscle cramps, and reduced urine output.",
+        "Creatinine rose from 1.1 to 3.4 mg/dL and phosphorus is 8.2 mg/dL with a low calcium.",
+        "Uric acid and potassium are markedly elevated, and the ECG shows peaked T waves."
+      ],
+      "common_wrong": [
+        "contrast nephropathy",
+        "sepsis",
+        "hypercalcemia of malignancy"
+      ],
+      "teaching": "Prevent tumor lysis syndrome with aggressive hydration and allopurinol or rasburicase before cytotoxic therapy in high-risk disease.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl023",
+      "category": "Complex Pathophysiology",
+      "diagnosis": "Refeeding Syndrome",
+      "aliases": [
+        "refeeding",
+        "refeeding hypophosphatemia",
+        "re-feeding syndrome"
+      ],
+      "clues": [
+        "A 34-year-old woman with a BMI of 14 is admitted for severe malnutrition and started on enteral feeding.",
+        "On the third day she is weak and short of breath, and she develops swelling in both legs.",
+        "Phosphorus is 0.9 mg/dL, with low potassium and magnesium, and her heart rate is irregular.",
+        "Insulin surge from carbohydrate feeding drove electrolytes into the cells, and thiamine was not given before feeds."
+      ],
+      "common_wrong": [
+        "heart failure",
+        "sepsis",
+        "Guillain-Barre syndrome"
+      ],
+      "teaching": "Give thiamine before feeding and replace phosphate, potassium, and magnesium while advancing calories slowly in malnourished patients.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl024",
+      "category": "Complex Pathophysiology",
+      "diagnosis": "Syndrome of Inappropriate Antidiuretic Hormone",
+      "aliases": [
+        "SIADH",
+        "syndrome of inappropriate ADH",
+        "inappropriate antidiuretic hormone secretion",
+        "SIADH secretion"
+      ],
+      "clues": [
+        "A 69-year-old man who smokes has two weeks of nausea, headache, and mild confusion.",
+        "He is euvolemic on examination, and his sodium is 121 mEq/L with a serum osmolality of 252 mOsm/kg.",
+        "Urine osmolality is 480 mOsm/kg and urine sodium is 55 mEq/L with a low uric acid.",
+        "Chest imaging shows a central lung mass and biopsy reveals small cell carcinoma."
+      ],
+      "common_wrong": [
+        "heart failure",
+        "psychogenic polydipsia",
+        "adrenal insufficiency"
+      ],
+      "teaching": "SIADH is a diagnosis of exclusion that requires euvolemia and normal thyroid, adrenal, and renal function.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl025",
+      "category": "Complex Pathophysiology",
+      "diagnosis": "Hepatorenal Syndrome",
+      "aliases": [
+        "HRS",
+        "HRS-AKI",
+        "hepatorenal"
+      ],
+      "clues": [
+        "A 58-year-old man with alcohol-associated cirrhosis has had rising abdominal girth for months.",
+        "After a large paracentesis he becomes oliguric, and his creatinine rises from 1.2 to 3.0 mg/dL.",
+        "Urinary sodium is under 10 mEq/L, the sediment is bland, and creatinine does not improve after 48 hours of diuretic withdrawal and albumin.",
+        "There is no shock, nephrotoxin exposure, or structural kidney disease on ultrasound."
+      ],
+      "common_wrong": [
+        "acute tubular necrosis",
+        "prerenal azotemia",
+        "glomerulonephritis"
+      ],
+      "teaching": "Hepatorenal syndrome is functional renal failure from splanchnic vasodilation; treat with albumin plus terlipressin or norepinephrine.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl026",
+      "category": "Complex Pathophysiology",
+      "diagnosis": "Disseminated Intravascular Coagulation",
+      "aliases": [
+        "DIC",
+        "consumptive coagulopathy",
+        "disseminated intravascular coagulopathy"
+      ],
+      "clues": [
+        "A 63-year-old woman is in the ICU with gram-negative sepsis from a urinary source.",
+        "New oozing is noted from her IV sites, and her platelet count has fallen from 210,000 to 38,000/uL.",
+        "PT and aPTT are both prolonged, and fibrinogen is 70 mg/dL.",
+        "D-dimer is very high and the smear shows schistocytes."
+      ],
+      "common_wrong": [
+        "heparin induced thrombocytopenia",
+        "thrombotic thrombocytopenic purpura",
+        "liver failure"
+      ],
+      "teaching": "Treat the underlying cause of DIC; replace products only for bleeding or procedures.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl027",
+      "category": "Complex Pathophysiology",
+      "diagnosis": "Lactic Acidosis",
+      "aliases": [
+        "metformin associated lactic acidosis",
+        "MALA",
+        "type B lactic acidosis",
+        "lactate acidosis"
+      ],
+      "clues": [
+        "A 70-year-old woman with type 2 diabetes and chronic kidney disease has a day of vomiting and weakness.",
+        "She is breathing rapidly, with a blood pressure of 100/60 and normal oxygen saturation.",
+        "The creatinine is 4.1 mg/dL and she takes metformin 1000 mg twice daily.",
+        "Arterial pH is 7.05 with an anion gap of 30, lactate of 14 mmol/L, and no ketones."
+      ],
+      "common_wrong": [
+        "diabetic ketoacidosis",
+        "sepsis",
+        "salicylate toxicity"
+      ],
+      "teaching": "Metformin is contraindicated at an eGFR under 30 mL/min, and severe cases may need hemodialysis.",
+      "review_notes": "Answer 'metformin toxicity' is not in alias list; faculty may want to add it."
+    },
+    {
+      "id": "cl028",
+      "category": "Complex Pathophysiology",
+      "diagnosis": "Cryoglobulinemia",
+      "aliases": [
+        "cryoglobulinaemia",
+        "cryoglobulinemic vasculitis",
+        "mixed cryoglobulinemia"
+      ],
+      "clues": [
+        "A 58-year-old man has several months of fatigue, joint pain, and a rash that worsens in cold weather.",
+        "He has palpable purpura on the legs and a peripheral neuropathy with numb feet.",
+        "Urine shows blood and protein, and C4 is very low with a positive rheumatoid factor.",
+        "Serum precipitates when cooled, and he tests positive for hepatitis C antibody."
+      ],
+      "common_wrong": [
+        "lupus",
+        "IgA vasculitis",
+        "polyarteritis nodosa"
+      ],
+      "teaching": "Warm the blood sample to the lab; hepatitis C is the leading cause of mixed cryoglobulinemia.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl029",
+      "category": "Complex Pathophysiology",
+      "diagnosis": "Antiphospholipid Syndrome",
+      "aliases": [
+        "APS",
+        "antiphospholipid antibody syndrome",
+        "Hughes syndrome",
+        "lupus anticoagulant syndrome"
+      ],
+      "clues": [
+        "A 30-year-old woman has had three first-trimester pregnancy losses.",
+        "She develops a deep vein thrombosis in the left leg without any provoking factors.",
+        "She has a lacy reticular rash on her legs, and aPTT is prolonged and does not correct with mixing.",
+        "Anticardiolipin and anti-beta-2 glycoprotein I antibodies are positive on two occasions twelve weeks apart."
+      ],
+      "common_wrong": [
+        "factor V Leiden",
+        "systemic lupus erythematosus",
+        "protein C deficiency"
+      ],
+      "teaching": "Warfarin is preferred over direct oral anticoagulants in high-risk, triple-positive antiphospholipid syndrome.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl030",
+      "category": "Complex Pathophysiology",
+      "diagnosis": "Cushing Syndrome",
+      "aliases": [
+        "Cushings syndrome",
+        "hypercortisolism",
+        "Cushing disease",
+        "cortisol excess"
+      ],
+      "clues": [
+        "A 40-year-old woman has gained weight over a year, particularly in her face and abdomen, with new easy bruising.",
+        "She has resistant hypertension, new diabetes, and menstrual irregularity.",
+        "Examination shows violaceous abdominal striae, a dorsocervical fat pad, and proximal muscle weakness.",
+        "A 1 mg dexamethasone suppression test fails to suppress cortisol and a late-night salivary cortisol is elevated."
+      ],
+      "common_wrong": [
+        "polycystic ovary syndrome",
+        "metabolic syndrome",
+        "obesity"
+      ],
+      "teaching": "Confirm hypercortisolism with biochemical testing first, then use ACTH to localize the source.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl031",
+      "category": "Unexpected Drug Interactions",
+      "diagnosis": "Serotonin Syndrome",
+      "aliases": [
+        "serotonin toxicity",
+        "serotonin storm",
+        "serotonergic toxicity"
+      ],
+      "clues": [
+        "A 36-year-old man on a long-term antidepressant is given a new medicine for migraine and a cough suppressant.",
+        "Within hours he is agitated and sweating, with diarrhea and a temperature of 38.9 C.",
+        "He has inducible clonus in both ankles, hyperreflexia, and dilated pupils.",
+        "Symptoms improve after stopping the drugs and treatment with benzodiazepines and cyproheptadine."
+      ],
+      "common_wrong": [
+        "neuroleptic malignant syndrome",
+        "anticholinergic toxicity",
+        "sepsis"
+      ],
+      "teaching": "Clonus and hyperreflexia with rapid onset after serotonergic drugs distinguish serotonin syndrome from NMS, which has rigidity and slow onset.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl032",
+      "category": "Unexpected Drug Interactions",
+      "diagnosis": "Rhabdomyolysis",
+      "aliases": [
+        "rhabdo",
+        "statin myopathy",
+        "statin induced rhabdomyolysis",
+        "exertional rhabdomyolysis"
+      ],
+      "clues": [
+        "A 64-year-old man on long-term simvastatin was started on clarithromycin for pneumonia a week ago.",
+        "He now has severe muscle aches and weakness in both thighs and notes dark urine.",
+        "Urine dipstick is strongly positive for blood but there are few red cells on microscopy, and creatinine is 3.2 mg/dL.",
+        "Creatine kinase is 48,000 U/L with high potassium and phosphorus."
+      ],
+      "common_wrong": [
+        "polymyositis",
+        "hemolysis",
+        "hepatitis"
+      ],
+      "teaching": "CYP3A4 inhibitors such as clarithromycin raise simvastatin levels; treat with aggressive IV fluids.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl033",
+      "category": "Unexpected Drug Interactions",
+      "diagnosis": "Stevens-Johnson Syndrome",
+      "aliases": [
+        "SJS",
+        "toxic epidermal necrolysis",
+        "TEN",
+        "Stevens Johnson",
+        "SJS/TEN"
+      ],
+      "clues": [
+        "A 28-year-old woman started a new anticonvulsant four weeks ago and now has fever and a sore throat.",
+        "She develops painful oral and conjunctival erosions and dusky target-like lesions on her trunk.",
+        "Skin detaches with gentle lateral pressure, with 8 percent of body surface area involved.",
+        "Biopsy shows full-thickness epidermal necrosis with minimal inflammation, and the culprit is lamotrigine."
+      ],
+      "common_wrong": [
+        "erythema multiforme",
+        "drug reaction with eosinophilia",
+        "viral exanthem"
+      ],
+      "teaching": "Stop the offending drug immediately; the SCORTEN score predicts mortality and care is best in a burn unit.",
+      "review_notes": "SJS and TEN differ by BSA; the clue 8 percent BSA is SJS-TEN overlap by some definitions, review."
+    },
+    {
+      "id": "cl034",
+      "category": "Unexpected Drug Interactions",
+      "diagnosis": "Neuroleptic Malignant Syndrome",
+      "aliases": [
+        "NMS",
+        "neuroleptic malignant",
+        "neuroleptic malignant syndrome with rigidity"
+      ],
+      "clues": [
+        "A 31-year-old man with schizophrenia was started on a high dose of haloperidol injections three days ago.",
+        "He is now agitated, sweaty, and has a fever of 40.1 C with a heart rate of 128.",
+        "His muscles feel stiff like a lead pipe and he has fluctuating blood pressure.",
+        "Creatine kinase is 12,000 U/L and he has leukocytosis, with normal reflexes and no clonus."
+      ],
+      "common_wrong": [
+        "serotonin syndrome",
+        "malignant hyperthermia",
+        "meningitis"
+      ],
+      "teaching": "Stop the antipsychotic and give supportive cooling and fluids; dantrolene or bromocriptine are options in severe cases.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl035",
+      "category": "Unexpected Drug Interactions",
+      "diagnosis": "Heparin-Induced Thrombocytopenia",
+      "aliases": [
+        "HIT",
+        "HIT type II",
+        "heparin thrombocytopenia"
+      ],
+      "clues": [
+        "A 62-year-old man is on day 7 after a knee replacement and receiving heparin prophylaxis.",
+        "His platelet count falls from 240,000 to 90,000/uL, a drop of more than 50 percent.",
+        "He develops a new swollen leg and a pulmonary embolus despite therapeutic heparin.",
+        "The 4T score is high and platelet factor 4 antibodies are strongly positive."
+      ],
+      "common_wrong": [
+        "DIC",
+        "immune thrombocytopenia",
+        "sepsis"
+      ],
+      "teaching": "Stop all heparin, including flushes, and start a non-heparin anticoagulant such as argatroban when HIT is suspected.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl036",
+      "category": "Unexpected Drug Interactions",
+      "diagnosis": "Digoxin Toxicity",
+      "aliases": [
+        "digitalis toxicity",
+        "digoxin overdose",
+        "digoxin poisoning",
+        "digitalis poisoning"
+      ],
+      "clues": [
+        "A 78-year-old woman with heart failure and atrial fibrillation has had days of nausea, anorexia, and fatigue.",
+        "A new loop diuretic and an antibiotic were recently added, and she reports blurry yellow-tinted vision.",
+        "Potassium is 3.1 mEq/L, creatinine is higher than baseline, and the ECG shows scooped ST segments.",
+        "Telemetry shows atrial tachycardia with block and bidirectional ventricular tachycardia."
+      ],
+      "common_wrong": [
+        "myocardial ischemia",
+        "hypokalemia",
+        "gastroenteritis"
+      ],
+      "teaching": "Hypokalemia and renal impairment worsen digoxin toxicity, and digoxin-specific antibody fragments are the antidote.",
+      "review_notes": "Chronic toxicity often has near-normal levels; review wording."
+    },
+    {
+      "id": "cl037",
+      "category": "Unexpected Drug Interactions",
+      "diagnosis": "Lithium Toxicity",
+      "aliases": [
+        "lithium poisoning",
+        "lithium overdose",
+        "lithium intoxication"
+      ],
+      "clues": [
+        "A 55-year-old woman with bipolar disorder takes a stable dose of lithium and begins a new medicine for knee pain.",
+        "She develops coarse tremor, nausea, and diarrhea, then slurred speech and unsteady gait.",
+        "Creatinine is mildly increased, and she has recently been on an ACE inhibitor and an NSAID.",
+        "Serum lithium level is 3.2 mEq/L and hemodialysis is recommended."
+      ],
+      "common_wrong": [
+        "stroke",
+        "viral gastroenteritis",
+        "serotonin syndrome"
+      ],
+      "teaching": "NSAIDs, ACE inhibitors, and thiazides reduce lithium clearance and can precipitate toxicity.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl038",
+      "category": "Unexpected Drug Interactions",
+      "diagnosis": "Acetaminophen Toxicity",
+      "aliases": [
+        "acetaminophen overdose",
+        "paracetamol overdose",
+        "Tylenol overdose",
+        "paracetamol toxicity",
+        "APAP toxicity"
+      ],
+      "clues": [
+        "A 24-year-old woman is brought in after a fight with her partner and vomiting; she denies ingestion.",
+        "She had mild nausea for a day, and her initial examination is unremarkable.",
+        "Two days later she has right upper quadrant pain, an INR of 3.4, and ALT above 5,000 U/L.",
+        "A four-hour serum level plotted on the nomogram was in the treatment range, and N-acetylcysteine is started."
+      ],
+      "common_wrong": [
+        "viral hepatitis",
+        "gastroenteritis",
+        "ischemic hepatitis"
+      ],
+      "teaching": "Start N-acetylcysteine early; the benefit is greatest within eight hours of ingestion.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl039",
+      "category": "Unexpected Drug Interactions",
+      "diagnosis": "Methemoglobinemia",
+      "aliases": [
+        "methaemoglobinemia",
+        "acquired methemoglobinemia",
+        "MetHb"
+      ],
+      "clues": [
+        "A 30-year-old man develops shortness of breath and bluish discoloration after a dental procedure.",
+        "His saturation reads 85 percent and does not rise with high flow oxygen, and he is not distressed.",
+        "His blood looks chocolate brown, and the arterial partial pressure of oxygen is normal.",
+        "Co-oximetry shows methemoglobin of 35 percent after benzocaine spray, and methylene blue is given."
+      ],
+      "common_wrong": [
+        "pulmonary embolism",
+        "carbon monoxide poisoning",
+        "pneumonia"
+      ],
+      "teaching": "Pulse oximetry trends toward 85 percent in methemoglobinemia; methylene blue is ineffective in G6PD deficiency.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl040",
+      "category": "Unexpected Drug Interactions",
+      "diagnosis": "Hyperkalemia",
+      "aliases": [
+        "high potassium",
+        "elevated potassium",
+        "hyperkalaemia",
+        "high serum potassium"
+      ],
+      "clues": [
+        "A 72-year-old man with diabetes starts trimethoprim-sulfamethoxazole for a urinary infection while taking lisinopril and spironolactone.",
+        "He becomes weak and has palpitations five days later.",
+        "His creatinine is 2.4 mg/dL and the ECG shows peaked T waves and a widened QRS.",
+        "Serum potassium is 7.4 mEq/L and he receives IV calcium gluconate."
+      ],
+      "common_wrong": [
+        "myocardial infarction",
+        "acute kidney injury",
+        "sepsis"
+      ],
+      "teaching": "Trimethoprim blocks the epithelial sodium channel like amiloride, so combining it with ACE inhibitors and spironolactone can cause severe hyperkalemia.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl041",
+      "category": "Atypical Presentations of Common Diseases",
+      "diagnosis": "Guillain-Barre Syndrome",
+      "aliases": [
+        "GBS",
+        "Guillain Barre",
+        "acute inflammatory demyelinating polyneuropathy",
+        "AIDP",
+        "Landry paralysis"
+      ],
+      "clues": [
+        "A 40-year-old man has tingling in both feet that began ten days after a diarrheal illness.",
+        "Over three days he develops weakness that ascends from his legs to his thighs and hands.",
+        "Reflexes are absent in the legs, and his forced vital capacity is declining at the bedside.",
+        "Cerebrospinal fluid shows elevated protein with normal cell count, and nerve conduction demonstrates demyelination."
+      ],
+      "common_wrong": [
+        "myasthenia gravis",
+        "transverse myelitis",
+        "hypokalemic paralysis"
+      ],
+      "teaching": "Monitor forced vital capacity and negative inspiratory force, and treat with IVIG or plasma exchange.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl042",
+      "category": "Diagnostic Dilemmas",
+      "diagnosis": "Hemochromatosis",
+      "aliases": [
+        "hereditary hemochromatosis",
+        "HFE hemochromatosis",
+        "iron overload disease",
+        "bronze diabetes"
+      ],
+      "clues": [
+        "A 48-year-old man has fatigue, joint pain, and reduced libido for several years.",
+        "He has pain and swelling in the second and third metacarpophalangeal joints, and new diabetes.",
+        "His skin has a gray bronze tint, and ferritin is 2,800 ng/mL with transferrin saturation over 80 percent.",
+        "HFE genotype testing shows C282Y homozygosity, and treatment with phlebotomy is planned."
+      ],
+      "common_wrong": [
+        "rheumatoid arthritis",
+        "alcohol related liver disease",
+        "type 2 diabetes"
+      ],
+      "teaching": "Screen with transferrin saturation and ferritin; phlebotomy prevents cirrhosis and hepatocellular carcinoma.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl043",
+      "category": "Diagnostic Dilemmas",
+      "diagnosis": "Legionnaires Disease",
+      "aliases": [
+        "Legionella",
+        "legionellosis",
+        "Legionella pneumonia",
+        "Legionnaire disease"
+      ],
+      "clues": [
+        "A 62-year-old man who smokes has fever and a dry cough that started after a hotel stay.",
+        "He has watery diarrhea and confusion, and his sodium is 128 mEq/L with a high bilirubin.",
+        "Chest radiograph shows a patchy lobar infiltrate that progresses despite beta-lactam therapy.",
+        "Urinary Legionella antigen is positive and he improves on azithromycin."
+      ],
+      "common_wrong": [
+        "pneumococcal pneumonia",
+        "influenza",
+        "mycoplasma pneumonia"
+      ],
+      "teaching": "Atypical pneumonia with hyponatremia, diarrhea, and travel history should prompt urinary antigen testing.",
+      "review_notes": ""
+    },
+    {
+      "id": "cl044",
+      "category": "Complex Pathophysiology",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome",
+      "aliases": [
+        "LEMS",
+        "Lambert Eaton syndrome",
+        "Eaton-Lambert syndrome",
+        "Lambert-Eaton"
+      ],
+      "clues": [
+        "A 63-year-old man who smokes has progressive leg weakness and difficulty rising from a chair.",
+        "He has a dry mouth and erectile dysfunction, and his reflexes are diminished.",
+        "Strength improves briefly after repeated effort and he has no ptosis early in the disease.",
+        "Repetitive nerve stimulation shows an incremental response, with antibodies against voltage-gated calcium channels and a small cell lung mass."
+      ],
+      "common_wrong": [
+        "myasthenia gravis",
+        "polymyositis",
+        "Guillain-Barre syndrome"
+      ],
+      "teaching": "Always search for small cell lung cancer when Lambert-Eaton is diagnosed in a smoker.",
+      "review_notes": ""
+    }
+  ]
+}
